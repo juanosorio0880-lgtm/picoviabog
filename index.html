@@ -3,31 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TU SUCURSAL – Sucursal del Conocimiento | Conocimiento sin Fronteras</title>
-    <meta name="description" content="Centro digital de conocimiento especializado e independiente. Investiga, aprende y descubre en nuestras sucursales dedicadas a Ciencias Sociales, Matemáticas, Historia, Biología y más de 2,000 temas educativos organizados.">
-    <meta name="keywords" content="recursos educativos digitales, plataforma de aprendizaje, investigación educativa, centro de conocimiento, aprendizaje digital, matemáticas explicadas, ciencias sociales, historia universal, biología celular, investigación científica">
+    <title>TU SUCURSAL – Guía Educativa y Divulgación Independiente</title>
+    <meta name="description" content="Guía educativa independiente dedicada a la divulgación clara y estructurada en Historia, Ciencias Sociales, Matemáticas y Biología.">
+    <meta name="keywords" content="guía educativa, divulgación científica, historia universal, ciencias sociales, matemáticas explicadas, biología celular, estudio independiente">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="TU SUCURSAL – Sucursal del Conocimiento">
+    <meta name="author" content="Tu Sucursal – Guía Educativa">
     <link rel="canonical" href="https://tusucursal.org/">
 
     <!-- Open Graph Metadata -->
-    <meta property="og:title" content="TU SUCURSAL – Sucursal del Conocimiento">
-    <meta property="og:description" content="Conocimiento sin Fronteras. Investiga, aprende y descubre en un centro digital especializado e independiente.">
+    <meta property="og:title" content="TU SUCURSAL – Guía Educativa Independiente">
+    <meta property="og:description" content="Guías temáticas de estudio y divulgación en Historia, Ciencias Sociales, Matemáticas y Biología.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tusucursal.org/">
     <meta property="og:site_name" content="TU SUCURSAL">
 
-    <!-- Schema.org Data Estructurada (EducationalOrganization) -->
+    <!-- Schema.org Data Estructurada (WebSite / Blog Educativo) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "TU SUCURSAL – SUCURSAL DEL CONOCIMIENTO",
-      "alternateName": "Tu Sucursal",
+      "@type": "WebSite",
+      "name": "TU SUCURSAL – Guía Educativa",
       "url": "https://tusucursal.org/",
-      "slogan": "Conocimiento sin Fronteras",
-      "description": "Plataforma educativa e investigativa independiente dedicada a la divulgación abierta del conocimiento en ciencias sociales, matemáticas, historia y biología, con más de 2,000 temas especializados.",
-      "knowsAbout": ["Ciencias Sociales", "Matemáticas", "Historia", "Biología", "Geografía", "Astronomía", "Tecnología", "Cultura General", "Investigación"]
+      "description": "Guía educativa independiente dedicada a la divulgación abierta del conocimiento en ciencias sociales, matemáticas, historia y biología.",
+      "inLanguage": "es"
     }
     </script>
 
@@ -63,7 +61,6 @@
     </script>
     <!-- Icons & MathJax -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <style>
@@ -71,36 +68,39 @@
         body { font-family: 'Inter', sans-serif; }
         .prose-editorial p { margin-bottom: 1.25rem; line-height: 1.8; font-family: 'Merriweather', serif; color: #334155; }
         .dark .prose-editorial p { color: #cbd5e1; }
-        .prose-editorial h3 { font-family: 'Inter', sans-serif; margin-top: 1.75rem; margin-bottom: 0.75rem; font-weight: 700; color: #0f172a; }
+        .prose-editorial h3 { font-family: 'Inter', sans-serif; margin-top: 1.75rem; margin-bottom: 0.75rem; font-weight: 700; color: #0f172a; font-size: 1.15rem; }
         .dark .prose-editorial h3 { color: #f8fafc; }
         .prose-editorial h4 { font-family: 'Inter', sans-serif; margin-top: 1.25rem; margin-bottom: 0.5rem; font-weight: 600; color: #1e293b; }
         .dark .prose-editorial h4 { color: #e2e8f0; }
+        .prose-editorial ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; font-family: 'Merriweather', serif; color: #334155; }
+        .dark .prose-editorial ul { color: #cbd5e1; }
+        .prose-editorial li { margin-bottom: 0.5rem; line-height: 1.7; }
     </style>
 </head>
 <body class="bg-slate-50 dark:bg-navy-950 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-300">
 
-    <!-- HEADER INSTITUCIONAL -->
+    <!-- HEADER DE LA GUÍA EDUCATIVA -->
     <header class="sticky top-0 z-50 bg-white/95 dark:bg-navy-900/95 backdrop-blur-md border-b border-slate-200 dark:border-navy-800 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 
-                <!-- Logo & Identidad de Marca -->
+                <!-- Logo & Identidad -->
                 <div class="flex items-center space-x-3 cursor-pointer" onclick="navigateTo('home')">
                     <div class="w-11 h-11 bg-navy-900 dark:bg-navy-800 border border-gold-500/40 text-gold-400 rounded-xl flex items-center justify-center shadow-md">
-                        <i class="fa-solid fa-compass-drafting text-xl"></i>
+                        <i class="fa-solid fa-book-open-reader text-xl"></i>
                     </div>
                     <div>
                         <div class="flex items-center gap-2">
                             <span class="text-xl font-black tracking-tight text-navy-900 dark:text-white uppercase">TU SUCURSAL</span>
-                            <span class="text-[10px] font-bold px-1.5 py-0.5 bg-gold-500/10 border border-gold-500/30 text-gold-600 dark:text-gold-400 rounded">+2,000 TEMAS</span>
+                            <span class="text-[10px] font-bold px-2 py-0.5 bg-gold-500/10 border border-gold-500/30 text-gold-600 dark:text-gold-400 rounded">GUÍA EDUCATIVA</span>
                         </div>
-                        <span class="text-xs font-semibold text-slate-500 dark:text-slate-400 tracking-wider uppercase block">Sucursal del Conocimiento</span>
+                        <span class="text-xs font-semibold text-slate-500 dark:text-slate-400 tracking-wider uppercase block">Divulgación y Estudio Independiente</span>
                     </div>
                 </div>
 
                 <!-- Buscador Rápido del Header -->
                 <div class="hidden md:flex flex-1 max-w-md mx-8 relative">
-                    <input type="text" id="header-search" oninput="handleHeaderSearch(this.value)" placeholder="Buscar entre más de 2,000 temas o fuentes externas..." 
+                    <input type="text" id="header-search" oninput="handleHeaderSearch(this.value)" placeholder="Buscar guías por tema o palabra clave..." 
                            class="w-full pl-10 pr-4 py-2 text-xs bg-slate-100 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-full focus:outline-none focus:ring-2 focus:ring-navy-500 transition">
                     <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-2.5 text-slate-400 text-xs"></i>
                     <div id="search-results" class="hidden absolute top-full left-0 right-0 mt-2 bg-white dark:bg-navy-900 rounded-xl shadow-2xl border border-slate-200 dark:border-navy-800 overflow-hidden z-50 max-h-96 overflow-y-auto"></div>
@@ -109,11 +109,11 @@
                 <!-- Menú Superior -->
                 <nav class="hidden xl:flex items-center space-x-5 text-xs font-semibold uppercase tracking-wider">
                     <button onclick="navigateTo('home')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Inicio</button>
-                    <button onclick="navigateTo('sucursal', 'historia')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Historia</button>
-                    <button onclick="navigateTo('sucursal', 'sociales')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">C. Sociales</button>
-                    <button onclick="navigateTo('sucursal', 'matematicas')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Matemáticas</button>
-                    <button onclick="navigateTo('sucursal', 'biologia')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Biología</button>
-                    <button onclick="navigateTo('audit')" class="text-gold-600 dark:text-gold-400 border border-gold-500/40 px-2.5 py-1 rounded hover:bg-gold-500/10 transition">Auditoría Ads</button>
+                    <button onclick="navigateTo('categoria', 'historia')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Historia</button>
+                    <button onclick="navigateTo('categoria', 'sociales')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">C. Sociales</button>
+                    <button onclick="navigateTo('categoria', 'matematicas')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Matemáticas</button>
+                    <button onclick="navigateTo('categoria', 'biologia')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Biología</button>
+                    <button onclick="navigateTo('sobre-proyecto')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Sobre el Autor</button>
                 </nav>
 
                 <!-- Switch de Tema / Acciones -->
@@ -131,13 +131,13 @@
 
         <!-- Menú Móvil -->
         <div id="mobile-menu" class="hidden xl:hidden bg-white dark:bg-navy-900 border-b border-slate-200 dark:border-navy-800 px-4 py-4 space-y-2">
-            <input type="text" oninput="handleHeaderSearch(this.value)" placeholder="Buscar tema o sucursal..." class="w-full pl-9 pr-3 py-2 text-xs bg-slate-100 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-lg mb-3">
+            <input type="text" oninput="handleHeaderSearch(this.value)" placeholder="Buscar tema o área..." class="w-full pl-9 pr-3 py-2 text-xs bg-slate-100 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-lg mb-3">
             <button onclick="navigateTo('home'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Inicio</button>
-            <button onclick="navigateTo('sucursal', 'historia'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Sucursal de Historia (500+ Temas)</button>
-            <button onclick="navigateTo('sucursal', 'sociales'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Sucursal de Ciencias Sociales (500+ Temas)</button>
-            <button onclick="navigateTo('sucursal', 'matematicas'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Sucursal de Matemáticas (500+ Temas)</button>
-            <button onclick="navigateTo('sucursal', 'biologia'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Sucursal de Biología (500+ Temas)</button>
-            <button onclick="navigateTo('audit'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider text-gold-500 rounded hover:bg-slate-100 dark:hover:bg-navy-800">Auditoría Google Ads</button>
+            <button onclick="navigateTo('categoria', 'historia'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Guía de Historia</button>
+            <button onclick="navigateTo('categoria', 'sociales'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Guía de Ciencias Sociales</button>
+            <button onclick="navigateTo('categoria', 'matematicas'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Guía de Matemáticas</button>
+            <button onclick="navigateTo('categoria', 'biologia'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Guía de Biología</button>
+            <button onclick="navigateTo('sobre-proyecto'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider text-gold-500 rounded hover:bg-slate-100 dark:hover:bg-navy-800">Sobre el Proyecto y Autor</button>
         </div>
     </header>
 
@@ -146,89 +146,76 @@
         <!-- Inyección dinámica de vistas -->
     </main>
 
-    <!-- FOOTER CORPORATIVO INTEGRAL -->
+    <!-- FOOTER DE TRANSPARENCIA PERSONAL -->
     <footer class="bg-navy-950 border-t border-navy-800 text-slate-400 text-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 
                 <!-- Columna Marca -->
                 <div class="md:col-span-2 space-y-3">
                     <div class="flex items-center space-x-2 text-white">
-                        <i class="fa-solid fa-compass-drafting text-lg text-gold-400"></i>
+                        <i class="fa-solid fa-book-open-reader text-lg text-gold-400"></i>
                         <span class="font-extrabold text-base tracking-tight uppercase">TU SUCURSAL</span>
                     </div>
                     <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
-                        Plataforma educativa e investigativa independiente. Catálogo estructurado con más de 2,000 temas en Historia, Ciencias Sociales, Matemáticas y Biología.
+                        Guía educativa personal dedicada a la divulgación clara y gratuita de conceptos fundamentales en Historia, Ciencias Sociales, Matemáticas y Biología.
                     </p>
-                    <p class="text-[11px] text-slate-500">
-                        <strong class="text-slate-400">Eslogan:</strong> CONOCIMIENTO SIN FRONTERAS<br>
-                        <strong class="text-slate-400">Premisa Institucional:</strong> INVESTIGA, APRENDE Y DESCUBRE
+                    <p class="text-[11px] text-slate-400">
+                        <strong class="text-slate-300">Editor Responsable:</strong> [ESCRIBE AQUÍ TU NOMBRE COMPLETO]<br>
+                        <strong class="text-slate-300">Contacto Directo:</strong> <a href="mailto:contacto@tusucursal.org" class="text-gold-400 hover:underline">contacto@tusucursal.org</a>
                     </p>
                 </div>
 
-                <!-- Columna Cuatro Sucursales Principales -->
+                <!-- Columna Áreas Temáticas -->
                 <div>
-                    <h3 class="text-white font-bold mb-3 text-xs uppercase tracking-wider border-b border-navy-800 pb-1">Sucursales Centrales</h3>
+                    <h3 class="text-white font-bold mb-3 text-xs uppercase tracking-wider border-b border-navy-800 pb-1">Áreas de Estudio</h3>
                     <ul class="space-y-1.5">
-                        <li><a href="#" onclick="navigateTo('sucursal', 'historia')" class="hover:text-gold-400 transition">S. de Historia (500+ Temas)</a></li>
-                        <li><a href="#" onclick="navigateTo('sucursal', 'sociales')" class="hover:text-gold-400 transition">S. de C. Sociales (500+ Temas)</a></li>
-                        <li><a href="#" onclick="navigateTo('sucursal', 'matematicas')" class="hover:text-gold-400 transition">S. de Matemáticas (500+ Temas)</a></li>
-                        <li><a href="#" onclick="navigateTo('sucursal', 'biologia')" class="hover:text-gold-400 transition">S. de Biología (500+ Temas)</a></li>
-                        <li><a href="#" onclick="navigateTo('sucursales-all')" class="hover:text-gold-400 transition font-bold text-gold-500">+ Ver Todas las Sucursales</a></li>
+                        <li><a href="#" onclick="navigateTo('categoria', 'historia')" class="hover:text-gold-400 transition">Guía de Historia</a></li>
+                        <li><a href="#" onclick="navigateTo('categoria', 'sociales')" class="hover:text-gold-400 transition">Guía de C. Sociales</a></li>
+                        <li><a href="#" onclick="navigateTo('categoria', 'matematicas')" class="hover:text-gold-400 transition">Guía de Matemáticas</a></li>
+                        <li><a href="#" onclick="navigateTo('categoria', 'biologia')" class="hover:text-gold-400 transition">Guía de Biología</a></li>
                     </ul>
                 </div>
 
-                <!-- Columna Transparencia Institucional -->
+                <!-- Columna Legal y Transparencia -->
                 <div>
-                    <h3 class="text-white font-bold mb-3 text-xs uppercase tracking-wider border-b border-navy-800 pb-1">Información Institucional</h3>
+                    <h3 class="text-white font-bold mb-3 text-xs uppercase tracking-wider border-b border-navy-800 pb-1">Información y Legal</h3>
                     <ul class="space-y-1.5">
-                        <li><a href="#" onclick="navigateTo('quienes-somos')" class="hover:text-gold-400 transition">Quiénes Somos</a></li>
-                        <li><a href="#" onclick="navigateTo('quienes-somos')" class="hover:text-gold-400 transition">Nuestra Misión</a></li>
-                        <li><a href="#" onclick="navigateTo('contacto')" class="hover:text-gold-400 transition">Información de Contacto</a></li>
-                        <li><a href="#" onclick="navigateTo('editorial')" class="hover:text-gold-400 transition">Política Editorial</a></li>
-                        <li><a href="#" onclick="navigateTo('audit')" class="hover:text-gold-400 transition text-gold-400">Informe Auditoría Ads</a></li>
-                    </ul>
-                </div>
-
-                <!-- Columna Legal y Protección -->
-                <div>
-                    <h3 class="text-white font-bold mb-3 text-xs uppercase tracking-wider border-b border-navy-800 pb-1">Información Legal</h3>
-                    <ul class="space-y-1.5">
+                        <li><a href="#" onclick="navigateTo('sobre-proyecto')" class="hover:text-gold-400 transition">Sobre el Proyecto y Autor</a></li>
+                        <li><a href="#" onclick="navigateTo('editorial')" class="hover:text-gold-400 transition">Criterios de Redacción</a></li>
+                        <li><a href="#" onclick="navigateTo('contacto')" class="hover:text-gold-400 transition">Formulario de Contacto</a></li>
                         <li><a href="#" onclick="navigateTo('privacidad')" class="hover:text-gold-400 transition">Política de Privacidad</a></li>
                         <li><a href="#" onclick="navigateTo('cookies')" class="hover:text-gold-400 transition">Política de Cookies</a></li>
-                        <li><a href="#" onclick="navigateTo('terminos')" class="hover:text-gold-400 transition">Términos y Condiciones</a></li>
-                        <li><a href="#" onclick="navigateTo('aviso-legal')" class="hover:text-gold-400 transition">Aviso Legal</a></li>
-                        <li><a href="#" onclick="navigateTo('propiedad-intelectual')" class="hover:text-gold-400 transition">Propiedad Intelectual</a></li>
-                        <li><a href="#" onclick="navigateTo('accesibilidad')" class="hover:text-gold-400 transition">Accesibilidad</a></li>
+                        <li><a href="#" onclick="navigateTo('terminos')" class="hover:text-gold-400 transition">Términos de Uso</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="border-t border-navy-900 pt-6 flex flex-col md:flex-row justify-between items-center text-[11px] text-slate-500 gap-4">
-                <p>&copy; 2026 TU SUCURSAL – SUCURSAL DEL CONOCIMIENTO. Plataforma educativa independiente. Todos los derechos reservados.</p>
+                <p>&copy; 2026 TU SUCURSAL – Guía Educativa Independiente editada por [TU NOMBRE COMPLETO].</p>
                 <div class="flex items-center space-x-4">
-                    <span>Español (América Latina)</span>
+                    <span>Colombia</span>
                     <span>|</span>
-                    <a href="#" onclick="navigateTo('privacidad')" class="hover:underline">Cumplimiento Ley 1581 / GDPR</a>
+                    <a href="#" onclick="navigateTo('privacidad')" class="hover:underline">Protección de Datos (Ley 1581)</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- AVISO DE COOKIES COMPLETO -->
+    <!-- AVISO DE COOKIES -->
     <div id="cookie-banner" class="fixed bottom-0 inset-x-0 bg-navy-900 border-t border-navy-700 text-white p-4 shadow-2xl z-50 transition-transform duration-300">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
             <p class="text-slate-300 leading-relaxed">
-                Utilizamos cookies estrictamente necesarias y analíticas para optimizar tu experiencia en nuestras sucursales de conocimiento. No recopilamos datos sensibles sin consentimiento previo. Consulta nuestra <a href="#" onclick="navigateTo('cookies')" class="underline text-gold-400">Política de Cookies</a>.
+                Utilizamos cookies técnicas y analíticas básicas para mejorar la navegación y medir el rendimiento de nuestras guías educativas. Consulta nuestra <a href="#" onclick="navigateTo('cookies')" class="underline text-gold-400">Política de Cookies</a>.
             </p>
             <div class="flex items-center space-x-3 shrink-0">
-                <button onclick="navigateTo('cookies')" class="px-3 py-1.5 border border-slate-600 rounded text-slate-300 hover:text-white text-xs">Preferencias</button>
-                <button onclick="acceptCookies()" class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold px-5 py-2 rounded-lg text-xs tracking-wider transition">Aceptar y Continuar</button>
+                <button onclick="navigateTo('cookies')" class="px-3 py-1.5 border border-slate-600 rounded text-slate-300 hover:text-white text-xs">Más info</button>
+                <button onclick="acceptCookies()" class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold px-5 py-2 rounded-lg text-xs tracking-wider transition">Aceptar</button>
             </div>
         </div>
     </div>
 
-    <!-- LÓGICA JAVASCRIPT INTEGRAL: AMPLIACIÓN MASIVA + BUSCADOR DE 3 NIVELES -->
+    <!-- LÓGICA JAVASCRIPT -->
     <script>
         /* --- ESTADO DEL TEMA OSCURO --- */
         function toggleTheme() {
@@ -251,250 +238,273 @@
             });
         }
 
-        /* --- SUCURSALES ESTRUCTURADAS --- */
-        const sucursalesData = {
+        /* --- ÁREAS TEMÁTICAS ACTIVAS (SOLO LAS QUE TIENEN CONTENIDO REAL) --- */
+        const categoriasData = {
             historia: {
                 id: 'historia',
-                name: 'Sucursal de Historia',
-                totalTopics: '500+ Temas',
-                shortDesc: 'Prehistoria, civilizaciones antiguas, Egipto, Mesopotamia, Grecia, Roma, Edad Media, Renacimiento, guerras mundiales e historia latinoamericana.',
-                icon: 'fa-timeline',
+                name: 'Guía de Historia Universal',
+                badge: 'Área de Humanidades',
+                shortDesc: 'Resúmenes estructurados sobre civilizaciones antiguas, revoluciones políticas y acontecimientos clave que moldearon el mundo actual.',
+                icon: 'fa-landmark',
                 bgClass: 'from-amber-900 to-navy-900',
-                specialty: 'Análisis crítico de los acontecimientos históricos universales y el desarrollo de las sociedades humanas.',
-                subcategories: [
-                    'Prehistoria y Evolución Humana', 'Primeras Civilizaciones Fluviales', 'Antiguo Egipto y Mesopotamia', 
-                    'Grecia Antigua y Filosofía Clásica', 'Imperio Romano y Legado Jurídico', 'Edad Media y Feudalismo', 
-                    'Renacimiento y Humanismo', 'Reforma y Contrarreforma', 'Revolución Francesa y Derechos', 
-                    'Revolución Industrial y Tecnología', 'Guerras Mundiales y Geopolítica', 'Historia de América Latina y Colombia'
-                ]
+                specialty: 'Explicaciones claras sobre procesos históricos, causas y consecuencias.'
             },
             sociales: {
                 id: 'sociales',
-                name: 'Sucursal de Ciencias Sociales',
-                totalTopics: '500+ Temas',
-                shortDesc: 'Sociología, psicología académica, economía, ciencia política, cultura, antropología, derechos humanos y demografía.',
+                name: 'Guía de Ciencias Sociales',
+                badge: 'Área Social y Política',
+                shortDesc: 'Conceptos fundamentales de sociología, estructura de las instituciones, democracia y comportamiento humano en sociedad.',
                 icon: 'fa-people-group',
                 bgClass: 'from-blue-900 to-navy-900',
-                specialty: 'Investigación del comportamiento humano en sociedad, la organización estatal y la dinámica cultural.',
-                subcategories: [
-                    'Sociología y Estructura Social', 'Psicología Académica y Cognición', 'Antropología Cultural', 
-                    'Economía y Distribución de Recursos', 'Ciencia Política y Sistemas de Gobierno', 'Derechos Humanos y Sociedad', 
-                    'Demografía y Geografía Humana', 'Globalización y Sociedad Digital', 'Filosofía Social y Ética', 'Educación y Desarrollo Humano'
-                ]
+                specialty: 'Análisis introductorio a las dinámicas sociales y sistemas políticos.'
             },
             matematicas: {
                 id: 'matematicas',
-                name: 'Sucursal de Matemáticas',
-                totalTopics: '500+ Temas',
-                shortDesc: 'Aritmética, álgebra, geometría euclidiana, trigonometría, estadística, probabilidad, cálculo y teoría de números.',
+                name: 'Guía de Matemáticas',
+                badge: 'Área Cuantitativa',
+                shortDesc: 'Fundamentos de aritmética, sistemas numéricos, introducción al álgebra y resolución paso a paso de ecuaciones.',
                 icon: 'fa-calculator',
                 bgClass: 'from-indigo-900 to-navy-900',
-                specialty: 'Investigación en estructuras numéricas, relaciones algebraicas y modelos de resolución cuantitativa.',
-                subcategories: [
-                    'Aritmética y Sistemas Numéricos', 'Álgebra y Ecuaciones Avanzadas', 'Geometría y Trigonometría', 
-                    'Estadística y Probabilidad', 'Cálculo Diferencial e Integral', 'Matemáticas Financieras', 
-                    'Teoría de Números y Lógica', 'Álgebra Lineal y Matrices', 'Sucesiones, Series y Límites', 'Problemas Aplicados'
-                ]
+                specialty: 'Explicaciones prácticas de conceptos matemáticos esenciales.'
             },
             biologia: {
                 id: 'biologia',
-                name: 'Sucursal de Biología',
-                totalTopics: '500+ Temas',
-                shortDesc: 'Biología celular, anatomía humana, genética, evolución, ecología, microbiología, botánica y zoología.',
+                name: 'Guía de Biología',
+                badge: 'Área de Ciencias Naturales',
+                shortDesc: 'Estudio introductorio sobre la célula, el ADN, la herencia genética y el origen de la vida en la Tierra.',
                 icon: 'fa-dna',
                 bgClass: 'from-emerald-900 to-navy-900',
-                specialty: 'Estudio sistemático de la vida, las estructuras moleculares y los sistemas ecológicos del planeta.',
-                subcategories: [
-                    'Biología Celular y Organelos', 'Genética y ADN', 'Evolución y Selección Natural', 
-                    'Anatomía y Fisiología Humana', 'Ecología y Biodiversidad', 'Microbiología y Virología', 
-                    'Botánica y Fisiología Vegetal', 'Zoología y Biología Marina', 'Biotecnología y Bioquímica', 'Neurobiología'
-                ]
-            },
-            geografia: {
-                id: 'geografia',
-                name: 'Sucursal de Geografía',
-                totalTopics: '300+ Temas',
-                shortDesc: 'Geología, tectónica de placas, geomorfología, climatología y cartografía terrestre.',
-                icon: 'fa-earth-americas',
-                bgClass: 'from-teal-900 to-navy-900',
-                specialty: 'Análisis de la superficie terrestre, las interacciones bioclimáticas y la organización territorial.'
-            },
-            astronomia: {
-                id: 'astronomia',
-                name: 'Sucursal del Universo y Astronomía',
-                totalTopics: '300+ Temas',
-                shortDesc: 'Astrofísica, cosmología moderna, agujeros negros, mecánica celeste y física cuántica.',
-                icon: 'fa-meteor',
-                bgClass: 'from-purple-900 to-navy-900',
-                specialty: 'Investigación de los cuerpos celestes, el origen del espacio-tiempo y los fenómenos galácticos.'
-            },
-            tecnologia: {
-                id: 'tecnologia',
-                name: 'Sucursal de Tecnología e IA',
-                totalTopics: '300+ Temas',
-                shortDesc: 'Computación avanzada, aprendizaje automático, ciencia de datos y redes globales.',
-                icon: 'fa-microchip',
-                bgClass: 'from-cyan-900 to-navy-900',
-                specialty: 'Estudio del desarrollo tecnológico, algoritmos de IA, cibernética y sistemas digitales.'
-            },
-            cultura: {
-                id: 'cultura',
-                name: 'Sucursal de Cultura General',
-                totalTopics: '400+ Temas',
-                shortDesc: 'Grandes obras artísticas, filosofía clásica, literatura universal e historia del arte.',
-                icon: 'fa-landmark-dome',
-                bgClass: 'from-slate-800 to-navy-900',
-                specialty: 'Compendio de las grandes realizaciones culturales, filosóficas y creativas de la humanidad.'
-            },
-            investigacion: {
-                id: 'investigacion',
-                name: 'Sucursal de Investigación',
-                totalTopics: '250+ Temas',
-                shortDesc: 'Metodología científica, análisis crítico de fuentes y epistemología aplicada.',
-                icon: 'fa-magnifying-glass-chart',
-                bgClass: 'from-slate-900 to-navy-950',
-                specialty: 'Técnicas rigurosas de investigación académica, evaluación empírica y método científico.'
+                specialty: 'Divulgación accesible sobre los procesos biológicos fundamentales.'
             }
         };
 
-        /* --- BASE DE DATOS DE ARTÍCULOS DETALLADOS --- */
+        /* --- BASE DE DATOS DE GUÍAS Y ARTÍCULOS DESARROLLADOS --- */
         const articlesDB = [
             // HISTORIA
             {
                 id: 'his-1',
-                sucursal: 'historia',
+                categoria: 'historia',
                 title: '¿Cómo surgieron las primeras civilizaciones antiguas?',
-                intro: 'Examen de las primeras sociedades urbanas en Mesopotamia, el valle del Nilo, el Indo y el Río Amarillo.',
+                intro: 'Un recorrido por la transición del nomadismo a las primeras sociedades urbanas en Mesopotamia, Egipto, el valle del Indo y China.',
                 content: `
-                    <p>La revolución agrícola facilitó la creación de asentamientos permanentes en Mesopotamia y Egipto, propiciando la invención de la escritura cuneiforme y jeroglífica para la administración de bienes.</p>
+                    <p>El surgimiento de las primeras civilizaciones hace aproximadamente 5,500 años marcó un punto de inflexión en la historia humana. Este proceso no ocurrió de manera repentina, sino que fue el resultado de siglos de transformación impulsados por la <strong>Revolución Neolítica</strong>, cuando los grupos humanos abandonaron gradualmente la caza y la recolección para adoptar la agricultura y la domesticación de animales.</p>
+                    <h3>El papel fundamental de los grandes ríos</h3>
+                    <p>No es coincidencia que las primeras sociedades complejas se establecieran junto a grandes cuencas fluviales: los ríos Tigris y Éufrates en Mesopotamia, el Nilo en Egipto, el río Indo en el sur de Asia y el río Amarillo en China. Las crecidas periódicas de estos ríos depositaban limo fértil en las tierras circundantes, permitiendo cosechas abundantes y excedentes alimentarios.</p>
+                    <p>Contar con excedentes de alimentos permitió que una parte de la población dejara de dedicarse exclusivamente a producir comida y asumiera nuevos roles especializados: artesanos, comerciantes, sacerdotes, administradores y gobernantes.</p>
+                    <h3>Invención de la escritura y las leyes</h3>
+                    <p>A medida que las aldeas crecieron hasta convertirse en ciudades-estado como Uruk o Ur, surgió la necesidad de registrar impuestos, inventarios de grano y acuerdos comerciales. Así nació la <strong>escritura cuneiforme</strong> en Mesopotamia y los <strong>jeroglíficos</strong> en Egipto, marcando el fin de la Prehistoria y el inicio de la Historia escrita. Con ellas aparecieron también los primeros códigos legales, como el Código de Hammurabi, destinados a mantener el orden social.</p>
                 `,
-                sources: ['Trigger, B. G. (2003). Understanding Early Civilizations. Cambridge University Press.']
+                sources: ['Trigger, B. G. (2003). Understanding Early Civilizations. Cambridge University Press.', 'Liverani, M. (1995). El antiguo Oriente: Historia, sociedad y economía. Crítica.']
             },
             {
                 id: 'his-2',
-                sucursal: 'historia',
-                title: '¿Por qué desaparecieron los dinosaurios? La extinción masiva del Cretácico',
-                intro: 'Evidencia geológica y paleontológica del impacto del asteroide en Chicxulub y el cambio climático extremo.',
+                categoria: 'historia',
+                title: '¿Por qué desaparecieron los dinosaurios? La extinción del Cretácico',
+                intro: 'La evidencia geológica y paleontológica detrás del evento que puso fin a la era de los grandes reptiles hace 66 millones de años.',
                 content: `
-                    <p>Hace aproximadamente 66 millones de años, un asteroide de unos 10 km de diámetro colisionó con la Península de Yucatán, desencadenando incendios globales, invierno volcánico y la extinción de más del 75% de las especies vivas, incluidos los dinosaurios no aviares.</p>
+                    <p>Durante más de 160 millones de años, los dinosaurios dominaron los ecosistemas terrestres del planeta. Sin embargo, al final del período Cretácico, hace aproximadamente <strong>66 millones de años</strong>, ocurrió una de las extinciones masivas más abruptas de la historia geológica de la Tierra, conocida como la extinción masiva del Cretácico-Paleógeno (K-Pg).</p>
+                    <h3>La hipótesis del impacto de Chicxulub</h3>
+                    <p>En 1980, el físico Luis Álvarez y su hijo, el geólogo Walter Álvarez, descubrieron una delgada capa de arcilla rica en <strong>iridio</strong> en sedimentos de todo el mundo correspondientes a esa época. Dado que el iridio es escaso en la corteza terrestre pero abundante en los asteroides, propusieron que un cuerpo extraterrestre de unos 10 a 15 kilómetros de diámetro impactó contra la Tierra.</p>
+                    <p>Posteriormente se identificó el cráter de Chicxulub, sepultado bajo la península de Yucatán (México), confirmando el lugar exacto de la colisión. La energía liberada equivalió a millones de bombas nucleares, generando megatsunamis, terremotos globales e incendios forestales masivos.</p>
+                    <h3>El invierno de impacto y el ascenso de los mamíferos</h3>
+                    <p>El polvo, el hollín y los aerosoles de azufre expulsados a la atmósfera bloquearon la luz solar durante años. Sin luz suficiente, la fotosíntesis se detuvo, colapsando las cadenas alimentarias tanto en tierra como en los océanos. Cerca del 75 % de las especies animales y vegetales desaparecieron, incluidos todos los dinosaurios no aviares. Este vacío ecológico permitió que los pequeños mamíferos sobrevivientes se diversificaran y ocuparan los nichos vacíos.</p>
                 `,
-                sources: ['Alvarez, L. W. et al. (1980). Extraterrestrial cause for the Cretaceous-Tertiary extinction. Science.']
+                sources: ['Alvarez, L. W. et al. (1980). Extraterrestrial cause for the Cretaceous-Tertiary extinction. Science.', 'Brusatte, S. (2018). Auge y caída de los dinosaurios. Debate.']
             },
             {
                 id: 'his-3',
-                sucursal: 'historia',
-                title: '¿Qué fue la Segunda Guerra Mundial y cuáles fueron sus consecuencias?',
-                intro: 'Análisis del conflicto bélico global (1939-1945), el Holocausto, las armas nucleares y la reorganización geopolítica.',
+                categoria: 'historia',
+                title: 'La Segunda Guerra Mundial: Causas, desarrollo y consecuencias',
+                intro: 'Síntesis histórica del conflicto bélico global de 1939 a 1945 y cómo redefinió el orden geopolítico del siglo XX.',
                 content: `
-                    <p>La Segunda Guerra Mundial enfrentó a los Aliados contra las potencias del Eje. El conflicto concluyó con la creación de la Organización de las Naciones Unidas (ONU) y el inicio del orden bipolar de la Guerra Fría.</p>
+                    <p>La Segunda Guerra Mundial (1939–1945) ha sido el conflicto armado más extenso y destructivo de la historia contemporánea. Enfrentó a dos grandes alianzas militares: las <strong>Potencias del Eje</strong> (lideradas por Alemania, Italia y Japón) y los <strong>Aliados</strong> (encabezados por el Reino Unido, la Unión Soviética, Estados Unidos y China).</p>
+                    <h3>Antecedentes y estallido del conflicto</h3>
+                    <p>Las raíces de la guerra se encuentran en las tensiones no resueltas tras la Primera Guerra Mundial, las duras condiciones del Tratado de Versalles, la Gran Depresión económica de 1929 y el ascenso de regímenes totalitarios expansionistas en Europa y Asia. El conflicto comenzó formalmente en Europa el 1 de septiembre de 1939 con la invasión alemana a Polonia, lo que llevó a Francia y al Reino Unido a declarar la guerra a Alemania.</p>
+                    <h3>Puntos de inflexión y desenlace</h3>
+                    <p>Tras una rápida expansión inicial del Eje entre 1939 y 1941, el curso de la guerra cambió con la entrada de la Unión Soviética (tras la Operación Barbarroja) y de Estados Unidos (tras el ataque a Pearl Harbor en diciembre de 1941). Batallas decisivas como Stalingrado, Midway y el desembarco de Normandía debilitaron progresivamente al Eje hasta la rendición de Alemania en mayo de 1945 y de Japón en agosto del mismo año, tras los bombardeos atómicos sobre Hiroshima y Nagasaki.</p>
+                    <h3>Consecuencias para el mundo moderno</h3>
+                    <ul>
+                        <li><strong>Pérdidas humanas:</strong> Se estima que fallecieron entre 50 y 70 millones de personas, incluyendo seis millones de judíos asesinados durante el Holocausto.</li>
+                        <li><strong>Creación de la ONU:</strong> En 1945 se fundó la Organización de las Naciones Unidas para prevenir futuros conflictos globales y promover los derechos humanos.</li>
+                        <li><strong>Guerra Fría:</strong> Europa perdió su hegemonía global y el mundo quedó dividido en dos bloques liderados por Estados Unidos y la Unión Soviética.</li>
+                    </ul>
                 `,
-                sources: ['Beevor, A. (2012). The Second World War. Little, Brown and Company.']
+                sources: ['Beevor, A. (2012). La Segunda Guerra Mundial. Pasado & Presente.', 'Kershaw, I. (2015). Descenso a los infiernos: Europa 1914-1949. Crítica.']
             },
             {
                 id: 'his-4',
-                sucursal: 'historia',
-                title: '¿Qué fue la Revolución Francesa y cómo transformó la política mundial?',
-                intro: 'El fin del Antiguo Régimen, la Declaración de los Derechos del Hombre y del Ciudadano y el surgimiento de la república.',
+                categoria: 'historia',
+                title: 'La Revolución Francesa y el nacimiento de los derechos ciudadanos',
+                intro: 'Cómo el levantamiento social de 1789 puso fin al absolutismo monárquico y sentó las bases de la política moderna.',
                 content: `
-                    <p>Iniciada en 1789, la Revolución Francesa abolió la monarquía absoluta y los privilegios feudales, instaurando los principios universales de libertad, igualdad y fraternidad.</p>
+                    <p>Iniciada en 1789, la Revolución Francesa fue un proceso de profunda transformación política y social que derrumbó la monarquía absoluta y el sistema feudal en Francia, difundiendo por toda Europa y América las ideas de soberanía popular, igualdad ante la ley y división de poderes.</p>
+                    <h3>Crisis del Antiguo Régimen</h3>
+                    <p>A finales del siglo XVIII, la sociedad francesa estaba dividida en tres estamentos desiguales: el clero (Primer Estado), la nobleza (Segundo Estado) y el Tercer Estado (campesinos, obreros y burguesía), que representaba más del 95 % de la población y sostenía casi toda la carga tributaria sin tener poder de decisión política. Una grave crisis financiera y malas cosechas detonaron el descontento general.</p>
+                    <h3>La Declaración de los Derechos del Hombre y del Ciudadano</h3>
+                    <p>Tras la convocatoria de los Estados Generales y la simbólica toma de la prisión de la Bastilla el 14 de julio de 1789, la Asamblea Nacional Constituyente abolió los privilegios feudales y aprobó la <strong>Declaración de los Derechos del Hombre y del Ciudadano</strong>. Este documento proclamó que todos los seres humanos nacen libres e iguales en derechos, estableciendo los principios fundamentales de la ciudadanía moderna.</p>
                 `,
-                sources: ['Soboul, A. (1989). La Révolution française. Gallimard.']
+                sources: ['Soboul, A. (1989). La Révolution française. Gallimard.', 'Hobsbawm, E. (1962). La era de la revolución, 1789-1848. Crítica.']
             },
+
             // CIENCIAS SOCIALES
             {
                 id: 'soc-1',
-                sucursal: 'sociales',
-                title: '¿Qué son las ciencias sociales y cómo estudian el comportamiento humano?',
-                intro: 'Una revisión integral de las disciplinas que componen el estudio sistemático de las sociedades humanas, instituciones e interacciones.',
+                categoria: 'sociales',
+                title: '¿Qué son las ciencias sociales y qué disciplinas las integran?',
+                intro: 'Introducción al estudio sistemático del ser humano en sociedad, sus instituciones, su cultura y sus relaciones económicas.',
                 content: `
-                    <p>Las ciencias sociales agrupan el conjunto de disciplinas académicas encargadas de investigar la estructura, dinámica y transformaciones de las comunidades humanas.</p>
+                    <p>Las <strong>ciencias sociales</strong> son el conjunto de disciplinas académicas que estudian de manera metódica el origen, la organización y el comportamiento de las sociedades humanas, así como las interacciones entre los individuos y las instituciones que crean.</p>
+                    <h3>Diferencia con las ciencias naturales</h3>
+                    <p>Mientras las ciencias naturales (como la física o la química) analizan fenómenos del mundo físico mediante leyes universales reproducibles en laboratorio, las ciencias sociales estudian realidades humanas complejas donde intervienen la cultura, la historia, los valores y la libre voluntad de las personas. Por ello combinan métodos cuantitativos (estadísticas, encuestas) con métodos cualitativos (entrevistas, observación participante y análisis documental).</p>
+                    <h3>Principales ramas de las ciencias sociales</h3>
+                    <ul>
+                        <li><strong>Sociología:</strong> Analiza la estructura de los grupos sociales, las clases, las normas y el cambio social.</li>
+                        <li><strong>Economía:</strong> Estudia cómo las sociedades administran recursos escasos para producir, distribuir y consumir bienes y servicios.</li>
+                        <li><strong>Ciencia Política:</strong> Examina las relaciones de poder, el Estado, los sistemas de gobierno y las políticas públicas.</li>
+                        <li><strong>Antropología:</strong> Investiga la diversidad cultural, las costumbres y la evolución social de los grupos humanos.</li>
+                    </ul>
                 `,
-                sources: ['Wallerstein, I. (1996). Abrir las ciencias sociales. Siglo XXI.', 'Giddens, A. (2009). Sociology. Polity Press.']
+                sources: ['Wallerstein, I. (1996). Abrir las ciencias sociales. Siglo XXI.', 'Giddens, A. (2009). Sociología. Alianza Editorial.']
             },
             {
                 id: 'soc-2',
-                sucursal: 'sociales',
-                title: 'Cómo funciona la sociedad: Cohesión, estructuras e instituciones',
-                intro: 'Una revisión sociológica de las normas interactivas, el proceso de socialización y la función de las instituciones humanas.',
+                categoria: 'sociales',
+                title: 'Cómo funciona la sociedad: Socialización, normas e instituciones',
+                intro: 'Una explicación clara sobre los mecanismos que permiten la convivencia organizada y la cohesión entre millones de personas.',
                 content: `
-                    <p>La sociedad se articula mediante redes relacionales normadas. Las instituciones jurídicas, educativas y familiares canalizan el comportamiento individual.</p>
+                    <p>Para que una sociedad funcione de manera estable, sus miembros necesitan compartir códigos comunes de comunicación, reglas de conducta y expectativas mutuas. En sociología, este entramado se comprende a través de tres conceptos clave: la socialización, las normas sociales y las instituciones.</p>
+                    <h3>El proceso de socialización</h3>
+                    <p>Ningún ser humano nace sabiendo cómo comportarse en sociedad; lo aprende mediante la <strong>socialización</strong>. La socialización primaria ocurre durante la infancia dentro de la familia, donde se adquiere el lenguaje y los valores básicos. Posteriormente, la socialización secundaria tiene lugar en la escuela, el trabajo y los grupos de pares, integrando al individuo en entornos más amplios.</p>
+                    <h3>El papel de las instituciones sociales</h3>
+                    <p>Las instituciones son estructuras estables de reglas y prácticas diseñadas para resolver necesidades colectivas esenciales. La familia, el sistema educativo, el sistema jurídico y el mercado son ejemplos de instituciones que canalizan el comportamiento individual y ofrecen previsibilidad a la vida cotidiana.</p>
                 `,
-                sources: ['Durkheim, É. (1895). Les Règles de la méthode sociologique.']
+                sources: ['Durkheim, É. (1895). Las reglas del método sociológico.', 'Berger, P. & Luckmann, T. (1966). La construcción social de la realidad. Amorrortu.']
             },
             {
                 id: 'soc-3',
-                sucursal: 'sociales',
-                title: 'Qué es la democracia: Orígenes, modelos y estado de derecho',
-                intro: 'Examen de los principios participativos atenienses, la democracia representativa moderna y la división constitucional de poderes.',
+                categoria: 'sociales',
+                title: '¿Qué es la democracia? Principios, evolución y Estado de derecho',
+                intro: 'De la democracia directa en la antigua Atenas a los sistemas representativos contemporáneos basados en derechos fundamentales.',
                 content: `
-                    <p>La democracia contemporánea trasciende la simple celebración periódica de elecciones. Se fundamenta en el respeto estricto a los derechos humanos.</p>
+                    <p>El término <strong>democracia</strong> proviene del griego <em>demos</em> (pueblo) y <em>kratos</em> (poder o gobierno), lo que literalmente significa "el gobierno del pueblo". Sin embargo, la forma en que se practica hoy en día ha evolucionado notablemente respecto a sus orígenes en la Antigüedad.</p>
+                    <h3>Democracia directa vs. democracia representativa</h3>
+                    <p>En la Atenas clásica (siglo V a. C.), los ciudadanos varones libres se reunían directamente en la asamblea para debatir y votar las leyes. En los Estados modernos, debido al tamaño de las poblaciones, predomina la <strong>democracia representativa</strong>, en la cual la ciudadanía elige periódicamente a sus representantes mediante el sufragio universal y secreto.</p>
+                    <h3>Pilares de una democracia constitucional</h3>
+                    <p>La democracia contemporánea no se reduce únicamente al voto de la mayoría; requiere un <strong>Estado de derecho</strong> que garantice:</p>
+                    <ul>
+                        <li><strong>División de poderes:</strong> Separación e independencia entre los poderes ejecutivo, legislativo y judicial para evitar abusos de autoridad.</li>
+                        <li><strong>Protección de derechos fundamentales:</strong> Libertad de expresión, prensa, asociación y respeto a las minorías.</li>
+                        <li><strong>Alternancia y transparencia:</strong> Elecciones libres, competitivas y sujetas a control institucional.</li>
+                    </ul>
                 `,
-                sources: ['Dahl, R. A. (1989). Democracy and Its Critics. Yale University Press.']
+                sources: ['Dahl, R. A. (1998). La democracia: Una guía para los ciudadanos. Taurus.', 'Bobbio, N. (1986). El futuro de la democracia. Fondo de Cultura Económica.']
             },
+
             // MATEMÁTICAS
             {
                 id: 'mat-1',
-                sucursal: 'matematicas',
-                title: 'Matemáticas desde cero: El origen de los sistemas numéricos',
-                intro: 'Revisión formal sobre cómo la humanidad formuló sistemas de numeración posicional para cuantificar el mundo.',
+                categoria: 'matematicas',
+                title: 'El origen de los sistemas numéricos y la invención del cero',
+                intro: 'Cómo distintas culturas crearon símbolos para contar y por qué el sistema posicional decimal transformó las matemáticas.',
                 content: `
-                    <p>Las matemáticas surgieron como una necesidad empírica para registrar magnitudes físicas. El desarrollo del sistema posicional decimal con el concepto del cero permitió el progreso aritmético.</p>
+                    <p>Las matemáticas nacieron de necesidades cotidianas muy concretas: contar rebaños, medir terrenos agrícolas, calcular estaciones y registrar intercambios comerciales. Antes de existir los números escritos, los seres humanos utilizaban marcas en huesos (como el hueso de Ishango), piedras o nudos en cuerdas.</p>
+                    <h3>Sistemas aditivos frente a sistemas posicionales</h3>
+                    <p>Civilizaciones como la egipcia o la romana emplearon sistemas <strong>aditivos</strong>, donde cada símbolo tiene un valor fijo sin importar dónde se ubique (por ejemplo, en números romanos la X siempre vale 10). Este método funciona para registrar cantidades, pero vuelve sumamente difícil realizar multiplicaciones o divisiones complejas.</p>
+                    <h3>La revolución del sistema posicional y el cero</h3>
+                    <p>El gran salto conceptual ocurrió cuando matemáticos de la India desarrollaron el <strong>sistema decimal posicional</strong> (base 10), difundido posteriormente al mundo árabe y a Europa por el matemático Al-Juarismi. En este sistema, el valor de una cifra depende de su posición (unidades, decenas, centenas) y el número <strong>cero (0)</strong> actúa tanto como marcador de posición vacía como cantidad numérica propia, haciendo posible el cálculo moderno.</p>
                 `,
-                sources: ['Boyer, C. B. (2011). A History of Mathematics. John Wiley & Sons.']
+                sources: ['Boyer, C. B. (2011). Historia de la matemática. Alianza Editorial.', 'Ifrah, G. (1997). Historia universal de las cifras. Espasa.']
             },
             {
                 id: 'mat-2',
-                sucursal: 'matematicas',
-                title: '¿Qué es el álgebra? De la sintaxis simbólica al análisis de incógnitas',
-                intro: 'El paso de la aritmética directa al manejo sintáctico de variables, expresiones racionales y ecuaciones.',
+                categoria: 'matematicas',
+                title: '¿Qué es el álgebra y para qué sirven las variables?',
+                intro: 'Guía introductoria para comprender el paso de las operaciones con números concretos al razonamiento con expresiones simbólicas.',
                 content: `
-                    <p>El álgebra abstrae los valores numéricos mediante variables simbólicas, permitiendo formular leyes generales y resolver ecuaciones complejas.</p>
+                    <p>Mientras la aritmética trabaja con números específicos y conocidos (como $3 + 5 = 8$), el <strong>álgebra</strong> introduce letras y símbolos llamados <strong>variables</strong> (habitualmente $x$, $y$, $z$) para representar cantidades desconocidas o valores que pueden cambiar.</p>
+                    <h3>La utilidad de abstraer problemas</h3>
+                    <p>Utilizar letras en lugar de números concretos permite expresar reglas generales que funcionan para infinitos casos. Por ejemplo, el área de cualquier rectángulo se resume en la expresión $A = b \cdot h$, sin importar si mide centímetros o kilómetros.</p>
+                    <h3>Componentes básicos de una expresión algebraica</h3>
+                    <ul>
+                        <li><strong>Variable o incógnita:</strong> La letra cuyo valor buscamos determinar o que puede variar.</li>
+                        <li><strong>Coeficiente:</strong> El número que multiplica a la variable (por ejemplo, en $4x$, el coeficiente es $4$).</li>
+                        <li><strong>Constante:</strong> Un término numérico fijo que no depende de ninguna variable.</li>
+                    </ul>
                 `,
-                sources: ['Stewart, I. (2012). In Pursuit of the Unknown. Basic Books.']
+                sources: ['Stewart, I. (2012). Historia de las matemáticas en los últimos 10.000 años. Crítica.', 'Baldor, A. (2017). Álgebra. Grupo Editorial Patria.']
             },
             {
                 id: 'mat-3',
-                sucursal: 'matematicas',
-                title: '¿Cómo se resuelven las ecuaciones de primer y segundo grado?',
-                intro: 'Guía metódica paso a paso para despejar incógnitas racionales y resolver cuadráticas con la fórmula general.',
+                categoria: 'matematicas',
+                title: 'Cómo resolver ecuaciones de primer y segundo grado paso a paso',
+                intro: 'Explicación práctica con ejemplos resueltos para despejar incógnitas lineales y aplicar la fórmula cuadrática.',
                 content: `
-                    <p>Para ecuaciones de segundo grado de la forma $ax^2 + bx + c = 0$, utilizamos:</p>
-                    <div class="bg-navy-900 text-gold-400 p-4 rounded-xl my-4 text-center font-mono">
-                        $$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$
+                    <p>Una <strong>ecuación</strong> es una igualdad matemática entre dos expresiones que contiene al menos una incógnita. Resolverla consiste en encontrar el valor o los valores de la incógnita que hacen verdadera dicha igualdad.</p>
+                    <h3>1. Ecuaciones de primer grado (lineales)</h3>
+                    <p>Tienen la forma general $ax + b = 0$, donde la incógnita $x$ está elevada a la potencia $1$. Para resolverla, agrupamos los términos con $x$ en un lado de la igualdad y los números independientes en el otro, aplicando operaciones inversas:</p>
+                    <div class="bg-slate-100 dark:bg-navy-950 p-4 rounded-xl my-4 font-mono text-xs sm:text-sm border border-slate-200 dark:border-navy-800">
+                        Ejemplo: $3x - 6 = 9$ <br>
+                        Paso 1 (sumar 6 en ambos lados): $3x = 9 + 6 \rightarrow 3x = 15$ <br>
+                        Paso 2 (dividir entre 3): $x = \frac{15}{3} \rightarrow x = 5$
                     </div>
+                    <h3>2. Ecuaciones de segundo grado (cuadráticas)</h3>
+                    <p>Tienen la forma $ax^2 + bx + c = 0$ (con $a \neq 0$). Se resuelven mediante la <strong>fórmula general cuadrática</strong>:</p>
+                    <div class="bg-navy-900 text-gold-400 p-4 rounded-xl my-4 text-center font-mono">
+                        $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+                    </div>
+                    <p>El término dentro de la raíz ($b^2 - 4ac$) se denomina <strong>discriminante</strong> e indica cuántas soluciones reales tiene la ecuación: dos soluciones si es positivo, una si es cero, y ninguna solución real si es negativo.</p>
                 `,
-                sources: ['Larson, R. (2018). College Algebra. Cengage Learning.']
+                sources: ['Larson, R. (2018). Precálculo. Cengage Learning.']
             },
+
             // BIOLOGÍA
             {
                 id: 'bio-1',
-                sucursal: 'biologia',
-                title: '¿Qué es una célula y cómo funciona la biología celular?',
-                intro: 'Diferencias estructurales entre células procariotas y eucariotas, organelos y metabolismo celular.',
+                categoria: 'biologia',
+                title: 'La célula: Unidad básica de la vida y sus tipos principales',
+                intro: 'Diferencias esenciales entre células procariotas y eucariotas, y cómo funcionan sus principales organelos internos.',
                 content: `
-                    <p>La célula es la unidad morfológica, funcional y genética de todo ser vivo. Las células eucariotas poseen un núcleo delimitado por membrana que alberga el material hereditario (ADN).</p>
+                    <p>Según la <strong>teoría celular</strong>, todos los seres vivos están formados por una o más células, y toda célula proviene de otra célula preexistente. Es la unidad estructural y funcional más pequeña capaz de realizar las funciones vitales: nutrición, relación y reproducción.</p>
+                    <h3>Células procariotas vs. células eucariotas</h3>
+                    <p>En la naturaleza existen dos grandes modelos de organización celular:</p>
+                    <ul>
+                        <li><strong>Células procariotas:</strong> Son más pequeñas y simples. No poseen un núcleo delimitado por membrana, por lo que su material genético (ADN) se encuentra libre en una región llamada nucleoide. Las bacterias y arqueas pertenecen a este grupo.</li>
+                        <li><strong>Células eucariotas:</strong> Son más complejas y grandes. Poseen un <strong>núcleo verdadero</strong> rodeado por una doble membrana que protege el ADN, además de compartimentos internos especializados llamados <em>organelos</em>. Forman parte de animales, plantas, hongos y protistas.</li>
+                    </ul>
+                    <h3>Organelos clave en la célula eucariota</h3>
+                    <p>Entre sus estructuras más importantes destacan las <strong>mitocondrias</strong> (encargadas de generar energía química en forma de ATP), los <strong>ribosomas</strong> (donde se sintetizan las proteínas) y, en el caso de las células vegetales, los <strong>cloroplastos</strong> (responsables de la fotosíntesis).</p>
                 `,
-                sources: ['Alberts, B. (2015). Molecular Biology of the Cell. Garland Science.']
+                sources: ['Alberts, B. et al. (2015). Biología molecular de la célula. Omega.', 'Campbell, N. A. & Reece, J. B. (2007). Biología. Editorial Médica Panamericana.']
             },
             {
                 id: 'bio-2',
-                sucursal: 'biologia',
-                title: '¿Qué es la genética y cómo transmite el ADN los rasgos hereditarios?',
-                intro: 'Explicación del flujo de información genética desde las leyes de Mendel hasta la estructura de la doble hélice.',
+                categoria: 'biologia',
+                title: '¿Qué es el ADN y cómo se transmite la información genética?',
+                intro: 'Estructura de la doble hélice, función de los genes y el mecanismo molecular de la herencia biológica.',
                 content: `
-                    <p>La molécula de ADN contiene las instrucciones genéticas empaquetadas en secuencias de nucleótidos que determinan los rasgos fenotípicos de un organismo.</p>
+                    <p>El <strong>ácido desoxirribonucleico (ADN)</strong> es la molécula que contiene las instrucciones biológicas necesarias para construir, mantener y reproducir a un organismo vivo. En las células eucariotas se encuentra organizado en cromosomas dentro del núcleo celular.</p>
+                    <h3>La estructura de doble hélice</h3>
+                    <p>En 1953, James Watson y Francis Crick —apoyándose en las fundamentales fotografías de difracción de rayos X obtenidas por <strong>Rosalind Franklin</strong>— describieron la estructura tridimensional del ADN como una doble hélice semejante a una escalera de caracol.</p>
+                    <p>Los peldaños de esta escalera están formados por pares de bases nitrogenadas complementarias: la <strong>Adenina (A)</strong> siempre se une con la <strong>Timina (T)</strong>, y la <strong>Citosina (C)</strong> siempre se empareja con la <strong>Guanina (G)</strong>. El orden específico de estas letras constituye el código genético.</p>
+                    <h3>De genes a proteínas</h3>
+                    <p>Un <strong>gen</strong> es un segmento específico de ADN que contiene la receta para fabricar una proteína determinada. Mediante los procesos de <em>transcripción</em> (copiado a ARN mensajero) y <em>traducción</em> (lectura en los ribosomas), la célula transforma la información genética en proteínas que ejecutan las funciones del organismo.</p>
                 `,
-                sources: ['Watson, J. D. (1953). Molecular Structure of Nucleic Acids. Nature.']
+                sources: ['Watson, J. D. & Crick, F. H. (1953). Molecular Structure of Nucleic Acids. Nature.', 'Maddox, B. (2002). Rosalind Franklin: The Dark Lady of DNA. HarperCollins.']
             },
             {
                 id: 'bio-3',
-                sucursal: 'biologia',
-                title: '¿Cómo se formó el universo y cómo surgió la vida en la Tierra?',
-                intro: 'De la teoría del Big Bang a la síntesis prebiótica y el origen químico de la vida.',
+                categoria: 'biologia',
+                title: 'El origen de la vida en la Tierra: De la química prebiótica a las primeras células',
+                intro: 'Principales hipótesis científicas sobre cómo surgieron los primeros sistemas biológicos hace unos 3,800 millones de años.',
                 content: `
-                    <p>El universo se originó hace 13.800 millones de años. La vida en la Tierra surgió hace unos 3.800 millones de años a partir de moléculas orgánicas complejas.</p>
+                    <p>La Tierra se formó hace aproximadamente 4,540 millones de años. Durante sus primeros cientos de millones de años fue un entorno hostil con intensa actividad volcánica y bombardeo de meteoritos. Sin embargo, hace unos <strong>3,800 millones de años</strong> aparecieron los primeros indicios de vida microscópica.</p>
+                    <h3>La hipótesis de Oparin-Haldane y el experimento de Miller-Urey</h3>
+                    <p>En la década de 1920, el bioquímico soviético Aleksandr Oparin y el biólogo británico J. B. S. Haldane propusieron de manera independiente que la atmósfera primitiva carecía de oxígeno libre y contenía gases como metano, amoníaco, vapor de agua e hidrógeno. Bajo la acción de descargas eléctricas (rayos) y radiación ultravioleta, estas moléculas simples habrían reaccionado para formar compuestos orgánicos más complejos en los océanos primitivos.</p>
+                    <p>En 1953, Stanley Miller y Harold Urey pusieron a prueba esta idea en el laboratorio simulando dichas condiciones y lograron sintetizar <strong>aminoácidos</strong> (los bloques básicos de las proteínas) a partir de sustancias inorgánicas.</p>
+                    <h3>La hipótesis del mundo de ARN</h3>
+                    <p>Uno de los grandes retos para explicar el origen de la vida es saber qué apareció primero: el ADN (que almacena información) o las proteínas (que catalizan reacciones). La hipótesis del <strong>mundo de ARN</strong> sugiere que moléculas primitivas de ARN cumplieron ambas funciones simultáneamente antes de que evolucionaran células más estables basadas en ADN.</p>
                 `,
-                sources: ['Hawking, S. (1988). A Brief History of Time.', 'Oparin, A. I. (1938). The Origin of Life.']
+                sources: ['Oparin, A. I. (1938). The Origin of Life. Macmillan.', 'Lazcano, A. (2010). El origen de la vida: Evolución química y evolución biológica. Trillas.']
             }
         ];
 
@@ -516,23 +526,17 @@
                 case 'home':
                     renderHome(main);
                     break;
-                case 'sucursales-all':
-                    renderAllSucursales(main);
-                    break;
-                case 'sucursal':
-                    renderSucursalPage(main, currentParam);
+                case 'categoria':
+                    renderCategoryPage(main, currentParam);
                     break;
                 case 'articulo':
                     renderArticleDetail(main, currentParam);
                     break;
-                case 'quienes-somos':
+                case 'sobre-proyecto':
                     renderAboutUs(main);
                     break;
                 case 'editorial':
                     renderEditorialPolicy(main);
-                    break;
-                case 'propiedad-intelectual':
-                    renderIntellectualProperty(main);
                     break;
                 case 'privacidad':
                     renderPrivacyPolicy(main);
@@ -543,17 +547,8 @@
                 case 'cookies':
                     renderCookiesPolicy(main);
                     break;
-                case 'aviso-legal':
-                    renderLegalNotice(main);
-                    break;
-                case 'accesibilidad':
-                    renderAccessibility(main);
-                    break;
                 case 'contacto':
                     renderContactForm(main);
-                    break;
-                case 'audit':
-                    renderAdsAuditReport(main);
                     break;
                 default:
                     renderHome(main);
@@ -567,103 +562,117 @@
         /* --- VISTA: PORTADA PRINCIPAL (HOME) --- */
         function renderHome(container) {
             container.innerHTML = `
-                <!-- HERO INSTITUCIONAL TRANSPARENTE -->
+                <!-- HERO DE GUÍA EDUCATIVA INDEPENDIENTE -->
                 <section class="relative rounded-3xl bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 text-white p-8 md:p-12 mb-12 shadow-2xl overflow-hidden border border-navy-800">
                     <div class="relative z-10 max-w-3xl">
                         <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-gold-500/10 border border-gold-500/30 rounded-full text-gold-400 text-xs font-bold uppercase tracking-wider mb-4">
-                            <i class="fa-solid fa-graduation-cap"></i> Biblioteca Masiva (+2,000 Temas Organizados)
+                            <i class="fa-solid fa-book-open"></i> Guía Educativa y Divulgación Abierta
                         </div>
                         <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-3 leading-tight">
                             TU SUCURSAL <br>
-                            <span class="text-slate-300 font-light text-xl md:text-2xl">SUCURSAL DEL CONOCIMIENTO</span>
+                            <span class="text-slate-300 font-light text-xl md:text-2xl">GUÍA EDUCATIVA DE ESTUDIO INDEPENDIENTE</span>
                         </h1>
-                        <p class="text-gold-400 text-xs font-semibold uppercase tracking-widest mb-4">
-                            CONOCIMIENTO SIN FRONTERAS | INVESTIGA, APRENDE Y DESCUBRE
-                        </p>
                         <p class="text-slate-300 text-xs md:text-sm leading-relaxed mb-8">
-                            Bienvenido a Tu Sucursal, un centro digital de conocimiento con más de 500 temas especializados en cada sucursal central: Historia, Ciencias Sociales, Matemáticas y Biología. Investiga y obtén explicaciones completas dentro de nuestra plataforma.
+                            Un espacio personal de divulgación creado para explicar de forma clara, ordenada y sin rodeos temas esenciales de Historia, Ciencias Sociales, Matemáticas y Biología. Selecciona un área de estudio o busca un tema específico.
                         </p>
 
-                        <!-- BUSCADOR CENTRAL CON 3 NIVELES -->
+                        <!-- BUSCADOR DIRECTO DE GUÍAS -->
                         <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/20 shadow-xl max-w-2xl mb-6">
                             <div class="text-[11px] text-gold-400 font-bold uppercase tracking-wider px-2 mb-1">
-                                ¿QUÉ TE GUSTARÍA INVESTIGAR HOY?
+                                BUSCAR EN LAS GUÍAS PUBLICADAS
                             </div>
                             <div class="flex flex-col sm:flex-row gap-2">
-                                <input type="text" id="hero-search-input" placeholder="Ej: ¿Qué fue el Imperio romano?, Revolución francesa, ecuaciones cuadráticas..." 
+                                <input type="text" id="hero-search-input" onkeyup="if(event.key==='Enter') executeAdvancedSearch()" placeholder="Ej: Revolución francesa, ecuaciones, célula, civilizaciones..." 
                                        class="w-full px-4 py-3 text-xs bg-white dark:bg-navy-950 text-slate-800 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-gold-400">
                                 <button onclick="executeAdvancedSearch()" class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-extrabold px-6 py-3 rounded-xl text-xs uppercase tracking-wider transition shrink-0">
-                                    Investigar
+                                    Buscar
                                 </button>
                             </div>
                             <div class="text-[10px] text-slate-300 px-2 mt-2 flex flex-wrap items-center gap-3">
-                                <span><i class="fa-solid fa-book-open text-emerald-400"></i> Biblioteca Propia (+2,000 Temas)</span>
+                                <span><i class="fa-solid fa-check-circle text-emerald-400"></i> Artículos redactados paso a paso</span>
                                 <span>•</span>
-                                <span><i class="fa-solid fa-globe text-gold-400"></i> Fuentes Externas Confiables</span>
-                                <span>•</span>
-                                <span><i class="fa-solid fa-microchip text-cyan-400"></i> IA Académica Integrada</span>
+                                <span><i class="fa-solid fa-book-bookmark text-gold-400"></i> Bibliografía de referencia incluida</span>
                             </div>
                         </div>
 
                         <div class="flex flex-wrap gap-3 text-xs font-semibold">
-                            <button onclick="navigateTo('sucursal', 'historia')" class="bg-navy-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl transition shadow">
-                                S. Historia (500+ Temas)
+                            <button onclick="navigateTo('categoria', 'historia')" class="bg-navy-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl transition shadow">
+                                Historia
                             </button>
-                            <button onclick="navigateTo('sucursal', 'sociales')" class="bg-navy-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl transition shadow">
-                                S. C. Sociales (500+ Temas)
+                            <button onclick="navigateTo('categoria', 'sociales')" class="bg-navy-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl transition shadow">
+                                Ciencias Sociales
                             </button>
-                            <button onclick="navigateTo('sucursal', 'matematicas')" class="bg-navy-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl transition shadow">
-                                S. Matemáticas (500+ Temas)
+                            <button onclick="navigateTo('categoria', 'matematicas')" class="bg-navy-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl transition shadow">
+                                Matemáticas
                             </button>
-                            <button onclick="navigateTo('sucursal', 'biologia')" class="bg-navy-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl transition shadow">
-                                S. Biología (500+ Temas)
+                            <button onclick="navigateTo('categoria', 'biologia')" class="bg-navy-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl transition shadow">
+                                Biología
                             </button>
                         </div>
                     </div>
                 </section>
 
-                <!-- CONTENEDOR DE RESULTADOS DEL BUSCADOR AVANZADO -->
+                <!-- CONTENEDOR DE RESULTADOS DEL BUSCADOR -->
                 <div id="advanced-search-results" class="hidden mb-12"></div>
 
-                <!-- SECCIÓN: ¿QUÉ SUCURSAL DESEAS VISITAR? -->
+                <!-- SECCIÓN: ÁREAS DE ESTUDIO -->
                 <section class="mb-14">
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 border-b border-slate-200 dark:border-navy-800 pb-4">
                         <div>
-                            <span class="text-xs font-extrabold text-gold-600 dark:text-gold-400 uppercase tracking-widest">NUESTRAS SUCURSALES CENTRALES</span>
+                            <span class="text-xs font-extrabold text-gold-600 dark:text-gold-400 uppercase tracking-widest">EXPLORA POR MATERIA</span>
                             <h2 class="text-2xl sm:text-3xl font-black text-navy-900 dark:text-white tracking-tight mt-1">
-                                ¿QUÉ SUCURSAL DESEAS VISITAR?
+                                Áreas Temáticas Disponibles
                             </h2>
                         </div>
-                        <button onclick="navigateTo('sucursales-all')" class="mt-3 md:mt-0 text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline flex items-center gap-1">
-                            EXPLORAR TODAS LAS SUCURSALES <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                        </button>
                     </div>
 
-                    <!-- GRID DE LAS 4 SUCURSALES PRINCIPALES (500+ TEMAS CADA UNA) -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                        ${Object.values(sucursalesData).filter(s => ['historia', 'sociales', 'matematicas', 'biologia'].includes(s.id)).map(suc => `
-                            <div onclick="navigateTo('sucursal', '${suc.id}')" class="bg-white dark:bg-navy-900 border-2 border-navy-500/20 dark:border-navy-700/50 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all cursor-pointer group flex flex-col justify-between">
+                    <!-- GRID DE LAS 4 ÁREAS -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                        ${Object.values(categoriasData).map(cat => {
+                            const count = articlesDB.filter(a => a.categoria === cat.id).length;
+                            return `
+                            <div onclick="navigateTo('categoria', '${cat.id}')" class="bg-white dark:bg-navy-900 border-2 border-navy-500/20 dark:border-navy-700/50 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all cursor-pointer group flex flex-col justify-between">
                                 <div>
                                     <div class="flex items-center justify-between mb-4">
-                                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br ${suc.bgClass} text-white flex items-center justify-center text-xl shadow-md group-hover:scale-105 transition-transform">
-                                            <i class="fa-solid ${suc.icon}"></i>
+                                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br ${cat.bgClass} text-white flex items-center justify-center text-xl shadow-md group-hover:scale-105 transition-transform">
+                                            <i class="fa-solid ${cat.icon}"></i>
                                         </div>
-                                        <span class="text-[10px] font-bold px-2.5 py-1 bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/30 rounded uppercase">${suc.totalTopics}</span>
+                                        <span class="text-[10px] font-bold px-2.5 py-1 bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/30 rounded uppercase">${count} Guías publicadas</span>
                                     </div>
                                     <h3 class="text-xl font-extrabold text-navy-900 dark:text-white mb-2 group-hover:text-navy-500 dark:group-hover:text-gold-400 transition">
-                                        ${suc.name}
+                                        ${cat.name}
                                     </h3>
                                     <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                                        ${suc.shortDesc}
+                                        ${cat.shortDesc}
                                     </p>
-                                    <div class="flex flex-wrap gap-1.5 mb-4">
-                                        ${suc.subcategories ? suc.subcategories.slice(0, 4).map(sub => `<span class="text-[10px] bg-slate-100 dark:bg-navy-950 px-2 py-0.5 rounded text-slate-600 dark:text-slate-300 font-medium">${sub}</span>`).join('') : ''}
-                                    </div>
                                 </div>
                                 <div class="flex items-center justify-between text-xs font-bold text-navy-500 dark:text-gold-400 pt-3 border-t border-slate-100 dark:border-navy-800">
-                                    <span>Acceder a la Biblioteca Completa</span>
+                                    <span>Ver guías de esta área</span>
                                     <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
                                 </div>
+                            </div>
+                        `}).join('')}
+                    </div>
+
+                    <!-- GUÍAS RECIENTES DESTACADAS DIRECTAMENTE EN PORTADA -->
+                    <div class="border-b border-slate-200 dark:border-navy-800 pb-4 mb-6">
+                        <span class="text-xs font-extrabold text-gold-600 dark:text-gold-400 uppercase tracking-widest">LECTURA DIRECTA</span>
+                        <h2 class="text-2xl font-black text-navy-900 dark:text-white tracking-tight mt-1">
+                            Guías Educativas Destacadas
+                        </h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        ${articlesDB.slice(0, 6).map(art => `
+                            <div onclick="navigateTo('articulo', '${art.id}')" class="bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-2xl p-6 shadow-sm hover:shadow-md transition cursor-pointer flex flex-col justify-between">
+                                <div>
+                                    <span class="text-[10px] font-bold text-gold-600 dark:text-gold-400 uppercase tracking-wider">${categoriasData[art.categoria].name}</span>
+                                    <h3 class="font-bold text-base mt-1 mb-2 text-navy-900 dark:text-white">${art.title}</h3>
+                                    <p class="text-xs text-slate-600 dark:text-slate-400 line-clamp-3 mb-4">${art.intro}</p>
+                                </div>
+                                <span class="text-xs font-bold text-navy-500 dark:text-gold-400 flex items-center pt-3 border-t border-slate-100 dark:border-navy-800">
+                                    Leer guía completa <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                                </span>
                             </div>
                         `).join('')}
                     </div>
@@ -671,7 +680,7 @@
             `;
         }
 
-        /* --- BUSCADOR AVANZADO DE 3 NIVELES (BIBLIOTECA + WIKIMEDIA + IA HOOK) --- */
+        /* --- BUSCADOR DE GUÍAS (SOLO CONTENIDO PROPIO REAL + REFERENCIAS EXTERNAS OPCIONALES) --- */
         async function executeAdvancedSearch() {
             const query = document.getElementById('hero-search-input').value.trim();
             if (!query) return;
@@ -679,13 +688,12 @@
             const container = document.getElementById('advanced-search-results');
             container.classList.remove('hidden');
 
-            // NIVEL 1: Biblioteca Propia
             const libraryMatches = articlesDB.filter(item => 
                 item.title.toLowerCase().includes(query.toLowerCase()) || 
-                item.intro.toLowerCase().includes(query.toLowerCase())
+                item.intro.toLowerCase().includes(query.toLowerCase()) ||
+                item.content.toLowerCase().includes(query.toLowerCase())
             );
 
-            // NIVEL 2: Fuentes Externas (Wikimedia API)
             let wikiResults = [];
             try {
                 const res = await fetch(`https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&utf8=&format=json&origin=*`);
@@ -696,75 +704,55 @@
             }
 
             let html = `
-                <div class="bg-white dark:bg-navy-900 p-8 md:p-10 rounded-3xl border-2 border-gold-500/30 dark:border-navy-700 shadow-2xl">
+                <div class="bg-white dark:bg-navy-900 p-6 md:p-8 rounded-3xl border-2 border-gold-500/30 dark:border-navy-700 shadow-2xl">
                     <div class="flex items-center justify-between mb-6 border-b border-slate-100 dark:border-navy-800 pb-3">
                         <span class="text-xs font-black uppercase text-gold-500 tracking-wider inline-flex items-center gap-1.5">
-                            <i class="fa-solid fa-magnifying-glass-chart"></i> Resultados del Buscador Avanzado para: "${query}"
+                            <i class="fa-solid fa-magnifying-glass"></i> Resultados de búsqueda para: "${query}"
                         </span>
                         <button onclick="document.getElementById('advanced-search-results').classList.add('hidden')" class="text-xs text-slate-400 hover:text-red-500">
                             <i class="fa-solid fa-xmark text-sm"></i> Cerrar
                         </button>
                     </div>
 
-                    <!-- NIVEL 1: ARTÍCULOS EN LA BIBLIOTECA PROPIA -->
-                    <div class="mb-8">
+                    <!-- RESULTADOS EN NUESTRAS GUÍAS -->
+                    <div class="mb-6">
                         <h3 class="text-xs font-extrabold uppercase text-navy-900 dark:text-white tracking-widest mb-3 border-l-4 border-gold-500 pl-2">
-                            Nivel 1: Biblioteca Propia de Tu Sucursal (${libraryMatches.length} resultados)
+                            Guías en Tu Sucursal (${libraryMatches.length})
                         </h3>
                         ${libraryMatches.length > 0 ? `
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 ${libraryMatches.map(m => `
                                     <div onclick="navigateTo('articulo', '${m.id}'); document.getElementById('advanced-search-results').classList.add('hidden');" class="p-4 bg-slate-50 dark:bg-navy-950 rounded-xl border border-slate-200 dark:border-navy-800 cursor-pointer hover:border-gold-400 transition">
-                                        <span class="text-[9px] font-extrabold text-gold-500 uppercase">${m.sucursal}</span>
+                                        <span class="text-[9px] font-extrabold text-gold-500 uppercase">${categoriasData[m.categoria].name}</span>
                                         <h4 class="font-bold text-xs text-navy-900 dark:text-white mt-1">${m.title}</h4>
                                         <p class="text-[11px] text-slate-500 mt-1 line-clamp-2">${m.intro}</p>
                                     </div>
                                 `).join('')}
                             </div>
                         ` : `
-                            <p class="text-xs text-slate-500 italic bg-slate-50 dark:bg-navy-950 p-4 rounded-xl">No hay artículos exactos en la biblioteca interna básica para este término, pero se han consultado repositorios externos autorizados.</p>
+                            <p class="text-xs text-slate-500 italic bg-slate-50 dark:bg-navy-950 p-4 rounded-xl">No encontramos guías internas con ese término exacto. Puedes explorar las áreas temáticas principales o revisar las referencias externas sugeridas abajo.</p>
                         `}
                     </div>
 
-                    <!-- NIVEL 2: FUENTES EXTERNAS CONFIABLES (WIKIMEDIA / WIKIPEDIA) -->
-                    <div class="mb-6 pt-6 border-t border-slate-100 dark:border-navy-800">
+                    <!-- LECTURAS COMPLEMENTARIAS EXTERNAS (WIKIPEDIA) -->
+                    ${wikiResults.length > 0 ? `
+                    <div class="pt-5 border-t border-slate-100 dark:border-navy-800">
                         <h3 class="text-xs font-extrabold uppercase text-navy-900 dark:text-white tracking-widest mb-3 border-l-4 border-navy-500 pl-2">
-                            Nivel 2: Fuentes Externas y Repositorios Académicos Autorizados (${wikiResults.length})
+                            Lecturas Enciclopédicas Complementarias
                         </h3>
-                        ${wikiResults.length > 0 ? `
-                            <div class="space-y-3">
-                                ${wikiResults.slice(0, 3).map(w => `
-                                    <div class="p-4 bg-slate-50 dark:bg-navy-950 rounded-xl border border-slate-200 dark:border-navy-800">
-                                        <h4 class="font-bold text-xs text-navy-900 dark:text-white mb-1">${w.title}</h4>
-                                        <p class="text-xs text-slate-600 dark:text-slate-400 mb-2">${w.snippet.replace(/<\/?[^>]+(>|$)/g, "")}...</p>
-                                        <a href="https://es.wikipedia.org/wiki/${encodeURIComponent(w.title)}" target="_blank" rel="noopener noreferrer" class="text-[11px] font-bold text-navy-500 dark:text-gold-400 hover:underline inline-flex items-center gap-1">
-                                            Consultar Fuente Externa <i class="fa-solid fa-external-link text-[9px]"></i>
-                                        </a>
-                                    </div>
-                                `).join('')}
-                            </div>
-                        ` : `
-                            <p class="text-xs text-slate-500">No se encontraron referencias externas coincidentes.</p>
-                        `}
-                    </div>
-
-                    <!-- NIVEL 3: ARQUITECTURA DE IA INTEGRADA -->
-                    <div class="pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <div class="p-4 bg-navy-900/5 dark:bg-navy-950 rounded-2xl border border-navy-500/20 flex flex-col sm:flex-row items-center justify-between gap-4">
-                            <div>
-                                <span class="text-[10px] font-bold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider block mb-1">Nivel 3: IA Académica Integrada (Backend API)</span>
-                                <p class="text-xs text-slate-600 dark:text-slate-300">¿Deseas generar una explicación sintética avanzada con el servicio de IA conectado al backend corporativo?</p>
-                            </div>
-                            <button onclick="alert('El módulo de IA requiere configurar la API Key corporativa en el servidor backend.')" class="bg-navy-900 dark:bg-navy-800 text-white font-bold px-4 py-2 rounded-xl text-xs shrink-0 hover:bg-navy-800">
-                                Generar Síntesis IA
-                            </button>
+                        <div class="space-y-3">
+                            ${wikiResults.slice(0, 3).map(w => `
+                                <div class="p-4 bg-slate-50 dark:bg-navy-950 rounded-xl border border-slate-200 dark:border-navy-800">
+                                    <h4 class="font-bold text-xs text-navy-900 dark:text-white mb-1">${w.title}</h4>
+                                    <p class="text-xs text-slate-600 dark:text-slate-400 mb-2">${w.snippet.replace(/<\/?[^>]+(>|$)/g, "")}...</p>
+                                    <a href="https://es.wikipedia.org/wiki/${encodeURIComponent(w.title)}" target="_blank" rel="noopener noreferrer" class="text-[11px] font-bold text-navy-500 dark:text-gold-400 hover:underline inline-flex items-center gap-1">
+                                        Ampliar en Wikipedia <i class="fa-solid fa-external-link text-[9px]"></i>
+                                    </a>
+                                </div>
+                            `).join('')}
                         </div>
                     </div>
-
-                    <div class="mt-6 text-[10px] text-slate-400 flex items-center justify-between pt-4 border-t border-slate-100 dark:border-navy-800">
-                        <span>Búsqueda multi-nivel ejecutada con éxito</span>
-                        <span>Fecha: ${new Date().toLocaleDateString('es-CO')}</span>
-                    </div>
+                    ` : ''}
                 </div>
             `;
 
@@ -785,14 +773,14 @@
             const matches = articlesDB.filter(art => 
                 art.title.toLowerCase().includes(q) || 
                 art.intro.toLowerCase().includes(q) ||
-                art.sucursal.toLowerCase().includes(q)
+                art.categoria.toLowerCase().includes(q)
             );
 
             if (matches.length > 0) {
                 resultsContainer.classList.remove('hidden');
                 resultsContainer.innerHTML = matches.slice(0, 5).map(m => `
                     <div onclick="navigateTo('articulo', '${m.id}'); document.getElementById('search-results').classList.add('hidden');" class="p-3 hover:bg-slate-100 dark:hover:bg-navy-800 cursor-pointer border-b border-slate-100 dark:border-navy-800 last:border-none">
-                        <span class="text-[9px] font-bold text-gold-500 uppercase">${m.sucursal}</span>
+                        <span class="text-[9px] font-bold text-gold-500 uppercase">${categoriasData[m.categoria].name}</span>
                         <h4 class="font-bold text-xs text-navy-900 dark:text-white mt-0.5">${m.title}</h4>
                     </div>
                 `).join('');
@@ -800,128 +788,71 @@
                 resultsContainer.classList.remove('hidden');
                 resultsContainer.innerHTML = `
                     <div class="p-4 text-xs text-slate-500 text-center">
-                        No hay coincidencias directas en la biblioteca rápida. Utiliza el buscador central de la portada para explorar más de 2,000 temas.
+                        No hay coincidencias directas. Prueba con otra palabra clave.
                     </div>
                 `;
             }
         }
 
-        /* --- VISTA: TODAS LAS SUCURSALES --- */
-        function renderAllSucursales(container) {
-            container.innerHTML = `
-                <div class="mb-10">
-                    <span class="text-xs font-extrabold text-gold-600 dark:text-gold-400 uppercase tracking-widest">RED DE CONOCIMIENTO</span>
-                    <h2 class="text-3xl font-black text-navy-900 dark:text-white mt-1">Todas las Sucursales de Tu Sucursal</h2>
-                    <p class="text-xs text-slate-600 dark:text-slate-400 mt-2">Explora los centros especializados con más de 2,000 temas organizados.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                    ${Object.values(sucursalesData).map(suc => `
-                        <div onclick="navigateTo('sucursal', '${suc.id}')" class="bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-2xl p-6 shadow-sm hover:shadow-xl transition cursor-pointer flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br ${suc.bgClass} text-white flex items-center justify-center text-xl shadow-md">
-                                        <i class="fa-solid ${suc.icon}"></i>
-                                    </div>
-                                    <span class="text-[10px] font-bold px-2 py-0.5 bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/30 rounded uppercase">${suc.totalTopics}</span>
-                                </div>
-                                <h3 class="text-lg font-extrabold text-navy-900 dark:text-white mb-2">${suc.name}</h3>
-                                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">${suc.shortDesc}</p>
-                                <p class="text-[11px] text-slate-500 italic mb-4"><strong>Especialidad:</strong> ${suc.specialty}</p>
-                            </div>
-                            <div class="flex items-center justify-between text-xs font-bold text-navy-500 dark:text-gold-400 pt-3 border-t border-slate-100 dark:border-navy-800">
-                                <span>Visitar Sucursal</span>
-                                <i class="fa-solid fa-arrow-right text-xs"></i>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-            `;
-        }
-
-        /* --- VISTA: PÁGINA DE SUCURSAL ESPECÍFICA CON SUBCATEGORÍAS Y TEMAS (500+) --- */
-        function renderSucursalPage(container, sucursalId) {
-            const suc = sucursalesData[sucursalId] || sucursalesData['historia'];
-            const sucArticles = articlesDB.filter(a => a.sucursal === sucursalId);
+        /* --- VISTA: PÁGINA DE ÁREA TEMÁTICA --- */
+        function renderCategoryPage(container, catId) {
+            const cat = categoriasData[catId] || categoriasData['historia'];
+            const catArticles = articlesDB.filter(a => a.categoria === cat.id);
 
             container.innerHTML = `
-                <div class="bg-gradient-to-br ${suc.bgClass} text-white p-8 md:p-12 rounded-3xl mb-10 shadow-xl border border-navy-800">
+                <div class="bg-gradient-to-br ${cat.bgClass} text-white p-8 md:p-12 rounded-3xl mb-10 shadow-xl border border-navy-800">
                     <div class="max-w-3xl">
                         <div class="flex items-center gap-3 mb-3">
                             <span class="text-xs font-bold px-3 py-1 bg-white/10 border border-white/20 rounded-full text-gold-400 uppercase tracking-wider">
-                                <i class="fa-solid ${suc.icon}"></i> ${suc.totalTopics} Organizados
+                                <i class="fa-solid ${cat.icon}"></i> ${cat.badge}
                             </span>
                         </div>
-                        <h1 class="text-3xl sm:text-4xl font-black mb-3">${suc.name}</h1>
-                        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-4">${suc.specialty}</p>
-                        <p class="text-xs text-slate-300">${suc.shortDesc}</p>
+                        <h1 class="text-3xl sm:text-4xl font-black mb-3">${cat.name}</h1>
+                        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-3">${cat.shortDesc}</p>
+                        <p class="text-xs text-slate-300 italic">${cat.specialty}</p>
                     </div>
                 </div>
 
-                <!-- SUBCATEGORÍAS DE LA SUCURSAL -->
-                ${suc.subcategories ? `
-                    <div class="mb-12 bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-6 shadow-sm">
-                        <h3 class="text-xs font-extrabold uppercase text-navy-900 dark:text-white tracking-widest mb-4">Subcategorías Principales del Catálogo (${suc.subcategories.length} Secciones)</h3>
-                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-                            ${suc.subcategories.map(sub => `
-                                <div class="p-3 bg-slate-50 dark:bg-navy-950 rounded-xl border border-slate-200 dark:border-navy-800 text-xs font-semibold text-slate-700 dark:text-slate-300 flex items-center justify-between">
-                                    <span>${sub}</span>
-                                    <i class="fa-solid fa-chevron-right text-[10px] text-gold-500"></i>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                ` : ''}
-
                 <div class="mb-12">
                     <div class="flex items-center justify-between mb-6 border-b border-slate-200 dark:border-navy-800 pb-3">
-                        <h3 class="text-xl font-extrabold text-navy-900 dark:text-white">Artículos y Fichas Destacadas en esta Sucursal</h3>
-                        <span class="text-xs text-slate-500">${sucArticles.length} publicaciones principales indexadas</span>
+                        <h2 class="text-xl font-extrabold text-navy-900 dark:text-white">Guías Disponibles en esta Área</h2>
+                        <span class="text-xs text-slate-500">${catArticles.length} artículos publicados</span>
                     </div>
 
-                    ${sucArticles.length > 0 ? `
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            ${sucArticles.map(art => `
-                                <div onclick="navigateTo('articulo', '${art.id}')" class="bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-2xl p-6 shadow-sm hover:shadow-md transition cursor-pointer flex flex-col justify-between">
-                                    <div>
-                                        <h4 class="font-bold text-base mb-2 text-navy-900 dark:text-white">${art.title}</h4>
-                                        <p class="text-xs text-slate-600 dark:text-slate-400 line-clamp-3 mb-4">${art.intro}</p>
-                                    </div>
-                                    <span class="text-xs font-bold text-navy-500 dark:text-gold-400 flex items-center pt-3 border-t border-slate-100 dark:border-navy-800">
-                                        Leer Ficha Completa <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
-                                    </span>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        ${catArticles.map(art => `
+                            <div onclick="navigateTo('articulo', '${art.id}')" class="bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-2xl p-6 shadow-sm hover:shadow-md transition cursor-pointer flex flex-col justify-between">
+                                <div>
+                                    <h3 class="font-bold text-base mb-2 text-navy-900 dark:text-white">${art.title}</h3>
+                                    <p class="text-xs text-slate-600 dark:text-slate-400 line-clamp-3 mb-4">${art.intro}</p>
                                 </div>
-                            `).join('')}
-                        </div>
-                    ` : `
-                        <div class="bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-2xl p-8 text-center">
-                            <p class="text-xs text-slate-500 mb-4">Próximamente se publicarán nuevas fichas completas para este catálogo.</p>
-                            <button onclick="navigateTo('home')" class="bg-navy-900 text-white px-4 py-2 rounded-xl text-xs font-bold">Volver al Inicio</button>
-                        </div>
-                    `}
+                                <span class="text-xs font-bold text-navy-500 dark:text-gold-400 flex items-center pt-3 border-t border-slate-100 dark:border-navy-800">
+                                    Leer guía completa <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                                </span>
+                            </div>
+                        `).join('')}
+                    </div>
                 </div>
 
                 <div class="flex justify-between items-center pt-6 border-t border-slate-200 dark:border-navy-800">
                     <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">
-                        <i class="fa-solid fa-arrow-left mr-1"></i> Volver a la Portada
-                    </button>
-                    <button onclick="navigateTo('sucursales-all')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">
-                        Explorar Otras Sucursales <i class="fa-solid fa-arrow-right ml-1"></i>
+                        <i class="fa-solid fa-arrow-left mr-1"></i> Volver al Inicio
                     </button>
                 </div>
             `;
         }
 
-        /* --- VISTA: DETALLE DE ARTÍCULO / FICHA --- */
+        /* --- VISTA: DETALLE DE GUÍA / ARTÍCULO --- */
         function renderArticleDetail(container, articleId) {
             const article = articlesDB.find(a => a.id === articleId) || articlesDB[0];
-            const suc = sucursalesData[article.sucursal];
+            const cat = categoriasData[article.categoria];
 
             container.innerHTML = `
                 <article class="max-w-4xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-6 sm:p-10 shadow-lg mb-12">
                     <div class="flex items-center gap-2 mb-4">
-                        <span class="text-[10px] font-extrabold px-2.5 py-1 bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/30 rounded uppercase">${suc.name}</span>
+                        <span class="text-[10px] font-extrabold px-2.5 py-1 bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/30 rounded uppercase">${cat.name}</span>
                         <span class="text-slate-400 text-xs">•</span>
-                        <span class="text-slate-500 text-xs font-medium">Ficha Educativa Original</span>
+                        <span class="text-slate-500 text-xs font-medium">Guía de Estudio</span>
                     </div>
 
                     <h1 class="text-2xl sm:text-4xl font-black text-navy-900 dark:text-white mb-4 leading-tight">${article.title}</h1>
@@ -932,15 +863,15 @@
                     </div>
 
                     <div class="border-t border-slate-200 dark:border-navy-800 pt-6 mt-8">
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-navy-900 dark:text-white mb-3">Fuentes y Referencias Académicas</h4>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-navy-900 dark:text-white mb-3">Bibliografía y Fuentes Consultadas</h4>
                         <ul class="space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
                             ${article.sources.map(src => `<li class="flex items-start gap-2"><i class="fa-solid fa-book-bookmark text-gold-500 mt-0.5"></i><span>${src}</span></li>`).join('')}
                         </ul>
                     </div>
 
                     <div class="mt-10 pt-6 border-t border-slate-200 dark:border-navy-800 flex justify-between items-center">
-                        <button onclick="navigateTo('sucursal', '${article.sucursal}')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">
-                            <i class="fa-solid fa-arrow-left mr-1"></i> Volver a ${suc.name}
+                        <button onclick="navigateTo('categoria', '${article.categoria}')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">
+                            <i class="fa-solid fa-arrow-left mr-1"></i> Más guías en ${cat.name}
                         </button>
                         <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">
                             Ir al Inicio <i class="fa-solid fa-house ml-1"></i>
@@ -950,19 +881,21 @@
             `;
         }
 
-        /* --- VISTAS LEGALES E INSTITUCIONALES --- */
+        /* --- VISTAS DE TRANSPARENCIA PERSONAL Y LEGALES --- */
         function renderAboutUs(container) {
             container.innerHTML = `
                 <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <span class="text-xs font-bold text-gold-600 dark:text-gold-400 uppercase tracking-widest">INSTITUCIONAL</span>
-                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mt-1 mb-4">Quiénes Somos</h1>
+                    <span class="text-xs font-bold text-gold-600 dark:text-gold-400 uppercase tracking-widest">TRANSPARENCIA DEL PROYECTO</span>
+                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mt-1 mb-4">Sobre el Proyecto y su Autor</h1>
                     <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p><strong>TU SUCURSAL – SUCURSAL DEL CONOCIMIENTO</strong> es una plataforma digital independiente dedicada a facilitar el acceso al conocimiento mediante diferentes espacios educativos especializados (sucursales), albergando más de 2,000 temas organizados.</p>
-                        <h3 class="font-bold text-navy-900 dark:text-white text-base pt-2">Misión Institucional</h3>
-                        <p>Democratizar el acceso al conocimiento verificado y estructurado mediante artículos originales y recursos educativos abiertos.</p>
+                        <p><strong>TU SUCURSAL</strong> es una guía educativa personal e independiente creada y administrada por <strong>[ESCRIBE AQUÍ TU NOMBRE COMPLETO]</strong> desde Colombia.</p>
+                        <p>El objetivo de este sitio es reunir resúmenes claros, estructurados y con respaldo bibliográfico sobre temas fundamentales de Historia, Ciencias Sociales, Matemáticas y Biología para estudiantes, autodidactas y lectores curiosos.</p>
+                        <h3 class="font-bold text-navy-900 dark:text-white text-base pt-2">Naturaleza Independiente</h3>
+                        <p>Este portal no representa a ninguna universidad, entidad financiera ni organismo gubernamental. Es una iniciativa personal de divulgación educativa gratuita.</p>
+                        <p><strong>Contacto directo del editor:</strong> <a href="mailto:contacto@tusucursal.org" class="text-gold-600 dark:text-gold-400 underline">contacto@tusucursal.org</a></p>
                     </div>
                     <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver a la Portada</button>
+                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver al Inicio</button>
                     </div>
                 </div>
             `;
@@ -971,26 +904,13 @@
         function renderEditorialPolicy(container) {
             container.innerHTML = `
                 <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Política Editorial</h1>
+                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Criterios de Redacción y Fuentes</h1>
                     <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p>En TU SUCURSAL, la selección y redacción de contenidos sigue estrictos estándares de verificación documental y rigor académico.</p>
+                        <p>Cada guía publicada en Tu Sucursal se elabora consultando manuales académicos, textos universitarios y literatura científica reconocida, citando las referencias al final de cada artículo para que el lector pueda profundizar por su cuenta.</p>
+                        <p>Los contenidos tienen fines exclusivamente divulgativos y de apoyo al estudio, y no sustituyen la formación académica formal ni el asesoramiento profesional especializado.</p>
                     </div>
                     <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver a la Portada</button>
-                    </div>
-                </div>
-            `;
-        }
-
-        function renderIntellectualProperty(container) {
-            container.innerHTML = `
-                <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Propiedad Intelectual</h1>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p>Todos los artículos y recursos originales publicados en TU SUCURSAL están protegidos por derechos de autor, permitiendo su uso educativo con la debida atribución.</p>
-                    </div>
-                    <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver a la Portada</button>
+                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver al Inicio</button>
                     </div>
                 </div>
             `;
@@ -1001,11 +921,13 @@
                 <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
                     <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Política de Privacidad y Protección de Datos</h1>
                     <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p>Conforme a la Ley Estatutaria 1581 de 2012 de Colombia y normativas internacionales, TU SUCURSAL garantiza la confidencialidad de la información.</p>
-                        <p><strong>Responsable del Tratamiento:</strong> [Razón Social Pendiente de Configuración]</p>
+                        <p>De conformidad con la Ley Estatutaria 1581 de 2012 de la República de Colombia y estándares internacionales de privacidad, se informa a los usuarios sobre el tratamiento de datos en este sitio web:</p>
+                        <p><strong>Responsable del Sitio y del Tratamiento:</strong> [ESCRIBE AQUÍ TU NOMBRE COMPLETO], persona natural domiciliada en Colombia.</p>
+                        <p><strong>Correo de Contacto para Derechos de Privacidad:</strong> contacto@tusucursal.org</p>
+                        <p><strong>Finalidad:</strong> Este sitio es de libre lectura y no exige registro de usuarios. Únicamente recopilamos los datos que el visitante envíe voluntariamente mediante correo electrónico o formulario de contacto para responder a sus consultas, así como métricas anónimas de navegación y medición publicitaria.</p>
                     </div>
                     <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver a la Portada</button>
+                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver al Inicio</button>
                     </div>
                 </div>
             `;
@@ -1014,12 +936,13 @@
         function renderTermsConditions(container) {
             container.innerHTML = `
                 <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Términos y Condiciones</h1>
+                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Términos de Uso</h1>
                     <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p>El acceso y uso de la plataforma TU SUCURSAL atribuye la condición de usuario, implicando la aceptación de los presentes términos de uso educativo.</p>
+                        <p>El acceso a las guías educativas de TU SUCURSAL es libre y gratuito para fines de consulta personal, estudio y enseñanza, siempre que se cite la fuente.</p>
+                        <p>El editor se reserva el derecho de actualizar, ampliar o corregir los artículos publicados para mantener su precisión educativa.</p>
                     </div>
                     <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver a la Portada</button>
+                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver al Inicio</button>
                     </div>
                 </div>
             `;
@@ -1030,38 +953,11 @@
                 <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
                     <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Política de Cookies</h1>
                     <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p>Utilizamos cookies técnicas y analíticas para garantizar el funcionamiento óptimo de nuestras sucursales de conocimiento.</p>
+                        <p>Este sitio utiliza almacenamiento local y cookies técnicas para recordar preferencias básicas (como el consentimiento del aviso de cookies) y herramientas analíticas para conocer qué guías educativas resultan más útiles a los visitantes.</p>
+                        <p>Puedes desactivar o eliminar las cookies en cualquier momento desde la configuración de tu navegador web.</p>
                     </div>
                     <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver a la Portada</button>
-                    </div>
-                </div>
-            `;
-        }
-
-        function renderLegalNotice(container) {
-            container.innerHTML = `
-                <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Aviso Legal</h1>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p>TU SUCURSAL es una marca educativa independiente sin vinculación con entidades financieras o gubernamentales.</p>
-                    </div>
-                    <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver a la Portada</button>
-                    </div>
-                </div>
-            `;
-        }
-
-        function renderAccessibility(container) {
-            container.innerHTML = `
-                <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Accesibilidad</h1>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p>Nos comprometemos a garantizar la accesibilidad universal para todos los estudiantes y visitantes conforme a las pautas WCAG.</p>
-                    </div>
-                    <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver a la Portada</button>
+                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver al Inicio</button>
                     </div>
                 </div>
             `;
@@ -1070,52 +966,30 @@
         function renderContactForm(container) {
             container.innerHTML = `
                 <div class="max-w-2xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <h1 class="text-2xl font-black text-navy-900 dark:text-white mb-2">Información de Contacto</h1>
-                    <p class="text-xs text-slate-500 mb-6">Envíanos tus consultas académicas o sugerencias institucionales.</p>
-                    <form onsubmit="event.preventDefault(); alert('Mensaje enviado correctamente. Gracias por contactar a Tu Sucursal.'); navigateTo('home');" class="space-y-4 text-xs">
-                        <div>
-                            <label class="block font-bold mb-1 text-slate-700 dark:text-slate-300">Nombre o Institución</label>
-                            <input type="text" required class="w-full p-3 bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-xl">
-                        </div>
-                        <div>
-                            <label class="block font-bold mb-1 text-slate-700 dark:text-slate-300">Correo Electrónico</label>
-                            <input type="email" required class="w-full p-3 bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-xl">
-                        </div>
-                        <div>
-                            <label class="block font-bold mb-1 text-slate-700 dark:text-slate-300">Mensaje</label>
-                            <textarea rows="4" required class="w-full p-3 bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-xl"></textarea>
-                        </div>
-                        <button type="submit" class="w-full py-3 bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold rounded-xl transition">Enviar Mensaje</button>
-                    </form>
-                </div>
-            `;
-        }
-
-        function renderAdsAuditReport(container) {
-            container.innerHTML = `
-                <div class="max-w-4xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <span class="text-xs font-extrabold text-gold-600 dark:text-gold-400 uppercase tracking-widest">CUMPLIMIENTO DE POLÍTICAS</span>
-                    <h1 class="text-2xl font-black text-navy-900 dark:text-white mt-1 mb-4">Informe de Auditoría Google Ads & AdSense</h1>
-                    <p class="text-xs text-slate-600 dark:text-slate-300 mb-6">Revisión de cumplimiento basada en los lineamientos oficiales de destino y contenido original.</p>
+                    <h1 class="text-2xl font-black text-navy-900 dark:text-white mb-2">Contacto Directo</h1>
+                    <p class="text-xs text-slate-500 mb-6">¿Tienes alguna sugerencia de tema, corrección o consulta sobre las guías? Escríbeme directamente.</p>
                     
-                    <div class="space-y-3 text-xs">
-                        <div class="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl flex items-center justify-between">
-                            <span class="font-bold text-emerald-700 dark:text-emerald-400">1. Contenido Original y Sustancial (+2,000 Temas Organizados)</span>
-                            <span class="px-2 py-0.5 bg-emerald-500 text-white rounded font-bold">CUMPLE</span>
-                        </div>
-                        <div class="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl flex items-center justify-between">
-                            <span class="font-bold text-emerald-700 dark:text-emerald-400">2. Destino Funcional y Accesible</span>
-                            <span class="px-2 py-0.5 bg-emerald-500 text-white rounded font-bold">CUMPLE</span>
-                        </div>
-                        <div class="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl flex items-center justify-between">
-                            <span class="font-bold text-emerald-700 dark:text-emerald-400">3. Identidad Comercial Transparente (Sin Afiliación Ficticia)</span>
-                            <span class="px-2 py-0.5 bg-emerald-500 text-white rounded font-bold">CUMPLE</span>
-                        </div>
-                        <div class="p-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl flex items-center justify-between">
-                            <span class="font-bold text-emerald-700 dark:text-emerald-400">4. Páginas Legales y Privacidad (Ley 1581 / GDPR)</span>
-                            <span class="px-2 py-0.5 bg-emerald-500 text-white rounded font-bold">CUMPLE</span>
-                        </div>
+                    <div class="p-4 bg-slate-50 dark:bg-navy-950 rounded-xl border border-slate-200 dark:border-navy-800 mb-6 text-xs">
+                        <p class="font-bold text-navy-900 dark:text-white mb-1">Correo electrónico del editor:</p>
+                        <a href="mailto:contacto@tusucursal.org" class="text-gold-600 dark:text-gold-400 font-semibold hover:underline">contacto@tusucursal.org</a>
                     </div>
+
+                    <!-- Nota: Reemplaza la URL de action por tu endpoint real de Formspree o Web3Forms cuando lo configures -->
+                    <form action="mailto:contacto@tusucursal.org" method="post" enctype="text/plain" class="space-y-4 text-xs">
+                        <div>
+                            <label class="block font-bold mb-1 text-slate-700 dark:text-slate-300">Tu Nombre</label>
+                            <input type="text" name="nombre" required class="w-full p-3 bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-xl">
+                        </div>
+                        <div>
+                            <label class="block font-bold mb-1 text-slate-700 dark:text-slate-300">Tu Correo Electrónico</label>
+                            <input type="email" name="correo" required class="w-full p-3 bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-xl">
+                        </div>
+                        <div>
+                            <label class="block font-bold mb-1 text-slate-700 dark:text-slate-300">Mensaje o Sugerencia de Tema</label>
+                            <textarea name="mensaje" rows="4" required class="w-full p-3 bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-xl"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold rounded-xl transition">Enviar por Correo</button>
+                    </form>
                 </div>
             `;
         }
@@ -1127,4 +1001,3 @@
     </script>
 </body>
 </html>
-
