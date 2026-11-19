@@ -1,1003 +1,1328 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TU SUCURSAL – Guía Educativa y Divulgación Independiente</title>
-    <meta name="description" content="Guía educativa independiente dedicada a la divulgación clara y estructurada en Historia, Ciencias Sociales, Matemáticas y Biología.">
-    <meta name="keywords" content="guía educativa, divulgación científica, historia universal, ciencias sociales, matemáticas explicadas, biología celular, estudio independiente">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Tu Sucursal – Guía Educativa">
-    <link rel="canonical" href="https://tusucursal.org/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guía educativa sobre cómo elegir y entender paquetes de celulares (datos, minutos, redes y vigencia). Sitio educativo sin fines comerciales ni captación de datos.">
+<meta name="author" content="Julian Restrepo Alvarez">
+<meta name="robots" content="index, follow">
+<title>Julian Restrepo Alvarez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg-primary: #090d16;
+    --bg-secondary: #111827;
+    --bg-card: rgba(17, 24, 39, 0.72);
+    --bg-card-hover: rgba(30, 41, 59, 0.9);
+    --border-glow: rgba(14, 165, 233, 0.35);
+    --border-subtle: rgba(148, 163, 184, 0.14);
+    --accent-orange: #0ea5e9;
+    --accent-red: #6366f1;
+    --accent-amber: #38bdf8;
+    --accent-cyan: #06b6d4;
+    --accent-emerald: #10b981;
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --gradient-1: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+    --gradient-2: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+    --gradient-3: linear-gradient(135deg, #06b6d4 0%, #10b981 100%);
+}
 
-    <!-- Open Graph Metadata -->
-    <meta property="og:title" content="TU SUCURSAL – Guía Educativa Independiente">
-    <meta property="og:description" content="Guías temáticas de estudio y divulgación en Historia, Ciencias Sociales, Matemáticas y Biología.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tusucursal.org/">
-    <meta property="og:site_name" content="TU SUCURSAL">
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <!-- Schema.org Data Estructurada (WebSite / Blog Educativo) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "TU SUCURSAL – Guía Educativa",
-      "url": "https://tusucursal.org/",
-      "description": "Guía educativa independiente dedicada a la divulgación abierta del conocimiento en ciencias sociales, matemáticas, historia y biología.",
-      "inLanguage": "es"
-    }
-    </script>
+html { scroll-behavior: smooth; }
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        navy: {
-                            50: '#f0f4f9',
-                            100: '#e1e9f3',
-                            500: '#1d4ed8',
-                            800: '#0f2648',
-                            900: '#0a192f',
-                            950: '#050c18'
-                        },
-                        gold: {
-                            400: '#fbbf24',
-                            500: '#d97706',
-                            600: '#b45309'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Merriweather', 'serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Icons & MathJax -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    background-color: var(--bg-primary);
+    background-image:
+        radial-gradient(circle at 15% 10%, rgba(14, 165, 233, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(99, 102, 241, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.05) 0%, transparent 60%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .prose-editorial p { margin-bottom: 1.25rem; line-height: 1.8; font-family: 'Merriweather', serif; color: #334155; }
-        .dark .prose-editorial p { color: #cbd5e1; }
-        .prose-editorial h3 { font-family: 'Inter', sans-serif; margin-top: 1.75rem; margin-bottom: 0.75rem; font-weight: 700; color: #0f172a; font-size: 1.15rem; }
-        .dark .prose-editorial h3 { color: #f8fafc; }
-        .prose-editorial h4 { font-family: 'Inter', sans-serif; margin-top: 1.25rem; margin-bottom: 0.5rem; font-weight: 600; color: #1e293b; }
-        .dark .prose-editorial h4 { color: #e2e8f0; }
-        .prose-editorial ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; font-family: 'Merriweather', serif; color: #334155; }
-        .dark .prose-editorial ul { color: #cbd5e1; }
-        .prose-editorial li { margin-bottom: 0.5rem; line-height: 1.7; }
-    </style>
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(14, 165, 233, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
+    animation: gridDrift 60s linear infinite;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(14, 165, 233, 0.15) 0%, transparent 8%),
+        radial-gradient(circle at 70% 60%, rgba(99, 102, 241, 0.12) 0%, transparent 8%),
+        radial-gradient(circle at 40% 80%, rgba(56, 189, 248, 0.1) 0%, transparent 6%);
+    filter: blur(40px);
+    pointer-events: none;
+    z-index: 0;
+    animation: orbFloat 20s ease-in-out infinite alternate;
+}
+
+@keyframes gridDrift {
+    0% { background-position: 0 0; }
+    100% { background-position: 50px 50px; }
+}
+
+@keyframes orbFloat {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(30px, -20px) scale(1.1); }
+    100% { transform: translate(-20px, 30px) scale(0.95); }
+}
+
+/* Scanning line effect */
+.scan-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-orange), transparent);
+    box-shadow: 0 0 12px var(--accent-orange);
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.4;
+    animation: scan 8s linear infinite;
+}
+
+@keyframes scan {
+    0% { transform: translateY(-2px); }
+    100% { transform: translateY(100vh); }
+}
+
+/* ===== HEADER ===== */
+header {
+    background: rgba(9, 13, 22, 0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.logo-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--gradient-1);
+    display: grid;
+    place-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.45);
+    position: relative;
+}
+
+.logo-mark::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 12px;
+    background: var(--gradient-1);
+    opacity: 0.5;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+}
+
+.logo-text small {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.55rem 1rem;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+nav a:hover {
+    color: var(--accent-orange);
+    background: rgba(14, 165, 233, 0.08);
+    border-color: var(--border-glow);
+}
+
+nav a.active {
+    color: var(--accent-orange);
+    background: rgba(14, 165, 233, 0.12);
+    border-color: var(--border-glow);
+    box-shadow: 0 0 12px rgba(14, 165, 233, 0.18);
+}
+
+/* ===== HERO ===== */
+.hero {
+    position: relative;
+    padding: 6rem 2rem 5rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-top: 2.2rem;
+    padding: 0.6rem 1.2rem;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-meta span { display: inline-flex; align-items: center; gap: 0.4rem; }
+.hero-meta .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent-emerald); box-shadow: 0 0 6px var(--accent-emerald); }
+
+.tech-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 2rem 0 0;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.07) 0%, transparent 100%);
+    border: 1px solid var(--border-subtle);
+    padding: 1.2rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    border-color: var(--accent-orange);
+    transform: translateY(-3px);
+}
+
+.stat-card .num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.1;
+    margin-bottom: 0.3rem;
+}
+
+.stat-card .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center top, rgba(14, 165, 233, 0.18) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(14, 165, 233, 0.08);
+    border: 1px solid var(--border-glow);
+    padding: 0.5rem 1.1rem;
+    border-radius: 100px;
+    font-size: 0.82rem;
+    margin-bottom: 1.8rem;
+    font-weight: 500;
+    color: var(--accent-orange);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.02em;
+}
+
+.badge::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-orange);
+    box-shadow: 0 0 8px var(--accent-orange);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+.hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.4rem;
+    color: var(--text-primary);
+    background: linear-gradient(180deg, #f8fafc 0%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero h1 .accent {
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.page { display: none; animation: fadeUp 0.5s ease; }
+.page.active { display: block; }
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    margin-bottom: 1.8rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-subtle);
+    transition: border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-orange), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+section:hover {
+    border-color: var(--border-glow);
+}
+
+section:hover::before { opacity: 0.6; }
+
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--text-primary);
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+h2::before {
+    content: '';
+    width: 4px;
+    height: 26px;
+    background: var(--gradient-1);
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--accent-orange);
+}
+
+h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--accent-orange);
+    font-size: 1.18rem;
+    font-weight: 600;
+    margin-top: 1.6rem;
+    margin-bottom: 0.7rem;
+    letter-spacing: -0.01em;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    color: var(--text-secondary);
+}
+
+ul, ol { margin-left: 1.6rem; margin-bottom: 1rem; color: var(--text-secondary); }
+li { margin-bottom: 0.5rem; }
+
+strong { color: var(--text-primary); font-weight: 600; }
+em { color: var(--text-muted); }
+
+/* ===== ALERT BOXES ===== */
+.highlight-box, .info-box, .responsable-box, .warning-box {
+    padding: 1.3rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    border: 1px solid;
+    backdrop-filter: blur(5px);
+}
+
+.highlight-box {
+    background: rgba(56, 189, 248, 0.08);
+    border-color: rgba(56, 189, 248, 0.25);
+    border-left: 3px solid var(--accent-amber);
+}
+
+.highlight-box strong { color: var(--accent-amber); }
+
+.info-box {
+    background: rgba(6, 182, 212, 0.06);
+    border-color: rgba(6, 182, 212, 0.2);
+    border-left: 3px solid var(--accent-cyan);
+}
+
+.info-box strong { color: var(--accent-cyan); }
+
+.warning-box {
+    background: rgba(99, 102, 241, 0.08);
+    border-color: rgba(99, 102, 241, 0.28);
+    border-left: 3px solid var(--accent-red);
+}
+
+.warning-box strong { color: var(--accent-red); }
+
+.responsable-box {
+    background: rgba(16, 185, 129, 0.06);
+    border-color: rgba(16, 185, 129, 0.25);
+    border-left: 3px solid var(--accent-emerald);
+}
+
+.responsable-box strong { color: var(--accent-emerald); }
+
+/* ===== GRIDS & CARDS ===== */
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin: 2rem 0; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 2rem 0; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; margin: 2rem 0; }
+
+.service-card {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.06) 0%, rgba(99, 102, 241, 0.06) 100%);
+    border: 1px solid var(--border-subtle);
+    padding: 2rem 1.5rem;
+    border-radius: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-orange);
+    box-shadow: 0 8px 30px -10px var(--accent-orange);
+}
+
+.service-card .icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-subtle);
+}
+
+.service-card h3 { margin-top: 0.8rem; color: var(--text-primary); }
+.service-card p { text-align: center; color: var(--text-muted); font-size: 0.95rem; }
+
+.type-card {
+    background: linear-gradient(180deg, rgba(14, 165, 233, 0.09) 0%, transparent 100%);
+    border: 1px solid var(--border-subtle);
+    padding: 1.4rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.type-card:hover {
+    border-color: var(--accent-orange);
+    transform: translateY(-3px);
+}
+
+.type-card .badge-letter {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: var(--gradient-1);
+    color: white;
+    border-radius: 50%;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.4);
+}
+
+.type-card h4 {
+    color: var(--text-primary);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.type-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin: 0;
+}
+
+.grid-2 .card {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.06) 0%, rgba(99, 102, 241, 0.06) 100%);
+    border: 1px solid var(--border-subtle);
+    padding: 2rem;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-2 .card:hover { transform: translateY(-3px); border-color: var(--border-glow); }
+.grid-2 .card h3 { margin-top: 0; color: var(--text-primary); font-size: 1.3rem; }
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+    background: rgba(14, 165, 233, 0.05);
+    border: 1px solid var(--border-subtle);
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.breadcrumb a {
+    color: var(--accent-orange);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.breadcrumb a:hover { text-decoration: underline; }
+
+/* ===== TIPS ===== */
+.tip {
+    background: linear-gradient(90deg, rgba(14, 165, 233, 0.07) 0%, transparent 100%);
+    border: 1px solid var(--border-subtle);
+    border-left: 3px solid var(--accent-orange);
+    padding: 1rem 1.2rem;
+    margin: 0.7rem 0;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    color: var(--text-secondary);
+}
+
+.tip:hover {
+    background: linear-gradient(90deg, rgba(14, 165, 233, 0.12) 0%, transparent 100%);
+    transform: translateX(4px);
+    border-left-color: var(--accent-amber);
+}
+
+.tip strong { color: var(--accent-orange); }
+
+/* PASS / Selection Steps */
+.pass-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.pass-step {
+    background: linear-gradient(180deg, rgba(99, 102, 241, 0.09) 0%, rgba(14, 165, 233, 0.06) 100%);
+    border: 1px solid var(--border-subtle);
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.pass-step:hover {
+    border-color: var(--accent-orange);
+    transform: translateY(-3px);
+}
+
+.pass-step .step-num {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-red);
+    color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 0.85rem;
+    line-height: 26px;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+.pass-step .letter {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--accent-orange);
+    margin-bottom: 0.4rem;
+}
+
+.pass-step h4 {
+    color: var(--text-primary);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+}
+
+.pass-step p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin: 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: rgba(6, 9, 16, 0.95);
+    backdrop-filter: blur(10px);
+    color: var(--text-secondary);
+    padding: 3.5rem 2rem 1.5rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--border-subtle);
+    position: relative;
+    z-index: 1;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    max-width: 600px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-orange), transparent);
+    opacity: 0.5;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2.5rem;
+}
+
+footer h4 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+footer p, footer li {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+}
+
+footer ul { list-style: none; margin-left: 0; }
+footer ul li { margin-bottom: 0.5rem; }
+
+footer a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease;
+}
+
+footer a:hover { color: var(--accent-orange); }
+
+.responsable-footer {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.06), rgba(99, 102, 241, 0.06));
+    border: 1px solid var(--border-glow);
+    padding: 1.5rem;
+    border-radius: 14px;
+    position: relative;
+}
+
+.responsable-footer::before {
+    content: 'ID';
+    position: absolute;
+    top: -10px;
+    left: 1.5rem;
+    background: var(--bg-primary);
+    color: var(--accent-orange);
+    padding: 0 0.6rem;
+    font-size: 0.7rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.responsable-footer h4 { color: var(--accent-orange); }
+.responsable-footer strong { color: var(--text-primary); }
+
+.footer-bottom {
+    max-width: 1280px;
+    margin: 3rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-subtle);
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.footer-bottom p { margin-bottom: 0.4rem; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero { padding: 4rem 1.5rem 3rem; }
+    .hero h1 { font-size: 1.8rem; }
+    .hero p { font-size: 1rem; }
+    .grid-2, .grid-3, .grid-4, .pass-grid, .tech-stats { grid-template-columns: 1fr 1fr; }
+    .footer-container { grid-template-columns: 1fr; }
+    nav ul { gap: 0.3rem; justify-content: center; }
+    nav a { font-size: 0.82rem; padding: 0.4rem 0.7rem; }
+    .header-container { flex-direction: column; }
+    section { padding: 1.6rem; }
+    h2 { font-size: 1.35rem; }
+    main { padding: 2rem 1.2rem 3rem; }
+    .logo { font-size: 1rem; }
+    .logo-mark { width: 34px; height: 34px; }
+    .scan-line { display: none; }
+}
+
+/* Hover glow on logo mark */
+.logo-mark { animation: logoPulse 4s ease-in-out infinite; }
+
+@keyframes logoPulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(14, 165, 233, 0.45); }
+    50% { box-shadow: 0 0 30px rgba(14, 165, 233, 0.7), 0 0 50px rgba(99, 102, 241, 0.3); }
+}
+
+/* Cursor blink in hero */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background: var(--accent-orange);
+    margin-left: 4px;
+    vertical-align: middle;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+::selection {
+    background: rgba(14, 165, 233, 0.3);
+    color: var(--text-primary);
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb {
+    background: rgba(14, 165, 233, 0.25);
+    border-radius: 10px;
+    border: 2px solid var(--bg-primary);
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(14, 165, 233, 0.45); }
+</style>
 </head>
-<body class="bg-slate-50 dark:bg-navy-950 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-300">
+<body>
 
-    <!-- HEADER DE LA GUÍA EDUCATIVA -->
-    <header class="sticky top-0 z-50 bg-white/95 dark:bg-navy-900/95 backdrop-blur-md border-b border-slate-200 dark:border-navy-800 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                
-                <!-- Logo & Identidad -->
-                <div class="flex items-center space-x-3 cursor-pointer" onclick="navigateTo('home')">
-                    <div class="w-11 h-11 bg-navy-900 dark:bg-navy-800 border border-gold-500/40 text-gold-400 rounded-xl flex items-center justify-center shadow-md">
-                        <i class="fa-solid fa-book-open-reader text-xl"></i>
-                    </div>
-                    <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-xl font-black tracking-tight text-navy-900 dark:text-white uppercase">TU SUCURSAL</span>
-                            <span class="text-[10px] font-bold px-2 py-0.5 bg-gold-500/10 border border-gold-500/30 text-gold-600 dark:text-gold-400 rounded">GUÍA EDUCATIVA</span>
-                        </div>
-                        <span class="text-xs font-semibold text-slate-500 dark:text-slate-400 tracking-wider uppercase block">Divulgación y Estudio Independiente</span>
-                    </div>
-                </div>
+<div class="scan-line"></div>
 
-                <!-- Buscador Rápido del Header -->
-                <div class="hidden md:flex flex-1 max-w-md mx-8 relative">
-                    <input type="text" id="header-search" oninput="handleHeaderSearch(this.value)" placeholder="Buscar guías por tema o palabra clave..." 
-                           class="w-full pl-10 pr-4 py-2 text-xs bg-slate-100 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-full focus:outline-none focus:ring-2 focus:ring-navy-500 transition">
-                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-2.5 text-slate-400 text-xs"></i>
-                    <div id="search-results" class="hidden absolute top-full left-0 right-0 mt-2 bg-white dark:bg-navy-900 rounded-xl shadow-2xl border border-slate-200 dark:border-navy-800 overflow-hidden z-50 max-h-96 overflow-y-auto"></div>
-                </div>
-
-                <!-- Menú Superior -->
-                <nav class="hidden xl:flex items-center space-x-5 text-xs font-semibold uppercase tracking-wider">
-                    <button onclick="navigateTo('home')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Inicio</button>
-                    <button onclick="navigateTo('categoria', 'historia')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Historia</button>
-                    <button onclick="navigateTo('categoria', 'sociales')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">C. Sociales</button>
-                    <button onclick="navigateTo('categoria', 'matematicas')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Matemáticas</button>
-                    <button onclick="navigateTo('categoria', 'biologia')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Biología</button>
-                    <button onclick="navigateTo('sobre-proyecto')" class="hover:text-navy-500 dark:hover:text-gold-400 transition">Sobre el Autor</button>
-                </nav>
-
-                <!-- Switch de Tema / Acciones -->
-                <div class="flex items-center space-x-3">
-                    <button onclick="toggleTheme()" aria-label="Cambiar Tema" class="p-2.5 rounded-xl border border-slate-200 dark:border-navy-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-navy-800 transition">
-                        <i class="fa-solid fa-moon text-sm dark:hidden"></i>
-                        <i class="fa-solid fa-sun text-sm hidden dark:block text-gold-400"></i>
-                    </button>
-                    <button onclick="toggleMobileMenu()" aria-label="Abrir Menú Móvil" class="xl:hidden p-2.5 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-navy-800 rounded-xl border border-slate-200 dark:border-navy-800">
-                        <i class="fa-solid fa-bars text-sm"></i>
-                    </button>
-                </div>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <div class="logo-mark">JR</div>
+            <div class="logo-text">
+                <span>Julian Restrepo Alvarez</span>
+                <small>Guía Educativa</small>
             </div>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio" id="nav-inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros" id="nav-sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#mision-vision" id="nav-mision-vision">Misión y Visión</a></li>
+                <li><a href="#politicas-privacidad" id="nav-politicas-privacidad">Políticas y Privacidad</a></li>
+                <li><a href="#terminos-condiciones" id="nav-terminos-condiciones">Términos y Condiciones</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-        <!-- Menú Móvil -->
-        <div id="mobile-menu" class="hidden xl:hidden bg-white dark:bg-navy-900 border-b border-slate-200 dark:border-navy-800 px-4 py-4 space-y-2">
-            <input type="text" oninput="handleHeaderSearch(this.value)" placeholder="Buscar tema o área..." class="w-full pl-9 pr-3 py-2 text-xs bg-slate-100 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-lg mb-3">
-            <button onclick="navigateTo('home'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Inicio</button>
-            <button onclick="navigateTo('categoria', 'historia'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Guía de Historia</button>
-            <button onclick="navigateTo('categoria', 'sociales'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Guía de Ciencias Sociales</button>
-            <button onclick="navigateTo('categoria', 'matematicas'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Guía de Matemáticas</button>
-            <button onclick="navigateTo('categoria', 'biologia'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider rounded hover:bg-slate-100 dark:hover:bg-navy-800">Guía de Biología</button>
-            <button onclick="navigateTo('sobre-proyecto'); toggleMobileMenu()" class="block w-full text-left font-semibold py-2 px-3 text-xs uppercase tracking-wider text-gold-500 rounded hover:bg-slate-100 dark:hover:bg-navy-800">Sobre el Proyecto y Autor</button>
-        </div>
-    </header>
-
-    <!-- CONTENEDOR PRINCIPAL DINÁMICO -->
-    <main id="main-content" class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full">
-        <!-- Inyección dinámica de vistas -->
-    </main>
-
-    <!-- FOOTER DE TRANSPARENCIA PERSONAL -->
-    <footer class="bg-navy-950 border-t border-navy-800 text-slate-400 text-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                
-                <!-- Columna Marca -->
-                <div class="md:col-span-2 space-y-3">
-                    <div class="flex items-center space-x-2 text-white">
-                        <i class="fa-solid fa-book-open-reader text-lg text-gold-400"></i>
-                        <span class="font-extrabold text-base tracking-tight uppercase">TU SUCURSAL</span>
-                    </div>
-                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
-                        Guía educativa personal dedicada a la divulgación clara y gratuita de conceptos fundamentales en Historia, Ciencias Sociales, Matemáticas y Biología.
-                    </p>
-                    <p class="text-[11px] text-slate-400">
-                        <strong class="text-slate-300">Editor Responsable:</strong> [ESCRIBE AQUÍ TU NOMBRE COMPLETO]<br>
-                        <strong class="text-slate-300">Contacto Directo:</strong> <a href="mailto:contacto@tusucursal.org" class="text-gold-400 hover:underline">contacto@tusucursal.org</a>
-                    </p>
-                </div>
-
-                <!-- Columna Áreas Temáticas -->
-                <div>
-                    <h3 class="text-white font-bold mb-3 text-xs uppercase tracking-wider border-b border-navy-800 pb-1">Áreas de Estudio</h3>
-                    <ul class="space-y-1.5">
-                        <li><a href="#" onclick="navigateTo('categoria', 'historia')" class="hover:text-gold-400 transition">Guía de Historia</a></li>
-                        <li><a href="#" onclick="navigateTo('categoria', 'sociales')" class="hover:text-gold-400 transition">Guía de C. Sociales</a></li>
-                        <li><a href="#" onclick="navigateTo('categoria', 'matematicas')" class="hover:text-gold-400 transition">Guía de Matemáticas</a></li>
-                        <li><a href="#" onclick="navigateTo('categoria', 'biologia')" class="hover:text-gold-400 transition">Guía de Biología</a></li>
-                    </ul>
-                </div>
-
-                <!-- Columna Legal y Transparencia -->
-                <div>
-                    <h3 class="text-white font-bold mb-3 text-xs uppercase tracking-wider border-b border-navy-800 pb-1">Información y Legal</h3>
-                    <ul class="space-y-1.5">
-                        <li><a href="#" onclick="navigateTo('sobre-proyecto')" class="hover:text-gold-400 transition">Sobre el Proyecto y Autor</a></li>
-                        <li><a href="#" onclick="navigateTo('editorial')" class="hover:text-gold-400 transition">Criterios de Redacción</a></li>
-                        <li><a href="#" onclick="navigateTo('contacto')" class="hover:text-gold-400 transition">Formulario de Contacto</a></li>
-                        <li><a href="#" onclick="navigateTo('privacidad')" class="hover:text-gold-400 transition">Política de Privacidad</a></li>
-                        <li><a href="#" onclick="navigateTo('cookies')" class="hover:text-gold-400 transition">Política de Cookies</a></li>
-                        <li><a href="#" onclick="navigateTo('terminos')" class="hover:text-gold-400 transition">Términos de Uso</a></li>
-                    </ul>
-                </div>
+<!-- ====================== INICIO ====================== -->
+<div id="page-inicio" class="page active">
+    <div class="hero">
+        <div class="hero-content">
+            <span class="badge">Sitio educativo · Sin fines comerciales</span>
+            <h1>Guía Práctica de <span class="accent">Paquetes de Celulares</span><span class="cursor"></span></h1>
+            <p>Información clara y objetiva para entender cómo funcionan los paquetes móviles de datos, minutos, mensajes y redes sociales, evitando cargos inesperados y eligiendo según tu uso real.</p>
+            <div class="hero-meta">
+                <span><span class="dot"></span> SISTEMA EDUCATIVO ACTIVO</span>
+                <span>v2.0</span>
+                <span>COL-2026</span>
             </div>
-
-            <div class="border-t border-navy-900 pt-6 flex flex-col md:flex-row justify-between items-center text-[11px] text-slate-500 gap-4">
-                <p>&copy; 2026 TU SUCURSAL – Guía Educativa Independiente editada por [TU NOMBRE COMPLETO].</p>
-                <div class="flex items-center space-x-4">
-                    <span>Colombia</span>
-                    <span>|</span>
-                    <a href="#" onclick="navigateTo('privacidad')" class="hover:underline">Protección de Datos (Ley 1581)</a>
+            <div class="tech-stats">
+                <div class="stat-card">
+                    <div class="num">GB / MB</div>
+                    <div class="label">Navegación Móvil</div>
                 </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- AVISO DE COOKIES -->
-    <div id="cookie-banner" class="fixed bottom-0 inset-x-0 bg-navy-900 border-t border-navy-700 text-white p-4 shadow-2xl z-50 transition-transform duration-300">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-            <p class="text-slate-300 leading-relaxed">
-                Utilizamos cookies técnicas y analíticas básicas para mejorar la navegación y medir el rendimiento de nuestras guías educativas. Consulta nuestra <a href="#" onclick="navigateTo('cookies')" class="underline text-gold-400">Política de Cookies</a>.
-            </p>
-            <div class="flex items-center space-x-3 shrink-0">
-                <button onclick="navigateTo('cookies')" class="px-3 py-1.5 border border-slate-600 rounded text-slate-300 hover:text-white text-xs">Más info</button>
-                <button onclick="acceptCookies()" class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold px-5 py-2 rounded-lg text-xs tracking-wider transition">Aceptar</button>
+                <div class="stat-card">
+                    <div class="num">MIN / SMS</div>
+                    <div class="label">Voz y Mensajes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">1 - 30 D</div>
+                    <div class="label">Vigencia Común</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">4G / 5G</div>
+                    <div class="label">Conectividad</div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- LÓGICA JAVASCRIPT -->
-    <script>
-        /* --- ESTADO DEL TEMA OSCURO --- */
-        function toggleTheme() {
-            document.documentElement.classList.toggle('dark');
-        }
+    <main>
+        <section>
+            <h2>Propósito de esta Guía</h2>
+            <p>Este sitio web ha sido creado con un <strong>propósito netamente educativo e informativo</strong>. Su objetivo principal es ofrecer a los usuarios información clara y práctica sobre el funcionamiento de los paquetes de celulares, las diferencias entre tipos de planes y las buenas prácticas para administrar el consumo de datos móviles.</p>
 
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
+            <div class="highlight-box">
+                <strong>¿Por qué se realiza esta guía educativa?</strong>
+                <p style="margin-top: 0.6rem;">Muchas personas activan paquetes de celulares sin revisar la vigencia, las condiciones de las aplicaciones incluidas o el consumo real de sus aplicaciones en segundo plano. Esto suele generar agotamiento rápido de datos o confusión al comparar opciones. Esta guía busca explicar de forma sencilla cómo leer y aprovechar mejor cada paquete móvil.</p>
+            </div>
 
-        function acceptCookies() {
-            document.getElementById('cookie-banner').classList.add('translate-y-full');
-            localStorage.setItem('cookie_consent', 'accepted');
-        }
+            <p><strong>Este sitio NO realiza:</strong></p>
+            <ul>
+                <li>Captación, recolección o almacenamiento de datos personales de los visitantes.</li>
+                <li>Ventas de paquetes móviles, recargas, SIM cards, equipos ni servicios de telecomunicaciones.</li>
+                <li>Procesos de afiliación, suscripción, portabilidad o registro de usuarios.</li>
+                <li>Transacciones financieras de ningún tipo.</li>
+                <li>Recomendación comercial de operadores, marcas o planes específicos.</li>
+            </ul>
+        </section>
 
-        if(localStorage.getItem('cookie_consent') === 'accepted') {
-            window.addEventListener('DOMContentLoaded', () => {
-                document.getElementById('cookie-banner')?.classList.add('hidden');
-            });
-        }
-
-        /* --- ÁREAS TEMÁTICAS ACTIVAS (SOLO LAS QUE TIENEN CONTENIDO REAL) --- */
-        const categoriasData = {
-            historia: {
-                id: 'historia',
-                name: 'Guía de Historia Universal',
-                badge: 'Área de Humanidades',
-                shortDesc: 'Resúmenes estructurados sobre civilizaciones antiguas, revoluciones políticas y acontecimientos clave que moldearon el mundo actual.',
-                icon: 'fa-landmark',
-                bgClass: 'from-amber-900 to-navy-900',
-                specialty: 'Explicaciones claras sobre procesos históricos, causas y consecuencias.'
-            },
-            sociales: {
-                id: 'sociales',
-                name: 'Guía de Ciencias Sociales',
-                badge: 'Área Social y Política',
-                shortDesc: 'Conceptos fundamentales de sociología, estructura de las instituciones, democracia y comportamiento humano en sociedad.',
-                icon: 'fa-people-group',
-                bgClass: 'from-blue-900 to-navy-900',
-                specialty: 'Análisis introductorio a las dinámicas sociales y sistemas políticos.'
-            },
-            matematicas: {
-                id: 'matematicas',
-                name: 'Guía de Matemáticas',
-                badge: 'Área Cuantitativa',
-                shortDesc: 'Fundamentos de aritmética, sistemas numéricos, introducción al álgebra y resolución paso a paso de ecuaciones.',
-                icon: 'fa-calculator',
-                bgClass: 'from-indigo-900 to-navy-900',
-                specialty: 'Explicaciones prácticas de conceptos matemáticos esenciales.'
-            },
-            biologia: {
-                id: 'biologia',
-                name: 'Guía de Biología',
-                badge: 'Área de Ciencias Naturales',
-                shortDesc: 'Estudio introductorio sobre la célula, el ADN, la herencia genética y el origen de la vida en la Tierra.',
-                icon: 'fa-dna',
-                bgClass: 'from-emerald-900 to-navy-900',
-                specialty: 'Divulgación accesible sobre los procesos biológicos fundamentales.'
-            }
-        };
-
-        /* --- BASE DE DATOS DE GUÍAS Y ARTÍCULOS DESARROLLADOS --- */
-        const articlesDB = [
-            // HISTORIA
-            {
-                id: 'his-1',
-                categoria: 'historia',
-                title: '¿Cómo surgieron las primeras civilizaciones antiguas?',
-                intro: 'Un recorrido por la transición del nomadismo a las primeras sociedades urbanas en Mesopotamia, Egipto, el valle del Indo y China.',
-                content: `
-                    <p>El surgimiento de las primeras civilizaciones hace aproximadamente 5,500 años marcó un punto de inflexión en la historia humana. Este proceso no ocurrió de manera repentina, sino que fue el resultado de siglos de transformación impulsados por la <strong>Revolución Neolítica</strong>, cuando los grupos humanos abandonaron gradualmente la caza y la recolección para adoptar la agricultura y la domesticación de animales.</p>
-                    <h3>El papel fundamental de los grandes ríos</h3>
-                    <p>No es coincidencia que las primeras sociedades complejas se establecieran junto a grandes cuencas fluviales: los ríos Tigris y Éufrates en Mesopotamia, el Nilo en Egipto, el río Indo en el sur de Asia y el río Amarillo en China. Las crecidas periódicas de estos ríos depositaban limo fértil en las tierras circundantes, permitiendo cosechas abundantes y excedentes alimentarios.</p>
-                    <p>Contar con excedentes de alimentos permitió que una parte de la población dejara de dedicarse exclusivamente a producir comida y asumiera nuevos roles especializados: artesanos, comerciantes, sacerdotes, administradores y gobernantes.</p>
-                    <h3>Invención de la escritura y las leyes</h3>
-                    <p>A medida que las aldeas crecieron hasta convertirse en ciudades-estado como Uruk o Ur, surgió la necesidad de registrar impuestos, inventarios de grano y acuerdos comerciales. Así nació la <strong>escritura cuneiforme</strong> en Mesopotamia y los <strong>jeroglíficos</strong> en Egipto, marcando el fin de la Prehistoria y el inicio de la Historia escrita. Con ellas aparecieron también los primeros códigos legales, como el Código de Hammurabi, destinados a mantener el orden social.</p>
-                `,
-                sources: ['Trigger, B. G. (2003). Understanding Early Civilizations. Cambridge University Press.', 'Liverani, M. (1995). El antiguo Oriente: Historia, sociedad y economía. Crítica.']
-            },
-            {
-                id: 'his-2',
-                categoria: 'historia',
-                title: '¿Por qué desaparecieron los dinosaurios? La extinción del Cretácico',
-                intro: 'La evidencia geológica y paleontológica detrás del evento que puso fin a la era de los grandes reptiles hace 66 millones de años.',
-                content: `
-                    <p>Durante más de 160 millones de años, los dinosaurios dominaron los ecosistemas terrestres del planeta. Sin embargo, al final del período Cretácico, hace aproximadamente <strong>66 millones de años</strong>, ocurrió una de las extinciones masivas más abruptas de la historia geológica de la Tierra, conocida como la extinción masiva del Cretácico-Paleógeno (K-Pg).</p>
-                    <h3>La hipótesis del impacto de Chicxulub</h3>
-                    <p>En 1980, el físico Luis Álvarez y su hijo, el geólogo Walter Álvarez, descubrieron una delgada capa de arcilla rica en <strong>iridio</strong> en sedimentos de todo el mundo correspondientes a esa época. Dado que el iridio es escaso en la corteza terrestre pero abundante en los asteroides, propusieron que un cuerpo extraterrestre de unos 10 a 15 kilómetros de diámetro impactó contra la Tierra.</p>
-                    <p>Posteriormente se identificó el cráter de Chicxulub, sepultado bajo la península de Yucatán (México), confirmando el lugar exacto de la colisión. La energía liberada equivalió a millones de bombas nucleares, generando megatsunamis, terremotos globales e incendios forestales masivos.</p>
-                    <h3>El invierno de impacto y el ascenso de los mamíferos</h3>
-                    <p>El polvo, el hollín y los aerosoles de azufre expulsados a la atmósfera bloquearon la luz solar durante años. Sin luz suficiente, la fotosíntesis se detuvo, colapsando las cadenas alimentarias tanto en tierra como en los océanos. Cerca del 75 % de las especies animales y vegetales desaparecieron, incluidos todos los dinosaurios no aviares. Este vacío ecológico permitió que los pequeños mamíferos sobrevivientes se diversificaran y ocuparan los nichos vacíos.</p>
-                `,
-                sources: ['Alvarez, L. W. et al. (1980). Extraterrestrial cause for the Cretaceous-Tertiary extinction. Science.', 'Brusatte, S. (2018). Auge y caída de los dinosaurios. Debate.']
-            },
-            {
-                id: 'his-3',
-                categoria: 'historia',
-                title: 'La Segunda Guerra Mundial: Causas, desarrollo y consecuencias',
-                intro: 'Síntesis histórica del conflicto bélico global de 1939 a 1945 y cómo redefinió el orden geopolítico del siglo XX.',
-                content: `
-                    <p>La Segunda Guerra Mundial (1939–1945) ha sido el conflicto armado más extenso y destructivo de la historia contemporánea. Enfrentó a dos grandes alianzas militares: las <strong>Potencias del Eje</strong> (lideradas por Alemania, Italia y Japón) y los <strong>Aliados</strong> (encabezados por el Reino Unido, la Unión Soviética, Estados Unidos y China).</p>
-                    <h3>Antecedentes y estallido del conflicto</h3>
-                    <p>Las raíces de la guerra se encuentran en las tensiones no resueltas tras la Primera Guerra Mundial, las duras condiciones del Tratado de Versalles, la Gran Depresión económica de 1929 y el ascenso de regímenes totalitarios expansionistas en Europa y Asia. El conflicto comenzó formalmente en Europa el 1 de septiembre de 1939 con la invasión alemana a Polonia, lo que llevó a Francia y al Reino Unido a declarar la guerra a Alemania.</p>
-                    <h3>Puntos de inflexión y desenlace</h3>
-                    <p>Tras una rápida expansión inicial del Eje entre 1939 y 1941, el curso de la guerra cambió con la entrada de la Unión Soviética (tras la Operación Barbarroja) y de Estados Unidos (tras el ataque a Pearl Harbor en diciembre de 1941). Batallas decisivas como Stalingrado, Midway y el desembarco de Normandía debilitaron progresivamente al Eje hasta la rendición de Alemania en mayo de 1945 y de Japón en agosto del mismo año, tras los bombardeos atómicos sobre Hiroshima y Nagasaki.</p>
-                    <h3>Consecuencias para el mundo moderno</h3>
-                    <ul>
-                        <li><strong>Pérdidas humanas:</strong> Se estima que fallecieron entre 50 y 70 millones de personas, incluyendo seis millones de judíos asesinados durante el Holocausto.</li>
-                        <li><strong>Creación de la ONU:</strong> En 1945 se fundó la Organización de las Naciones Unidas para prevenir futuros conflictos globales y promover los derechos humanos.</li>
-                        <li><strong>Guerra Fría:</strong> Europa perdió su hegemonía global y el mundo quedó dividido en dos bloques liderados por Estados Unidos y la Unión Soviética.</li>
-                    </ul>
-                `,
-                sources: ['Beevor, A. (2012). La Segunda Guerra Mundial. Pasado & Presente.', 'Kershaw, I. (2015). Descenso a los infiernos: Europa 1914-1949. Crítica.']
-            },
-            {
-                id: 'his-4',
-                categoria: 'historia',
-                title: 'La Revolución Francesa y el nacimiento de los derechos ciudadanos',
-                intro: 'Cómo el levantamiento social de 1789 puso fin al absolutismo monárquico y sentó las bases de la política moderna.',
-                content: `
-                    <p>Iniciada en 1789, la Revolución Francesa fue un proceso de profunda transformación política y social que derrumbó la monarquía absoluta y el sistema feudal en Francia, difundiendo por toda Europa y América las ideas de soberanía popular, igualdad ante la ley y división de poderes.</p>
-                    <h3>Crisis del Antiguo Régimen</h3>
-                    <p>A finales del siglo XVIII, la sociedad francesa estaba dividida en tres estamentos desiguales: el clero (Primer Estado), la nobleza (Segundo Estado) y el Tercer Estado (campesinos, obreros y burguesía), que representaba más del 95 % de la población y sostenía casi toda la carga tributaria sin tener poder de decisión política. Una grave crisis financiera y malas cosechas detonaron el descontento general.</p>
-                    <h3>La Declaración de los Derechos del Hombre y del Ciudadano</h3>
-                    <p>Tras la convocatoria de los Estados Generales y la simbólica toma de la prisión de la Bastilla el 14 de julio de 1789, la Asamblea Nacional Constituyente abolió los privilegios feudales y aprobó la <strong>Declaración de los Derechos del Hombre y del Ciudadano</strong>. Este documento proclamó que todos los seres humanos nacen libres e iguales en derechos, estableciendo los principios fundamentales de la ciudadanía moderna.</p>
-                `,
-                sources: ['Soboul, A. (1989). La Révolution française. Gallimard.', 'Hobsbawm, E. (1962). La era de la revolución, 1789-1848. Crítica.']
-            },
-
-            // CIENCIAS SOCIALES
-            {
-                id: 'soc-1',
-                categoria: 'sociales',
-                title: '¿Qué son las ciencias sociales y qué disciplinas las integran?',
-                intro: 'Introducción al estudio sistemático del ser humano en sociedad, sus instituciones, su cultura y sus relaciones económicas.',
-                content: `
-                    <p>Las <strong>ciencias sociales</strong> son el conjunto de disciplinas académicas que estudian de manera metódica el origen, la organización y el comportamiento de las sociedades humanas, así como las interacciones entre los individuos y las instituciones que crean.</p>
-                    <h3>Diferencia con las ciencias naturales</h3>
-                    <p>Mientras las ciencias naturales (como la física o la química) analizan fenómenos del mundo físico mediante leyes universales reproducibles en laboratorio, las ciencias sociales estudian realidades humanas complejas donde intervienen la cultura, la historia, los valores y la libre voluntad de las personas. Por ello combinan métodos cuantitativos (estadísticas, encuestas) con métodos cualitativos (entrevistas, observación participante y análisis documental).</p>
-                    <h3>Principales ramas de las ciencias sociales</h3>
-                    <ul>
-                        <li><strong>Sociología:</strong> Analiza la estructura de los grupos sociales, las clases, las normas y el cambio social.</li>
-                        <li><strong>Economía:</strong> Estudia cómo las sociedades administran recursos escasos para producir, distribuir y consumir bienes y servicios.</li>
-                        <li><strong>Ciencia Política:</strong> Examina las relaciones de poder, el Estado, los sistemas de gobierno y las políticas públicas.</li>
-                        <li><strong>Antropología:</strong> Investiga la diversidad cultural, las costumbres y la evolución social de los grupos humanos.</li>
-                    </ul>
-                `,
-                sources: ['Wallerstein, I. (1996). Abrir las ciencias sociales. Siglo XXI.', 'Giddens, A. (2009). Sociología. Alianza Editorial.']
-            },
-            {
-                id: 'soc-2',
-                categoria: 'sociales',
-                title: 'Cómo funciona la sociedad: Socialización, normas e instituciones',
-                intro: 'Una explicación clara sobre los mecanismos que permiten la convivencia organizada y la cohesión entre millones de personas.',
-                content: `
-                    <p>Para que una sociedad funcione de manera estable, sus miembros necesitan compartir códigos comunes de comunicación, reglas de conducta y expectativas mutuas. En sociología, este entramado se comprende a través de tres conceptos clave: la socialización, las normas sociales y las instituciones.</p>
-                    <h3>El proceso de socialización</h3>
-                    <p>Ningún ser humano nace sabiendo cómo comportarse en sociedad; lo aprende mediante la <strong>socialización</strong>. La socialización primaria ocurre durante la infancia dentro de la familia, donde se adquiere el lenguaje y los valores básicos. Posteriormente, la socialización secundaria tiene lugar en la escuela, el trabajo y los grupos de pares, integrando al individuo en entornos más amplios.</p>
-                    <h3>El papel de las instituciones sociales</h3>
-                    <p>Las instituciones son estructuras estables de reglas y prácticas diseñadas para resolver necesidades colectivas esenciales. La familia, el sistema educativo, el sistema jurídico y el mercado son ejemplos de instituciones que canalizan el comportamiento individual y ofrecen previsibilidad a la vida cotidiana.</p>
-                `,
-                sources: ['Durkheim, É. (1895). Las reglas del método sociológico.', 'Berger, P. & Luckmann, T. (1966). La construcción social de la realidad. Amorrortu.']
-            },
-            {
-                id: 'soc-3',
-                categoria: 'sociales',
-                title: '¿Qué es la democracia? Principios, evolución y Estado de derecho',
-                intro: 'De la democracia directa en la antigua Atenas a los sistemas representativos contemporáneos basados en derechos fundamentales.',
-                content: `
-                    <p>El término <strong>democracia</strong> proviene del griego <em>demos</em> (pueblo) y <em>kratos</em> (poder o gobierno), lo que literalmente significa "el gobierno del pueblo". Sin embargo, la forma en que se practica hoy en día ha evolucionado notablemente respecto a sus orígenes en la Antigüedad.</p>
-                    <h3>Democracia directa vs. democracia representativa</h3>
-                    <p>En la Atenas clásica (siglo V a. C.), los ciudadanos varones libres se reunían directamente en la asamblea para debatir y votar las leyes. En los Estados modernos, debido al tamaño de las poblaciones, predomina la <strong>democracia representativa</strong>, en la cual la ciudadanía elige periódicamente a sus representantes mediante el sufragio universal y secreto.</p>
-                    <h3>Pilares de una democracia constitucional</h3>
-                    <p>La democracia contemporánea no se reduce únicamente al voto de la mayoría; requiere un <strong>Estado de derecho</strong> que garantice:</p>
-                    <ul>
-                        <li><strong>División de poderes:</strong> Separación e independencia entre los poderes ejecutivo, legislativo y judicial para evitar abusos de autoridad.</li>
-                        <li><strong>Protección de derechos fundamentales:</strong> Libertad de expresión, prensa, asociación y respeto a las minorías.</li>
-                        <li><strong>Alternancia y transparencia:</strong> Elecciones libres, competitivas y sujetas a control institucional.</li>
-                    </ul>
-                `,
-                sources: ['Dahl, R. A. (1998). La democracia: Una guía para los ciudadanos. Taurus.', 'Bobbio, N. (1986). El futuro de la democracia. Fondo de Cultura Económica.']
-            },
-
-            // MATEMÁTICAS
-            {
-                id: 'mat-1',
-                categoria: 'matematicas',
-                title: 'El origen de los sistemas numéricos y la invención del cero',
-                intro: 'Cómo distintas culturas crearon símbolos para contar y por qué el sistema posicional decimal transformó las matemáticas.',
-                content: `
-                    <p>Las matemáticas nacieron de necesidades cotidianas muy concretas: contar rebaños, medir terrenos agrícolas, calcular estaciones y registrar intercambios comerciales. Antes de existir los números escritos, los seres humanos utilizaban marcas en huesos (como el hueso de Ishango), piedras o nudos en cuerdas.</p>
-                    <h3>Sistemas aditivos frente a sistemas posicionales</h3>
-                    <p>Civilizaciones como la egipcia o la romana emplearon sistemas <strong>aditivos</strong>, donde cada símbolo tiene un valor fijo sin importar dónde se ubique (por ejemplo, en números romanos la X siempre vale 10). Este método funciona para registrar cantidades, pero vuelve sumamente difícil realizar multiplicaciones o divisiones complejas.</p>
-                    <h3>La revolución del sistema posicional y el cero</h3>
-                    <p>El gran salto conceptual ocurrió cuando matemáticos de la India desarrollaron el <strong>sistema decimal posicional</strong> (base 10), difundido posteriormente al mundo árabe y a Europa por el matemático Al-Juarismi. En este sistema, el valor de una cifra depende de su posición (unidades, decenas, centenas) y el número <strong>cero (0)</strong> actúa tanto como marcador de posición vacía como cantidad numérica propia, haciendo posible el cálculo moderno.</p>
-                `,
-                sources: ['Boyer, C. B. (2011). Historia de la matemática. Alianza Editorial.', 'Ifrah, G. (1997). Historia universal de las cifras. Espasa.']
-            },
-            {
-                id: 'mat-2',
-                categoria: 'matematicas',
-                title: '¿Qué es el álgebra y para qué sirven las variables?',
-                intro: 'Guía introductoria para comprender el paso de las operaciones con números concretos al razonamiento con expresiones simbólicas.',
-                content: `
-                    <p>Mientras la aritmética trabaja con números específicos y conocidos (como $3 + 5 = 8$), el <strong>álgebra</strong> introduce letras y símbolos llamados <strong>variables</strong> (habitualmente $x$, $y$, $z$) para representar cantidades desconocidas o valores que pueden cambiar.</p>
-                    <h3>La utilidad de abstraer problemas</h3>
-                    <p>Utilizar letras en lugar de números concretos permite expresar reglas generales que funcionan para infinitos casos. Por ejemplo, el área de cualquier rectángulo se resume en la expresión $A = b \cdot h$, sin importar si mide centímetros o kilómetros.</p>
-                    <h3>Componentes básicos de una expresión algebraica</h3>
-                    <ul>
-                        <li><strong>Variable o incógnita:</strong> La letra cuyo valor buscamos determinar o que puede variar.</li>
-                        <li><strong>Coeficiente:</strong> El número que multiplica a la variable (por ejemplo, en $4x$, el coeficiente es $4$).</li>
-                        <li><strong>Constante:</strong> Un término numérico fijo que no depende de ninguna variable.</li>
-                    </ul>
-                `,
-                sources: ['Stewart, I. (2012). Historia de las matemáticas en los últimos 10.000 años. Crítica.', 'Baldor, A. (2017). Álgebra. Grupo Editorial Patria.']
-            },
-            {
-                id: 'mat-3',
-                categoria: 'matematicas',
-                title: 'Cómo resolver ecuaciones de primer y segundo grado paso a paso',
-                intro: 'Explicación práctica con ejemplos resueltos para despejar incógnitas lineales y aplicar la fórmula cuadrática.',
-                content: `
-                    <p>Una <strong>ecuación</strong> es una igualdad matemática entre dos expresiones que contiene al menos una incógnita. Resolverla consiste en encontrar el valor o los valores de la incógnita que hacen verdadera dicha igualdad.</p>
-                    <h3>1. Ecuaciones de primer grado (lineales)</h3>
-                    <p>Tienen la forma general $ax + b = 0$, donde la incógnita $x$ está elevada a la potencia $1$. Para resolverla, agrupamos los términos con $x$ en un lado de la igualdad y los números independientes en el otro, aplicando operaciones inversas:</p>
-                    <div class="bg-slate-100 dark:bg-navy-950 p-4 rounded-xl my-4 font-mono text-xs sm:text-sm border border-slate-200 dark:border-navy-800">
-                        Ejemplo: $3x - 6 = 9$ <br>
-                        Paso 1 (sumar 6 en ambos lados): $3x = 9 + 6 \rightarrow 3x = 15$ <br>
-                        Paso 2 (dividir entre 3): $x = \frac{15}{3} \rightarrow x = 5$
-                    </div>
-                    <h3>2. Ecuaciones de segundo grado (cuadráticas)</h3>
-                    <p>Tienen la forma $ax^2 + bx + c = 0$ (con $a \neq 0$). Se resuelven mediante la <strong>fórmula general cuadrática</strong>:</p>
-                    <div class="bg-navy-900 text-gold-400 p-4 rounded-xl my-4 text-center font-mono">
-                        $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
-                    </div>
-                    <p>El término dentro de la raíz ($b^2 - 4ac$) se denomina <strong>discriminante</strong> e indica cuántas soluciones reales tiene la ecuación: dos soluciones si es positivo, una si es cero, y ninguna solución real si es negativo.</p>
-                `,
-                sources: ['Larson, R. (2018). Precálculo. Cengage Learning.']
-            },
-
-            // BIOLOGÍA
-            {
-                id: 'bio-1',
-                categoria: 'biologia',
-                title: 'La célula: Unidad básica de la vida y sus tipos principales',
-                intro: 'Diferencias esenciales entre células procariotas y eucariotas, y cómo funcionan sus principales organelos internos.',
-                content: `
-                    <p>Según la <strong>teoría celular</strong>, todos los seres vivos están formados por una o más células, y toda célula proviene de otra célula preexistente. Es la unidad estructural y funcional más pequeña capaz de realizar las funciones vitales: nutrición, relación y reproducción.</p>
-                    <h3>Células procariotas vs. células eucariotas</h3>
-                    <p>En la naturaleza existen dos grandes modelos de organización celular:</p>
-                    <ul>
-                        <li><strong>Células procariotas:</strong> Son más pequeñas y simples. No poseen un núcleo delimitado por membrana, por lo que su material genético (ADN) se encuentra libre en una región llamada nucleoide. Las bacterias y arqueas pertenecen a este grupo.</li>
-                        <li><strong>Células eucariotas:</strong> Son más complejas y grandes. Poseen un <strong>núcleo verdadero</strong> rodeado por una doble membrana que protege el ADN, además de compartimentos internos especializados llamados <em>organelos</em>. Forman parte de animales, plantas, hongos y protistas.</li>
-                    </ul>
-                    <h3>Organelos clave en la célula eucariota</h3>
-                    <p>Entre sus estructuras más importantes destacan las <strong>mitocondrias</strong> (encargadas de generar energía química en forma de ATP), los <strong>ribosomas</strong> (donde se sintetizan las proteínas) y, en el caso de las células vegetales, los <strong>cloroplastos</strong> (responsables de la fotosíntesis).</p>
-                `,
-                sources: ['Alberts, B. et al. (2015). Biología molecular de la célula. Omega.', 'Campbell, N. A. & Reece, J. B. (2007). Biología. Editorial Médica Panamericana.']
-            },
-            {
-                id: 'bio-2',
-                categoria: 'biologia',
-                title: '¿Qué es el ADN y cómo se transmite la información genética?',
-                intro: 'Estructura de la doble hélice, función de los genes y el mecanismo molecular de la herencia biológica.',
-                content: `
-                    <p>El <strong>ácido desoxirribonucleico (ADN)</strong> es la molécula que contiene las instrucciones biológicas necesarias para construir, mantener y reproducir a un organismo vivo. En las células eucariotas se encuentra organizado en cromosomas dentro del núcleo celular.</p>
-                    <h3>La estructura de doble hélice</h3>
-                    <p>En 1953, James Watson y Francis Crick —apoyándose en las fundamentales fotografías de difracción de rayos X obtenidas por <strong>Rosalind Franklin</strong>— describieron la estructura tridimensional del ADN como una doble hélice semejante a una escalera de caracol.</p>
-                    <p>Los peldaños de esta escalera están formados por pares de bases nitrogenadas complementarias: la <strong>Adenina (A)</strong> siempre se une con la <strong>Timina (T)</strong>, y la <strong>Citosina (C)</strong> siempre se empareja con la <strong>Guanina (G)</strong>. El orden específico de estas letras constituye el código genético.</p>
-                    <h3>De genes a proteínas</h3>
-                    <p>Un <strong>gen</strong> es un segmento específico de ADN que contiene la receta para fabricar una proteína determinada. Mediante los procesos de <em>transcripción</em> (copiado a ARN mensajero) y <em>traducción</em> (lectura en los ribosomas), la célula transforma la información genética en proteínas que ejecutan las funciones del organismo.</p>
-                `,
-                sources: ['Watson, J. D. & Crick, F. H. (1953). Molecular Structure of Nucleic Acids. Nature.', 'Maddox, B. (2002). Rosalind Franklin: The Dark Lady of DNA. HarperCollins.']
-            },
-            {
-                id: 'bio-3',
-                categoria: 'biologia',
-                title: 'El origen de la vida en la Tierra: De la química prebiótica a las primeras células',
-                intro: 'Principales hipótesis científicas sobre cómo surgieron los primeros sistemas biológicos hace unos 3,800 millones de años.',
-                content: `
-                    <p>La Tierra se formó hace aproximadamente 4,540 millones de años. Durante sus primeros cientos de millones de años fue un entorno hostil con intensa actividad volcánica y bombardeo de meteoritos. Sin embargo, hace unos <strong>3,800 millones de años</strong> aparecieron los primeros indicios de vida microscópica.</p>
-                    <h3>La hipótesis de Oparin-Haldane y el experimento de Miller-Urey</h3>
-                    <p>En la década de 1920, el bioquímico soviético Aleksandr Oparin y el biólogo británico J. B. S. Haldane propusieron de manera independiente que la atmósfera primitiva carecía de oxígeno libre y contenía gases como metano, amoníaco, vapor de agua e hidrógeno. Bajo la acción de descargas eléctricas (rayos) y radiación ultravioleta, estas moléculas simples habrían reaccionado para formar compuestos orgánicos más complejos en los océanos primitivos.</p>
-                    <p>En 1953, Stanley Miller y Harold Urey pusieron a prueba esta idea en el laboratorio simulando dichas condiciones y lograron sintetizar <strong>aminoácidos</strong> (los bloques básicos de las proteínas) a partir de sustancias inorgánicas.</p>
-                    <h3>La hipótesis del mundo de ARN</h3>
-                    <p>Uno de los grandes retos para explicar el origen de la vida es saber qué apareció primero: el ADN (que almacena información) o las proteínas (que catalizan reacciones). La hipótesis del <strong>mundo de ARN</strong> sugiere que moléculas primitivas de ARN cumplieron ambas funciones simultáneamente antes de que evolucionaran células más estables basadas en ADN.</p>
-                `,
-                sources: ['Oparin, A. I. (1938). The Origin of Life. Macmillan.', 'Lazcano, A. (2010). El origen de la vida: Evolución química y evolución biológica. Trillas.']
-            }
-        ];
-
-        /* --- ROUTER & ESTADO DE NAVEGACIÓN --- */
-        let currentRoute = 'home';
-        let currentParam = null;
-
-        function navigateTo(route, param = null) {
-            currentRoute = route;
-            currentParam = param;
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            renderApp();
-        }
-
-        function renderApp() {
-            const main = document.getElementById('main-content');
-            
-            switch (currentRoute) {
-                case 'home':
-                    renderHome(main);
-                    break;
-                case 'categoria':
-                    renderCategoryPage(main, currentParam);
-                    break;
-                case 'articulo':
-                    renderArticleDetail(main, currentParam);
-                    break;
-                case 'sobre-proyecto':
-                    renderAboutUs(main);
-                    break;
-                case 'editorial':
-                    renderEditorialPolicy(main);
-                    break;
-                case 'privacidad':
-                    renderPrivacyPolicy(main);
-                    break;
-                case 'terminos':
-                    renderTermsConditions(main);
-                    break;
-                case 'cookies':
-                    renderCookiesPolicy(main);
-                    break;
-                case 'contacto':
-                    renderContactForm(main);
-                    break;
-                default:
-                    renderHome(main);
-            }
-
-            if (window.MathJax && MathJax.typesetPromise) {
-                MathJax.typesetPromise();
-            }
-        }
-
-        /* --- VISTA: PORTADA PRINCIPAL (HOME) --- */
-        function renderHome(container) {
-            container.innerHTML = `
-                <!-- HERO DE GUÍA EDUCATIVA INDEPENDIENTE -->
-                <section class="relative rounded-3xl bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 text-white p-8 md:p-12 mb-12 shadow-2xl overflow-hidden border border-navy-800">
-                    <div class="relative z-10 max-w-3xl">
-                        <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-gold-500/10 border border-gold-500/30 rounded-full text-gold-400 text-xs font-bold uppercase tracking-wider mb-4">
-                            <i class="fa-solid fa-book-open"></i> Guía Educativa y Divulgación Abierta
-                        </div>
-                        <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-3 leading-tight">
-                            TU SUCURSAL <br>
-                            <span class="text-slate-300 font-light text-xl md:text-2xl">GUÍA EDUCATIVA DE ESTUDIO INDEPENDIENTE</span>
-                        </h1>
-                        <p class="text-slate-300 text-xs md:text-sm leading-relaxed mb-8">
-                            Un espacio personal de divulgación creado para explicar de forma clara, ordenada y sin rodeos temas esenciales de Historia, Ciencias Sociales, Matemáticas y Biología. Selecciona un área de estudio o busca un tema específico.
-                        </p>
-
-                        <!-- BUSCADOR DIRECTO DE GUÍAS -->
-                        <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl border border-white/20 shadow-xl max-w-2xl mb-6">
-                            <div class="text-[11px] text-gold-400 font-bold uppercase tracking-wider px-2 mb-1">
-                                BUSCAR EN LAS GUÍAS PUBLICADAS
-                            </div>
-                            <div class="flex flex-col sm:flex-row gap-2">
-                                <input type="text" id="hero-search-input" onkeyup="if(event.key==='Enter') executeAdvancedSearch()" placeholder="Ej: Revolución francesa, ecuaciones, célula, civilizaciones..." 
-                                       class="w-full px-4 py-3 text-xs bg-white dark:bg-navy-950 text-slate-800 dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-gold-400">
-                                <button onclick="executeAdvancedSearch()" class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-extrabold px-6 py-3 rounded-xl text-xs uppercase tracking-wider transition shrink-0">
-                                    Buscar
-                                </button>
-                            </div>
-                            <div class="text-[10px] text-slate-300 px-2 mt-2 flex flex-wrap items-center gap-3">
-                                <span><i class="fa-solid fa-check-circle text-emerald-400"></i> Artículos redactados paso a paso</span>
-                                <span>•</span>
-                                <span><i class="fa-solid fa-book-bookmark text-gold-400"></i> Bibliografía de referencia incluida</span>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-wrap gap-3 text-xs font-semibold">
-                            <button onclick="navigateTo('categoria', 'historia')" class="bg-navy-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl transition shadow">
-                                Historia
-                            </button>
-                            <button onclick="navigateTo('categoria', 'sociales')" class="bg-navy-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl transition shadow">
-                                Ciencias Sociales
-                            </button>
-                            <button onclick="navigateTo('categoria', 'matematicas')" class="bg-navy-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl transition shadow">
-                                Matemáticas
-                            </button>
-                            <button onclick="navigateTo('categoria', 'biologia')" class="bg-navy-500 hover:bg-blue-600 text-white px-5 py-2.5 rounded-xl transition shadow">
-                                Biología
-                            </button>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- CONTENEDOR DE RESULTADOS DEL BUSCADOR -->
-                <div id="advanced-search-results" class="hidden mb-12"></div>
-
-                <!-- SECCIÓN: ÁREAS DE ESTUDIO -->
-                <section class="mb-14">
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 border-b border-slate-200 dark:border-navy-800 pb-4">
-                        <div>
-                            <span class="text-xs font-extrabold text-gold-600 dark:text-gold-400 uppercase tracking-widest">EXPLORA POR MATERIA</span>
-                            <h2 class="text-2xl sm:text-3xl font-black text-navy-900 dark:text-white tracking-tight mt-1">
-                                Áreas Temáticas Disponibles
-                            </h2>
-                        </div>
-                    </div>
-
-                    <!-- GRID DE LAS 4 ÁREAS -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                        ${Object.values(categoriasData).map(cat => {
-                            const count = articlesDB.filter(a => a.categoria === cat.id).length;
-                            return `
-                            <div onclick="navigateTo('categoria', '${cat.id}')" class="bg-white dark:bg-navy-900 border-2 border-navy-500/20 dark:border-navy-700/50 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all cursor-pointer group flex flex-col justify-between">
-                                <div>
-                                    <div class="flex items-center justify-between mb-4">
-                                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br ${cat.bgClass} text-white flex items-center justify-center text-xl shadow-md group-hover:scale-105 transition-transform">
-                                            <i class="fa-solid ${cat.icon}"></i>
-                                        </div>
-                                        <span class="text-[10px] font-bold px-2.5 py-1 bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/30 rounded uppercase">${count} Guías publicadas</span>
-                                    </div>
-                                    <h3 class="text-xl font-extrabold text-navy-900 dark:text-white mb-2 group-hover:text-navy-500 dark:group-hover:text-gold-400 transition">
-                                        ${cat.name}
-                                    </h3>
-                                    <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                                        ${cat.shortDesc}
-                                    </p>
-                                </div>
-                                <div class="flex items-center justify-between text-xs font-bold text-navy-500 dark:text-gold-400 pt-3 border-t border-slate-100 dark:border-navy-800">
-                                    <span>Ver guías de esta área</span>
-                                    <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                                </div>
-                            </div>
-                        `}).join('')}
-                    </div>
-
-                    <!-- GUÍAS RECIENTES DESTACADAS DIRECTAMENTE EN PORTADA -->
-                    <div class="border-b border-slate-200 dark:border-navy-800 pb-4 mb-6">
-                        <span class="text-xs font-extrabold text-gold-600 dark:text-gold-400 uppercase tracking-widest">LECTURA DIRECTA</span>
-                        <h2 class="text-2xl font-black text-navy-900 dark:text-white tracking-tight mt-1">
-                            Guías Educativas Destacadas
-                        </h2>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        ${articlesDB.slice(0, 6).map(art => `
-                            <div onclick="navigateTo('articulo', '${art.id}')" class="bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-2xl p-6 shadow-sm hover:shadow-md transition cursor-pointer flex flex-col justify-between">
-                                <div>
-                                    <span class="text-[10px] font-bold text-gold-600 dark:text-gold-400 uppercase tracking-wider">${categoriasData[art.categoria].name}</span>
-                                    <h3 class="font-bold text-base mt-1 mb-2 text-navy-900 dark:text-white">${art.title}</h3>
-                                    <p class="text-xs text-slate-600 dark:text-slate-400 line-clamp-3 mb-4">${art.intro}</p>
-                                </div>
-                                <span class="text-xs font-bold text-navy-500 dark:text-gold-400 flex items-center pt-3 border-t border-slate-100 dark:border-navy-800">
-                                    Leer guía completa <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
-                                </span>
-                            </div>
-                        `).join('')}
-                    </div>
-                </section>
-            `;
-        }
-
-        /* --- BUSCADOR DE GUÍAS (SOLO CONTENIDO PROPIO REAL + REFERENCIAS EXTERNAS OPCIONALES) --- */
-        async function executeAdvancedSearch() {
-            const query = document.getElementById('hero-search-input').value.trim();
-            if (!query) return;
-
-            const container = document.getElementById('advanced-search-results');
-            container.classList.remove('hidden');
-
-            const libraryMatches = articlesDB.filter(item => 
-                item.title.toLowerCase().includes(query.toLowerCase()) || 
-                item.intro.toLowerCase().includes(query.toLowerCase()) ||
-                item.content.toLowerCase().includes(query.toLowerCase())
-            );
-
-            let wikiResults = [];
-            try {
-                const res = await fetch(`https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&utf8=&format=json&origin=*`);
-                const data = await res.json();
-                wikiResults = data.query?.search || [];
-            } catch (e) {
-                console.log("Consulta externa no disponible momentáneamente");
-            }
-
-            let html = `
-                <div class="bg-white dark:bg-navy-900 p-6 md:p-8 rounded-3xl border-2 border-gold-500/30 dark:border-navy-700 shadow-2xl">
-                    <div class="flex items-center justify-between mb-6 border-b border-slate-100 dark:border-navy-800 pb-3">
-                        <span class="text-xs font-black uppercase text-gold-500 tracking-wider inline-flex items-center gap-1.5">
-                            <i class="fa-solid fa-magnifying-glass"></i> Resultados de búsqueda para: "${query}"
-                        </span>
-                        <button onclick="document.getElementById('advanced-search-results').classList.add('hidden')" class="text-xs text-slate-400 hover:text-red-500">
-                            <i class="fa-solid fa-xmark text-sm"></i> Cerrar
-                        </button>
-                    </div>
-
-                    <!-- RESULTADOS EN NUESTRAS GUÍAS -->
-                    <div class="mb-6">
-                        <h3 class="text-xs font-extrabold uppercase text-navy-900 dark:text-white tracking-widest mb-3 border-l-4 border-gold-500 pl-2">
-                            Guías en Tu Sucursal (${libraryMatches.length})
-                        </h3>
-                        ${libraryMatches.length > 0 ? `
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                ${libraryMatches.map(m => `
-                                    <div onclick="navigateTo('articulo', '${m.id}'); document.getElementById('advanced-search-results').classList.add('hidden');" class="p-4 bg-slate-50 dark:bg-navy-950 rounded-xl border border-slate-200 dark:border-navy-800 cursor-pointer hover:border-gold-400 transition">
-                                        <span class="text-[9px] font-extrabold text-gold-500 uppercase">${categoriasData[m.categoria].name}</span>
-                                        <h4 class="font-bold text-xs text-navy-900 dark:text-white mt-1">${m.title}</h4>
-                                        <p class="text-[11px] text-slate-500 mt-1 line-clamp-2">${m.intro}</p>
-                                    </div>
-                                `).join('')}
-                            </div>
-                        ` : `
-                            <p class="text-xs text-slate-500 italic bg-slate-50 dark:bg-navy-950 p-4 rounded-xl">No encontramos guías internas con ese término exacto. Puedes explorar las áreas temáticas principales o revisar las referencias externas sugeridas abajo.</p>
-                        `}
-                    </div>
-
-                    <!-- LECTURAS COMPLEMENTARIAS EXTERNAS (WIKIPEDIA) -->
-                    ${wikiResults.length > 0 ? `
-                    <div class="pt-5 border-t border-slate-100 dark:border-navy-800">
-                        <h3 class="text-xs font-extrabold uppercase text-navy-900 dark:text-white tracking-widest mb-3 border-l-4 border-navy-500 pl-2">
-                            Lecturas Enciclopédicas Complementarias
-                        </h3>
-                        <div class="space-y-3">
-                            ${wikiResults.slice(0, 3).map(w => `
-                                <div class="p-4 bg-slate-50 dark:bg-navy-950 rounded-xl border border-slate-200 dark:border-navy-800">
-                                    <h4 class="font-bold text-xs text-navy-900 dark:text-white mb-1">${w.title}</h4>
-                                    <p class="text-xs text-slate-600 dark:text-slate-400 mb-2">${w.snippet.replace(/<\/?[^>]+(>|$)/g, "")}...</p>
-                                    <a href="https://es.wikipedia.org/wiki/${encodeURIComponent(w.title)}" target="_blank" rel="noopener noreferrer" class="text-[11px] font-bold text-navy-500 dark:text-gold-400 hover:underline inline-flex items-center gap-1">
-                                        Ampliar en Wikipedia <i class="fa-solid fa-external-link text-[9px]"></i>
-                                    </a>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                    ` : ''}
+        <section>
+            <h2>¿Por qué Entender Bien tu Paquete Móvil?</h2>
+            <p>Elegir un paquete acorde a tus hábitos diarios evita gastar saldo de forma innecesaria y te permite mantener conectividad cuando realmente la necesitas, ya sea para trabajar, estudiar, comunicarte o consultar información en movilidad.</p>
+            <div class="grid-3">
+                <div class="service-card">
+                    <div class="icon">📊</div>
+                    <h3>Control del Consumo</h3>
+                    <p>Permite identificar qué aplicaciones gastan más megas y ajustar el uso según tu necesidad diaria.</p>
                 </div>
-            `;
-
-            container.innerHTML = html;
-            container.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-
-        /* --- BÚSQUEDA RÁPIDA EN EL HEADER --- */
-        function handleHeaderSearch(query) {
-            const resultsContainer = document.getElementById('search-results');
-            if (!query || query.trim().length === 0) {
-                resultsContainer.classList.add('hidden');
-                resultsContainer.innerHTML = '';
-                return;
-            }
-
-            const q = query.toLowerCase();
-            const matches = articlesDB.filter(art => 
-                art.title.toLowerCase().includes(q) || 
-                art.intro.toLowerCase().includes(q) ||
-                art.categoria.toLowerCase().includes(q)
-            );
-
-            if (matches.length > 0) {
-                resultsContainer.classList.remove('hidden');
-                resultsContainer.innerHTML = matches.slice(0, 5).map(m => `
-                    <div onclick="navigateTo('articulo', '${m.id}'); document.getElementById('search-results').classList.add('hidden');" class="p-3 hover:bg-slate-100 dark:hover:bg-navy-800 cursor-pointer border-b border-slate-100 dark:border-navy-800 last:border-none">
-                        <span class="text-[9px] font-bold text-gold-500 uppercase">${categoriasData[m.categoria].name}</span>
-                        <h4 class="font-bold text-xs text-navy-900 dark:text-white mt-0.5">${m.title}</h4>
-                    </div>
-                `).join('');
-            } else {
-                resultsContainer.classList.remove('hidden');
-                resultsContainer.innerHTML = `
-                    <div class="p-4 text-xs text-slate-500 text-center">
-                        No hay coincidencias directas. Prueba con otra palabra clave.
-                    </div>
-                `;
-            }
-        }
-
-        /* --- VISTA: PÁGINA DE ÁREA TEMÁTICA --- */
-        function renderCategoryPage(container, catId) {
-            const cat = categoriasData[catId] || categoriasData['historia'];
-            const catArticles = articlesDB.filter(a => a.categoria === cat.id);
-
-            container.innerHTML = `
-                <div class="bg-gradient-to-br ${cat.bgClass} text-white p-8 md:p-12 rounded-3xl mb-10 shadow-xl border border-navy-800">
-                    <div class="max-w-3xl">
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-xs font-bold px-3 py-1 bg-white/10 border border-white/20 rounded-full text-gold-400 uppercase tracking-wider">
-                                <i class="fa-solid ${cat.icon}"></i> ${cat.badge}
-                            </span>
-                        </div>
-                        <h1 class="text-3xl sm:text-4xl font-black mb-3">${cat.name}</h1>
-                        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-3">${cat.shortDesc}</p>
-                        <p class="text-xs text-slate-300 italic">${cat.specialty}</p>
-                    </div>
+                <div class="service-card">
+                    <div class="icon">⏳</div>
+                    <h3>Gestión de Vigencia</h3>
+                    <p>Ayuda a diferenciar paquetes de 1, 3, 7, 15 o 30 días para que el tiempo no venza sin aprovecharse.</p>
                 </div>
-
-                <div class="mb-12">
-                    <div class="flex items-center justify-between mb-6 border-b border-slate-200 dark:border-navy-800 pb-3">
-                        <h2 class="text-xl font-extrabold text-navy-900 dark:text-white">Guías Disponibles en esta Área</h2>
-                        <span class="text-xs text-slate-500">${catArticles.length} artículos publicados</span>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        ${catArticles.map(art => `
-                            <div onclick="navigateTo('articulo', '${art.id}')" class="bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-2xl p-6 shadow-sm hover:shadow-md transition cursor-pointer flex flex-col justify-between">
-                                <div>
-                                    <h3 class="font-bold text-base mb-2 text-navy-900 dark:text-white">${art.title}</h3>
-                                    <p class="text-xs text-slate-600 dark:text-slate-400 line-clamp-3 mb-4">${art.intro}</p>
-                                </div>
-                                <span class="text-xs font-bold text-navy-500 dark:text-gold-400 flex items-center pt-3 border-t border-slate-100 dark:border-navy-800">
-                                    Leer guía completa <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
-                                </span>
-                            </div>
-                        `).join('')}
-                    </div>
+                <div class="service-card">
+                    <div class="icon">📱</div>
+                    <h3>Uso Informado</h3>
+                    <p>Facilita comparar beneficios reales frente a condiciones como límites de velocidad o apps excluidas.</p>
                 </div>
+            </div>
+        </section>
 
-                <div class="flex justify-between items-center pt-6 border-t border-slate-200 dark:border-navy-800">
-                    <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">
-                        <i class="fa-solid fa-arrow-left mr-1"></i> Volver al Inicio
-                    </button>
+        <section>
+            <h2>Componentes Principales de un Paquete de Celular</h2>
+            <p>La mayoría de los paquetes móviles combinan distintos recursos. Conocer qué significa cada uno ayuda a evaluar si un paquete se ajusta a tu rutina.</p>
+            <div class="grid-4">
+                <div class="type-card">
+                    <div class="badge-letter">DATOS</div>
+                    <h4>Navegación Libre</h4>
+                    <p>Megabytes o gigabytes para navegar en internet, mapas, correo y páginas web.</p>
                 </div>
-            `;
+                <div class="type-card">
+                    <div class="badge-letter">VOZ</div>
+                    <h4>Minutos y SMS</h4>
+                    <p>Llamadas a otros números móviles o fijos y mensajes de texto tradicionales.</p>
+                </div>
+                <div class="type-card">
+                    <div class="badge-letter">APPS</div>
+                    <h4>Redes y Mensajería</h4>
+                    <p>Acceso a plataformas específicas, sujeto a términos y condiciones particulares.</p>
+                </div>
+                <div class="type-card">
+                    <div class="badge-letter">TIEMPO</div>
+                    <h4>Vigencia del Paquete</h4>
+                    <p>Plazo en horas o días durante el cual permanecen activos los recursos asignados.</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <strong>Dato útil:</strong> Los videos en alta definición, las videollamadas continuas y las actualizaciones automáticas de aplicaciones suelen consumir significativamente más datos que la mensajería de texto o la lectura de páginas ligeras.
+            </div>
+        </section>
+
+        <section>
+            <h2>Cómo Administrar y Cuidar tu Consumo de Datos</h2>
+            <div class="tip"><strong>1. Revisa la vigencia antes de activar:</strong> comprueba si el paquete dura horas, días o un mes, y asegúrate de que coincida con tu frecuencia de uso.</div>
+            <div class="tip"><strong>2. Usa Wi-Fi para descargas pesadas:</strong> actualiza el sistema operativo, respalda fotos o descarga archivos grandes conectado a redes Wi-Fi confiables.</div>
+            <div class="tip"><strong>3. Limita el uso en segundo plano:</strong> restringe los datos en segundo plano para aplicaciones que no necesiten sincronizarse constantemente cuando no usas el teléfono.</div>
+            <div class="tip"><strong>4. Modera la calidad de video:</strong> en plataformas de video o transmisión en vivo, ajusta la resolución a media o automática cuando estés con datos móviles.</div>
+            <div class="tip"><strong>5. Activa alertas de consumo:</strong> configura en los ajustes del celular un aviso o límite de datos para saber cuándo te acercas al tope del paquete.</div>
+            <div class="tip"><strong>6. Lee las condiciones de redes incluidas:</strong> verifica si reproducir videos, enlaces externos o llamadas dentro de ciertas apps consume de la bolsa de datos general.</div>
+            <div class="tip"><strong>7. Desactiva el roaming si no aplica:</strong> evita cargos adicionales por uso internacional verificando las condiciones de tu línea antes de viajar.</div>
+            <div class="tip"><strong>8. Consulta el saldo periódicamente:</strong> revisa el estado de tus megas y minutos disponibles desde los canales oficiales de tu operador antes de realizar actividades de alto consumo.</div>
+        </section>
+
+        <section>
+            <h2>Cómo Elegir un Paquete: Pasos Clave</h2>
+            <p>Seguir un orden sencillo al momento de elegir un paquete móvil ayuda a tomar decisiones más ajustadas a tu presupuesto y a tu forma de conectarte.</p>
+            <div class="pass-grid">
+                <div class="pass-step">
+                    <span class="step-num">1</span>
+                    <div class="letter">USO</div>
+                    <h4>Evalúa tu Rutina</h4>
+                    <p>Identifica si usas el celular más para mensajería, trabajo, estudio o entretenimiento.</p>
+                </div>
+                <div class="pass-step">
+                    <span class="step-num">2</span>
+                    <div class="letter">PLAZO</div>
+                    <h4>Define la Vigencia</h4>
+                    <p>Elige entre opciones de corta duración o mayor vigencia según tu ciclo de consumo.</p>
+                </div>
+                <div class="pass-step">
+                    <span class="step-num">3</span>
+                    <div class="letter">LEER</div>
+                    <h4>Revisa Condiciones</h4>
+                    <p>Consulta políticas de uso justo, renovaciones automáticas y alcances de cada beneficio.</p>
+                </div>
+                <div class="pass-step">
+                    <span class="step-num">4</span>
+                    <div class="letter">MEDIR</div>
+                    <h4>Monitorea el Resultado</h4>
+                    <p>Compara cuánto consumiste al finalizar el periodo para ajustar tu próxima elección.</p>
+                </div>
+            </div>
+            <div class="warning-box">
+                <strong>¡Ten en cuenta!</strong> Las condiciones, tarifas, coberturas y políticas de los paquetes móviles varían según el operador, el tipo de línea y la regulación vigente. Verifica siempre la información oficial directamente con el proveedor de servicios correspondiente.
+            </div>
+        </section>
+
+        <section>
+            <h2>Recomendaciones Generales de Conectividad</h2>
+            <ol>
+                <li>Revisa el historial de consumo de datos en los ajustes de tu teléfono para conocer tus promedios reales.</li>
+                <li>Evita activar renovaciones automáticas sin confirmar primero cómo funcionan los cobros y cancelaciones.</li>
+                <li>Mantén tu dispositivo protegido con bloqueo de pantalla y precaución al conectarte a redes Wi-Fi públicas.</li>
+                <li>Compara el costo por día o por gigabyte en lugar de guiarte únicamente por el número grande del anuncio.</li>
+                <li>Conserva los comprobantes o confirmaciones de activación de tu línea para cualquier consulta con tu operador.</li>
+                <li>Ajusta la reproducción automática de videos en redes sociales para ahorrar datos móviles.</li>
+                <li>Consulta las líneas de atención oficial de tu proveedor ante fallas de servicio, facturación o cobertura.</li>
+            </ol>
+            <div class="info-box">
+                <strong>Importante:</strong> Esta guía constituye orientación general de carácter educativo. No reemplaza la información oficial de los operadores de telecomunicaciones ni constituye asesoría comercial, legal o técnica especializada.
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- ====================== SOBRE NOSOTROS ====================== -->
+<div id="page-sobre-nosotros" class="page">
+    <main>
+        <section>
+            <div class="breadcrumb"><a href="#inicio">~/inicio</a> &gt; sobre-nosotros</div>
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una iniciativa educativa independiente que nace en la ciudad de <strong>Barranquilla, Atlántico (Colombia)</strong>, con el propósito de poner a disposición de los usuarios información clara, práctica y verificable sobre el funcionamiento y uso responsable de los paquetes de celulares.</p>
+            <p>Esta guía surge de la necesidad de explicar en lenguaje cotidiano conceptos habituales de la telefonía móvil —como megas, gigabytes, vigencias y consumos en segundo plano— para que las personas tomen decisiones más informadas.</p>
+
+            <h3>¿Quiénes somos?</h3>
+            <p>Detrás de este sitio se encuentra <strong>Julian Restrepo Alvarez</strong>, ciudadano colombiano residente en Barranquilla (Atlántico), quien de manera personal y voluntaria divulga contenidos educativos sobre paquetes de celulares, sin perseguir fines de lucro y sin ofrecer ningún tipo de servicio comercial.</p>
+
+            <h3>Nuestro compromiso</h3>
+            <ul>
+                <li>Ofrecer información de carácter educativo, con enfoque claro y práctico.</li>
+                <li>Mantener un sitio totalmente gratuito, sin publicidad de terceros y sin captación de datos personales.</li>
+                <li>Promover el uso informado y consciente de los recursos móviles.</li>
+                <li>Actualizar periódicamente la información para reflejar buenas prácticas vigentes.</li>
+                <li>Respetar plenamente la privacidad de los visitantes.</li>
+            </ul>
+
+            <div class="responsable-box">
+                <strong>Identificación del responsable del sitio:</strong>
+                <p style="margin-top: 0.6rem;">
+                    <strong>Nombre:</strong> Julian Restrepo Alvarez<br>
+                    <strong>NIT:</strong> 81.777.04-1<br>
+                    <strong>Dirección:</strong> Cra 59b #96-133, Barranquilla, Atlántico — Colombia<br>
+                    <strong>Correo electrónico:</strong> Tocandod@gmail.com<br>
+                    <strong>Carácter:</strong> Anunciante y responsable del tratamiento de datos
+                </p>
+            </div>
+
+            <h3>Naturaleza del sitio</h3>
+            <p>Este sitio web tiene una naturaleza estrictamente educativa. No constituye una actividad mercantil ni representa a ningún operador móvil, marca, entidad pública, distribuidor o comercializador de planes y paquetes celulares. Toda la información publicada es de libre consulta y su único fin es orientar al usuario.</p>
+        </section>
+    </main>
+</div>
+
+<!-- ====================== MISIÓN Y VISIÓN ====================== -->
+<div id="page-mision-vision" class="page">
+    <main>
+        <section>
+            <div class="breadcrumb"><a href="#inicio">~/inicio</a> &gt; mision-vision</div>
+            <h2>Misión y Visión</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Nuestra Misión</h3>
+                    <p>Difundir, de manera clara, accesible y gratuita, contenidos educativos que orienten a los usuarios sobre el funcionamiento, elección y administración de los paquetes de celulares, promoviendo el uso informado de la conectividad móvil sin recurrir a actividades comerciales ni a la captación de datos personales.</p>
+                </div>
+                <div class="card">
+                    <h3>Nuestra Visión</h3>
+                    <p>Ser para el año 2030 una guía educativa de referencia en línea para quienes buscan comprender de forma sencilla los paquetes móviles y optimizar su consumo diario, reconocida por la claridad, utilidad y objetividad de sus contenidos, así como por su compromiso con la privacidad del visitante.</p>
+                </div>
+            </div>
+
+            <h3>Nuestros Valores</h3>
+            <ul>
+                <li><strong>Educación:</strong> creemos que la información clara facilita mejores decisiones cotidianas.</li>
+                <li><strong>Claridad:</strong> explicamos términos técnicos de conectividad en un lenguaje accesible.</li>
+                <li><strong>Transparencia:</strong> publicamos información objetiva y de utilidad práctica.</li>
+                <li><strong>Gratuidad:</strong> el acceso a este sitio es y será siempre completamente libre y sin costo.</li>
+                <li><strong>Privacidad:</strong> no recolectamos datos personales de nuestros visitantes.</li>
+                <li><strong>Independencia:</strong> no representamos intereses comerciales, políticos ni de operadores.</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>Verificación:</strong> Esta misión y visión han sido publicadas con fines de verificación del propósito educativo del sitio, conforme a las exigencias de las plataformas publicitarias y de las normas colombianas aplicables.
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- ====================== POLÍTICAS Y PRIVACIDAD ====================== -->
+<div id="page-politicas-privacidad" class="page">
+    <main>
+        <section>
+            <div class="breadcrumb"><a href="#inicio">~/inicio</a> &gt; politicas-privacidad</div>
+            <h2>Políticas y Privacidad</h2>
+            <p><em>Última actualización: 8 de mayo de 2026</em></p>
+
+            <div class="responsable-box">
+                <strong>Responsable del tratamiento de los datos:</strong>
+                <p style="margin-top: 0.6rem;">
+                    <strong>Nombre:</strong> Julian Restrepo Alvarez<br>
+                    <strong>NIT:</strong> 81.777.04-1<br>
+                    <strong>Dirección:</strong> Cra 59b #96-133, Barranquilla, Atlántico — Colombia<br>
+                    <strong>Correo electrónico de contacto:</strong> Tocandod@gmail.com
+                </p>
+            </div>
+
+            <h3>1. Objeto</h3>
+            <p>La presente política tiene por objeto informar a los usuarios y visitantes del sitio web sobre el tratamiento que se da a la información, en cumplimiento de la <strong>Ley 1581 de 2012</strong>, el <strong>Decreto 1377 de 2013</strong> y demás normas concordantes que regulan la protección de datos personales en Colombia.</p>
+
+            <h3>2. Naturaleza del sitio</h3>
+            <p>Este sitio es una <strong>guía educativa de libre consulta</strong>. No requiere registro, no solicita datos personales, no maneja formularios de contacto y no utiliza cookies de seguimiento publicitario. Por lo tanto, en condiciones normales de navegación, el sitio no recolecta, almacena ni trata datos personales de los visitantes.</p>
+
+            <h3>3. Datos que podrían ser recolectados</h3>
+            <p>De manera técnica y automática, el servidor que aloja este sitio podría registrar información estándar como la dirección IP, el tipo de navegador, la fecha y hora de acceso. Esta información se conserva únicamente con fines técnicos y estadísticos agregados.</p>
+
+            <h3>4. Finalidad del tratamiento</h3>
+            <p>Cualquier información técnica recolectada se utilizará exclusivamente para:</p>
+            <ul>
+                <li>Garantizar el funcionamiento adecuado del sitio.</li>
+                <li>Detectar y prevenir intentos de uso indebido o ataques informáticos.</li>
+                <li>Generar estadísticas agregadas y anónimas de visitas.</li>
+            </ul>
+
+            <h3>5. No transferencia de información</h3>
+            <p>El responsable no transfiere, vende, comparte ni cede información a terceros con fines comerciales. La información técnica del servidor podría ser entregada únicamente cuando lo exija una autoridad competente mediante orden legal.</p>
+
+            <h3>6. Derechos del titular</h3>
+            <p>De conformidad con la Ley 1581 de 2012, todo titular de datos personales tiene derecho a:</p>
+            <ul>
+                <li>Conocer, actualizar y rectificar sus datos personales.</li>
+                <li>Solicitar prueba de la autorización otorgada al responsable.</li>
+                <li>Ser informado sobre el uso que se ha dado a sus datos.</li>
+                <li>Presentar quejas ante la Superintendencia de Industria y Comercio.</li>
+                <li>Revocar la autorización y/o solicitar la supresión del dato.</li>
+                <li>Acceder en forma gratuita a sus datos personales.</li>
+            </ul>
+
+            <h3>7. Canal de atención</h3>
+            <p>Para ejercer cualquiera de los derechos anteriores, presentar consultas, reclamos o solicitudes relacionadas con la presente política, el titular podrá comunicarse con el responsable a través del correo electrónico: <strong>Tocandod@gmail.com</strong>.</p>
+
+            <h3>8. Uso de cookies</h3>
+            <p>Este sitio no utiliza cookies de rastreo, análisis comercial ni publicidad personalizada.</p>
+
+            <h3>9. Modificaciones</h3>
+            <p>El responsable se reserva el derecho de modificar la presente política en cualquier momento, en cuyo caso se publicará la nueva versión en este mismo sitio.</p>
+
+            <h3>10. Aceptación</h3>
+            <p>La navegación y permanencia en el presente sitio implica el conocimiento y la aceptación de la presente política de privacidad por parte del visitante.</p>
+
+            <div class="info-box">
+                <strong>Autoridad de control:</strong> Superintendencia de Industria y Comercio (SIC) de Colombia. Para presentar quejas relacionadas con el tratamiento de datos personales, puede consultar: <em>www.sic.gov.co</em>.
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- ====================== TÉRMINOS Y CONDICIONES ====================== -->
+<div id="page-terminos-condiciones" class="page">
+    <main>
+        <section>
+            <div class="breadcrumb"><a href="#inicio">~/inicio</a> &gt; terminos-condiciones</div>
+            <h2>Términos y Condiciones de Uso</h2>
+            <p><em>Última actualización: 8 de mayo de 2026</em></p>
+
+            <div class="responsable-box">
+                <strong>Responsable del sitio y del tratamiento de los datos:</strong>
+                <p style="margin-top: 0.6rem;">
+                    <strong>Nombre:</strong> Julian Restrepo Alvarez<br>
+                    <strong>NIT:</strong> 81.777.04-1<br>
+                    <strong>Dirección:</strong> Cra 59b #96-133, Barranquilla, Atlántico — Colombia<br>
+                    <strong>Correo electrónico de contacto:</strong> Tocandod@gmail.com
+                </p>
+            </div>
+
+            <h3>1. Aceptación de los términos</h3>
+            <p>El acceso y uso del presente sitio web implican la aceptación plena, expresa y sin reservas de los presentes Términos y Condiciones por parte del usuario.</p>
+
+            <h3>2. Objeto del sitio</h3>
+            <p>Este sitio web tiene un fin <strong>exclusivamente educativo e informativo</strong>. Su contenido busca difundir información práctica sobre el funcionamiento y uso de paquetes de celulares. Bajo ninguna circunstancia constituye oferta comercial, asesoría contractual ni asesoría técnica especializada.</p>
+
+            <h3>3. Carácter no comercial</h3>
+            <p>El sitio no realiza actividades comerciales, no vende productos ni servicios, no recibe pagos, no recolecta datos personales con fines comerciales y no realiza captación de clientes ni potenciales consumidores.</p>
+
+            <h3>4. Propiedad intelectual</h3>
+            <p>Los contenidos, textos, diseños, imágenes y elementos gráficos del sitio son propiedad del responsable. Se permite la reproducción parcial con fines educativos, citando la fuente. Está prohibida la utilización comercial sin autorización previa y por escrito.</p>
+
+            <h3>5. Uso permitido</h3>
+            <p>El usuario se obliga a utilizar el sitio:</p>
+            <ul>
+                <li>Conforme a la ley colombiana, la moral y las buenas costumbres.</li>
+                <li>Sin alterar, dañar o intentar acceder no autorizadamente al sitio o a sus servidores.</li>
+                <li>Sin utilizar el contenido para fines ilícitos, fraudulentos o lesivos a terceros.</li>
+                <li>Sin reproducir el contenido con fines comerciales no autorizados.</li>
+            </ul>
+
+            <h3>6. Limitación de responsabilidad</h3>
+            <p>El responsable del sitio actúa de buena fe y se esfuerza por mantener la información actualizada y precisa. Sin embargo, <strong>no garantiza</strong> que la información esté libre de errores u omisiones. Para condiciones específicas de planes, tarifas o coberturas, el usuario deberá consultar directamente los canales oficiales de su operador de telecomunicaciones.</p>
+
+            <h3>7. Enlaces a terceros</h3>
+            <p>En caso de que el sitio incluya enlaces a sitios web de terceros, el responsable no se hace responsable del contenido, las políticas de privacidad ni las prácticas de dichos sitios externos.</p>
+
+            <h3>8. Disponibilidad del sitio</h3>
+            <p>El responsable no garantiza la disponibilidad ininterrumpida del sitio. Podrán existir interrupciones por mantenimiento, actualizaciones, fallas técnicas o causas de fuerza mayor.</p>
+
+            <h3>9. Modificaciones</h3>
+            <p>El responsable se reserva el derecho de modificar el contenido del sitio y los presentes Términos y Condiciones en cualquier momento, sin necesidad de aviso previo.</p>
+
+            <h3>10. Tratamiento de datos</h3>
+            <p>Para conocer el tratamiento de los datos, el usuario podrá consultar la <a href="#politicas-privacidad" style="color: var(--accent-orange); text-decoration: underline;">Política de Privacidad</a>. El responsable del tratamiento de los datos personales es <strong>Julian Restrepo Alvarez</strong>, identificado anteriormente.</p>
+
+            <h3>11. Legislación aplicable y jurisdicción</h3>
+            <p>Los presentes Términos y Condiciones se rigen por las leyes de la <strong>República de Colombia</strong>. Cualquier controversia será resuelta ante los jueces competentes de la ciudad de Barranquilla, Atlántico, salvo que la ley disponga otra cosa.</p>
+
+            <h3>12. Contacto</h3>
+            <p>Para cualquier consulta relacionada con estos Términos y Condiciones, puede comunicarse al correo: <strong>Tocandod@gmail.com</strong>.</p>
+
+            <div class="info-box">
+                <strong>Constancia:</strong> Al continuar navegando en este sitio, el usuario manifiesta haber leído, entendido y aceptado los presentes Términos y Condiciones, así como la Política de Privacidad publicada.
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- ====================== FOOTER ====================== -->
+<footer>
+    <div class="footer-container">
+        <div class="responsable-footer">
+            <h4>Identificación del Anunciante y Responsable</h4>
+            <p>Esta página web es una guía educativa de carácter no comercial. El anunciante, responsable de la página web y responsable del tratamiento de los datos es:</p>
+            <p style="margin-top: 0.8rem;">
+                <strong>Julian Restrepo Alvarez</strong><br>
+                <strong>NIT:</strong> 81.777.04-1<br>
+                Cra 59b #96-133, Barranquilla, Atlántico — Colombia<br>
+                Correo: Tocandod@gmail.com
+            </p>
+        </div>
+        <div>
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#mision-vision">Misión y Visión</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#politicas-privacidad">Políticas y Privacidad</a></li>
+                <li><a href="#terminos-condiciones">Términos y Condiciones</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Julian Restrepo Alvarez · Todos los derechos reservados</p>
+        <p>Sitio educativo · Sin fines comerciales · Sin captación de datos personales</p>
+    </div>
+</footer>
+
+<script>
+(function() {
+    var validPages = ['inicio', 'sobre-nosotros', 'mision-vision', 'politicas-privacidad', 'terminos-condiciones'];
+
+    var titles = {
+        'inicio': 'Julian Restrepo Alvarez',
+        'sobre-nosotros': 'Julian Restrepo Alvarez · Sobre Nosotros',
+        'mision-vision': 'Julian Restrepo Alvarez · Misión y Visión',
+        'politicas-privacidad': 'Julian Restrepo Alvarez · Políticas y Privacidad',
+        'terminos-condiciones': 'Julian Restrepo Alvarez · Términos y Condiciones'
+    };
+
+    function showPage(pageId) {
+        if (validPages.indexOf(pageId) === -1) pageId = 'inicio';
+
+        var pages = document.querySelectorAll('.page');
+        for (var i = 0; i < pages.length; i++) {
+            pages[i].classList.remove('active');
+        }
+        var navs = document.querySelectorAll('nav a');
+        for (var j = 0; j < navs.length; j++) {
+            navs[j].classList.remove('active');
         }
 
-        /* --- VISTA: DETALLE DE GUÍA / ARTÍCULO --- */
-        function renderArticleDetail(container, articleId) {
-            const article = articlesDB.find(a => a.id === articleId) || articlesDB[0];
-            const cat = categoriasData[article.categoria];
+        var page = document.getElementById('page-' + pageId);
+        if (page) page.classList.add('active');
 
-            container.innerHTML = `
-                <article class="max-w-4xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-6 sm:p-10 shadow-lg mb-12">
-                    <div class="flex items-center gap-2 mb-4">
-                        <span class="text-[10px] font-extrabold px-2.5 py-1 bg-gold-500/10 text-gold-600 dark:text-gold-400 border border-gold-500/30 rounded uppercase">${cat.name}</span>
-                        <span class="text-slate-400 text-xs">•</span>
-                        <span class="text-slate-500 text-xs font-medium">Guía de Estudio</span>
-                    </div>
+        var navLink = document.getElementById('nav-' + pageId);
+        if (navLink) navLink.classList.add('active');
 
-                    <h1 class="text-2xl sm:text-4xl font-black text-navy-900 dark:text-white mb-4 leading-tight">${article.title}</h1>
-                    <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 italic mb-8 border-l-4 border-gold-500 pl-4 py-1">${article.intro}</p>
+        if (titles[pageId]) document.title = titles[pageId];
+    }
 
-                    <div class="prose-editorial text-xs sm:text-sm leading-relaxed mb-10">
-                        ${article.content}
-                    </div>
+    function loadFromHash() {
+        var hash = (window.location.hash || '').replace('#', '');
+        showPage(hash || 'inicio');
+        window.scrollTo(0, 0);
+    }
 
-                    <div class="border-t border-slate-200 dark:border-navy-800 pt-6 mt-8">
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-navy-900 dark:text-white mb-3">Bibliografía y Fuentes Consultadas</h4>
-                        <ul class="space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
-                            ${article.sources.map(src => `<li class="flex items-start gap-2"><i class="fa-solid fa-book-bookmark text-gold-500 mt-0.5"></i><span>${src}</span></li>`).join('')}
-                        </ul>
-                    </div>
+    window.addEventListener('hashchange', loadFromHash);
 
-                    <div class="mt-10 pt-6 border-t border-slate-200 dark:border-navy-800 flex justify-between items-center">
-                        <button onclick="navigateTo('categoria', '${article.categoria}')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">
-                            <i class="fa-solid fa-arrow-left mr-1"></i> Más guías en ${cat.name}
-                        </button>
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">
-                            Ir al Inicio <i class="fa-solid fa-house ml-1"></i>
-                        </button>
-                    </div>
-                </article>
-            `;
-        }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadFromHash);
+    } else {
+        loadFromHash();
+    }
+})();
+</script>
 
-        /* --- VISTAS DE TRANSPARENCIA PERSONAL Y LEGALES --- */
-        function renderAboutUs(container) {
-            container.innerHTML = `
-                <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <span class="text-xs font-bold text-gold-600 dark:text-gold-400 uppercase tracking-widest">TRANSPARENCIA DEL PROYECTO</span>
-                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mt-1 mb-4">Sobre el Proyecto y su Autor</h1>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p><strong>TU SUCURSAL</strong> es una guía educativa personal e independiente creada y administrada por <strong>[ESCRIBE AQUÍ TU NOMBRE COMPLETO]</strong> desde Colombia.</p>
-                        <p>El objetivo de este sitio es reunir resúmenes claros, estructurados y con respaldo bibliográfico sobre temas fundamentales de Historia, Ciencias Sociales, Matemáticas y Biología para estudiantes, autodidactas y lectores curiosos.</p>
-                        <h3 class="font-bold text-navy-900 dark:text-white text-base pt-2">Naturaleza Independiente</h3>
-                        <p>Este portal no representa a ninguna universidad, entidad financiera ni organismo gubernamental. Es una iniciativa personal de divulgación educativa gratuita.</p>
-                        <p><strong>Contacto directo del editor:</strong> <a href="mailto:contacto@tusucursal.org" class="text-gold-600 dark:text-gold-400 underline">contacto@tusucursal.org</a></p>
-                    </div>
-                    <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver al Inicio</button>
-                    </div>
-                </div>
-            `;
-        }
-
-        function renderEditorialPolicy(container) {
-            container.innerHTML = `
-                <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Criterios de Redacción y Fuentes</h1>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p>Cada guía publicada en Tu Sucursal se elabora consultando manuales académicos, textos universitarios y literatura científica reconocida, citando las referencias al final de cada artículo para que el lector pueda profundizar por su cuenta.</p>
-                        <p>Los contenidos tienen fines exclusivamente divulgativos y de apoyo al estudio, y no sustituyen la formación académica formal ni el asesoramiento profesional especializado.</p>
-                    </div>
-                    <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver al Inicio</button>
-                    </div>
-                </div>
-            `;
-        }
-
-        function renderPrivacyPolicy(container) {
-            container.innerHTML = `
-                <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Política de Privacidad y Protección de Datos</h1>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p>De conformidad con la Ley Estatutaria 1581 de 2012 de la República de Colombia y estándares internacionales de privacidad, se informa a los usuarios sobre el tratamiento de datos en este sitio web:</p>
-                        <p><strong>Responsable del Sitio y del Tratamiento:</strong> [ESCRIBE AQUÍ TU NOMBRE COMPLETO], persona natural domiciliada en Colombia.</p>
-                        <p><strong>Correo de Contacto para Derechos de Privacidad:</strong> contacto@tusucursal.org</p>
-                        <p><strong>Finalidad:</strong> Este sitio es de libre lectura y no exige registro de usuarios. Únicamente recopilamos los datos que el visitante envíe voluntariamente mediante correo electrónico o formulario de contacto para responder a sus consultas, así como métricas anónimas de navegación y medición publicitaria.</p>
-                    </div>
-                    <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver al Inicio</button>
-                    </div>
-                </div>
-            `;
-        }
-
-        function renderTermsConditions(container) {
-            container.innerHTML = `
-                <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Términos de Uso</h1>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p>El acceso a las guías educativas de TU SUCURSAL es libre y gratuito para fines de consulta personal, estudio y enseñanza, siempre que se cite la fuente.</p>
-                        <p>El editor se reserva el derecho de actualizar, ampliar o corregir los artículos publicados para mantener su precisión educativa.</p>
-                    </div>
-                    <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver al Inicio</button>
-                    </div>
-                </div>
-            `;
-        }
-
-        function renderCookiesPolicy(container) {
-            container.innerHTML = `
-                <div class="max-w-3xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <h1 class="text-3xl font-black text-navy-900 dark:text-white mb-4">Política de Cookies</h1>
-                    <div class="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        <p>Este sitio utiliza almacenamiento local y cookies técnicas para recordar preferencias básicas (como el consentimiento del aviso de cookies) y herramientas analíticas para conocer qué guías educativas resultan más útiles a los visitantes.</p>
-                        <p>Puedes desactivar o eliminar las cookies en cualquier momento desde la configuración de tu navegador web.</p>
-                    </div>
-                    <div class="mt-8 pt-6 border-t border-slate-100 dark:border-navy-800">
-                        <button onclick="navigateTo('home')" class="text-xs font-bold text-navy-500 dark:text-gold-400 hover:underline">Volver al Inicio</button>
-                    </div>
-                </div>
-            `;
-        }
-
-        function renderContactForm(container) {
-            container.innerHTML = `
-                <div class="max-w-2xl mx-auto bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 rounded-3xl p-8 shadow-sm mb-12">
-                    <h1 class="text-2xl font-black text-navy-900 dark:text-white mb-2">Contacto Directo</h1>
-                    <p class="text-xs text-slate-500 mb-6">¿Tienes alguna sugerencia de tema, corrección o consulta sobre las guías? Escríbeme directamente.</p>
-                    
-                    <div class="p-4 bg-slate-50 dark:bg-navy-950 rounded-xl border border-slate-200 dark:border-navy-800 mb-6 text-xs">
-                        <p class="font-bold text-navy-900 dark:text-white mb-1">Correo electrónico del editor:</p>
-                        <a href="mailto:contacto@tusucursal.org" class="text-gold-600 dark:text-gold-400 font-semibold hover:underline">contacto@tusucursal.org</a>
-                    </div>
-
-                    <!-- Nota: Reemplaza la URL de action por tu endpoint real de Formspree o Web3Forms cuando lo configures -->
-                    <form action="mailto:contacto@tusucursal.org" method="post" enctype="text/plain" class="space-y-4 text-xs">
-                        <div>
-                            <label class="block font-bold mb-1 text-slate-700 dark:text-slate-300">Tu Nombre</label>
-                            <input type="text" name="nombre" required class="w-full p-3 bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-xl">
-                        </div>
-                        <div>
-                            <label class="block font-bold mb-1 text-slate-700 dark:text-slate-300">Tu Correo Electrónico</label>
-                            <input type="email" name="correo" required class="w-full p-3 bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-xl">
-                        </div>
-                        <div>
-                            <label class="block font-bold mb-1 text-slate-700 dark:text-slate-300">Mensaje o Sugerencia de Tema</label>
-                            <textarea name="mensaje" rows="4" required class="w-full p-3 bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 rounded-xl"></textarea>
-                        </div>
-                        <button type="submit" class="w-full py-3 bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold rounded-xl transition">Enviar por Correo</button>
-                    </form>
-                </div>
-            `;
-        }
-
-        /* --- INICIALIZACIÓN AL CARGAR LA PÁGINA --- */
-        window.addEventListener('DOMContentLoaded', () => {
-            renderApp();
-        });
-    </script>
 </body>
 </html>
