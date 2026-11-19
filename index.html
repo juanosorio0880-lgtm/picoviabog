@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Guía educativa sobre la gestión y revisión de paquetes y recargas de celular en casa. Sitio educativo sin fines comerciales ni captación de datos.">
+<meta name="description" content="Manual informativo sobre la revisión y conservación preventiva de extintores domésticos. Portal educativo sin propósito comercial ni recolección de datos.">
 <meta name="author" content="Julian Restrepo Alvarez">
 <meta name="robots" content="index, follow">
 <title>Julian Restrepo Alvarez</title>
@@ -12,23 +12,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-    --bg-primary: #061014;
-    --bg-secondary: #0c1d24;
-    --bg-card: rgba(12, 29, 36, 0.72);
-    --bg-card-hover: rgba(18, 42, 52, 0.9);
-    --border-glow: rgba(16, 185, 129, 0.35);
-    --border-subtle: rgba(148, 163, 184, 0.14);
-    --accent-orange: #10b981;
-    --accent-red: #0284c7;
-    --accent-amber: #34d399;
-    --accent-cyan: #22d3ee;
-    --accent-emerald: #2dd4bf;
-    --text-primary: #f0fdf4;
-    --text-secondary: #cbd5e1;
-    --text-muted: #94a3b8;
-    --gradient-1: linear-gradient(135deg, #10b981 0%, #0284c7 100%);
-    --gradient-2: linear-gradient(135deg, #34d399 0%, #10b981 100%);
-    --gradient-3: linear-gradient(135deg, #22d3ee 0%, #2dd4bf 100%);
+    --bg-primary: #0b0a14;
+    --bg-secondary: #161426;
+    --bg-card: rgba(22, 20, 38, 0.72);
+    --bg-card-hover: rgba(34, 31, 56, 0.9);
+    --border-glow: rgba(139, 92, 246, 0.38);
+    --border-subtle: rgba(167, 139, 250, 0.14);
+    --accent-orange: #8b5cf6;
+    --accent-red: #ec4899;
+    --accent-amber: #a78bfa;
+    --accent-cyan: #06b6d4;
+    --accent-emerald: #10b981;
+    --text-primary: #f5f3ff;
+    --text-secondary: #ddd6fe;
+    --text-muted: #9ca3af;
+    --gradient-1: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+    --gradient-2: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+    --gradient-3: linear-gradient(135deg, #06b6d4 0%, #10b981 100%);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -41,9 +41,9 @@ body {
     color: var(--text-secondary);
     background-color: var(--bg-primary);
     background-image:
-        radial-gradient(circle at 15% 10%, rgba(16, 185, 129, 0.11) 0%, transparent 40%),
-        radial-gradient(circle at 85% 85%, rgba(2, 132, 199, 0.1) 0%, transparent 40%),
-        radial-gradient(circle at 50% 50%, rgba(52, 211, 153, 0.05) 0%, transparent 60%);
+        radial-gradient(circle at 15% 10%, rgba(139, 92, 246, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(236, 72, 153, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(167, 139, 250, 0.05) 0%, transparent 60%);
     background-attachment: fixed;
     min-height: 100vh;
     overflow-x: hidden;
@@ -54,8 +54,8 @@ body::before {
     position: fixed;
     inset: 0;
     background-image:
-        linear-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+        linear-gradient(rgba(139, 92, 246, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(139, 92, 246, 0.05) 1px, transparent 1px);
     background-size: 50px 50px;
     pointer-events: none;
     z-index: 0;
@@ -67,9 +67,9 @@ body::after {
     position: fixed;
     inset: 0;
     background:
-        radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.15) 0%, transparent 8%),
-        radial-gradient(circle at 70% 60%, rgba(2, 132, 199, 0.12) 0%, transparent 8%),
-        radial-gradient(circle at 40% 80%, rgba(52, 211, 153, 0.1) 0%, transparent 6%);
+        radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 8%),
+        radial-gradient(circle at 70% 60%, rgba(236, 72, 153, 0.12) 0%, transparent 8%),
+        radial-gradient(circle at 40% 80%, rgba(167, 139, 250, 0.1) 0%, transparent 6%);
     filter: blur(40px);
     pointer-events: none;
     z-index: 0;
@@ -109,7 +109,7 @@ body::after {
 
 /* ===== HEADER ===== */
 header {
-    background: rgba(6, 16, 20, 0.85);
+    background: rgba(11, 10, 20, 0.85);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     border-bottom: 1px solid var(--border-subtle);
@@ -151,7 +151,7 @@ header {
     color: white;
     font-weight: 700;
     font-size: 0.9rem;
-    box-shadow: 0 0 20px rgba(16, 185, 129, 0.45);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.45);
     position: relative;
 }
 
@@ -203,15 +203,15 @@ nav a {
 
 nav a:hover {
     color: var(--accent-orange);
-    background: rgba(16, 185, 129, 0.08);
+    background: rgba(139, 92, 246, 0.08);
     border-color: var(--border-glow);
 }
 
 nav a.active {
     color: var(--accent-orange);
-    background: rgba(16, 185, 129, 0.12);
+    background: rgba(139, 92, 246, 0.14);
     border-color: var(--border-glow);
-    box-shadow: 0 0 12px rgba(16, 185, 129, 0.18);
+    box-shadow: 0 0 12px rgba(139, 92, 246, 0.2);
 }
 
 /* ===== HERO ===== */
@@ -231,7 +231,7 @@ nav a.active {
     color: var(--text-muted);
     margin-top: 2.2rem;
     padding: 0.6rem 1.2rem;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.35);
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
     flex-wrap: wrap;
@@ -249,7 +249,7 @@ nav a.active {
 }
 
 .stat-card {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.06) 0%, transparent 100%);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.07) 0%, transparent 100%);
     border: 1px solid var(--border-subtle);
     padding: 1.2rem 1rem;
     border-radius: 12px;
@@ -286,7 +286,7 @@ nav a.active {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at center top, rgba(16, 185, 129, 0.18) 0%, transparent 60%);
+    background: radial-gradient(ellipse at center top, rgba(139, 92, 246, 0.2) 0%, transparent 60%);
     pointer-events: none;
 }
 
@@ -301,14 +301,14 @@ nav a.active {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(16, 185, 129, 0.08);
+    background: rgba(139, 92, 246, 0.1);
     border: 1px solid var(--border-glow);
     padding: 0.5rem 1.1rem;
     border-radius: 100px;
     font-size: 0.82rem;
     margin-bottom: 1.8rem;
     font-weight: 500;
-    color: var(--accent-orange);
+    color: var(--accent-amber);
     font-family: 'JetBrains Mono', monospace;
     letter-spacing: 0.02em;
 }
@@ -336,7 +336,7 @@ nav a.active {
     letter-spacing: -0.03em;
     margin-bottom: 1.4rem;
     color: var(--text-primary);
-    background: linear-gradient(180deg, #f0fdf4 0%, #94a3b8 100%);
+    background: linear-gradient(180deg, #f5f3ff 0%, #a5b4fc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -428,7 +428,7 @@ h2::before {
 
 h3 {
     font-family: 'Space Grotesk', sans-serif;
-    color: var(--accent-orange);
+    color: var(--accent-amber);
     font-size: 1.18rem;
     font-weight: 600;
     margin-top: 1.6rem;
@@ -458,32 +458,32 @@ em { color: var(--text-muted); }
 }
 
 .highlight-box {
-    background: rgba(52, 211, 153, 0.08);
-    border-color: rgba(52, 211, 153, 0.25);
+    background: rgba(167, 139, 250, 0.08);
+    border-color: rgba(167, 139, 250, 0.25);
     border-left: 3px solid var(--accent-amber);
 }
 
 .highlight-box strong { color: var(--accent-amber); }
 
 .info-box {
-    background: rgba(34, 211, 238, 0.06);
-    border-color: rgba(34, 211, 238, 0.2);
+    background: rgba(6, 182, 212, 0.06);
+    border-color: rgba(6, 182, 212, 0.2);
     border-left: 3px solid var(--accent-cyan);
 }
 
 .info-box strong { color: var(--accent-cyan); }
 
 .warning-box {
-    background: rgba(2, 132, 199, 0.08);
-    border-color: rgba(2, 132, 199, 0.28);
+    background: rgba(236, 72, 153, 0.07);
+    border-color: rgba(236, 72, 153, 0.25);
     border-left: 3px solid var(--accent-red);
 }
 
 .warning-box strong { color: var(--accent-red); }
 
 .responsable-box {
-    background: rgba(45, 212, 191, 0.06);
-    border-color: rgba(45, 212, 191, 0.25);
+    background: rgba(16, 185, 129, 0.06);
+    border-color: rgba(16, 185, 129, 0.25);
     border-left: 3px solid var(--accent-emerald);
 }
 
@@ -495,7 +495,7 @@ em { color: var(--text-muted); }
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; margin: 2rem 0; }
 
 .service-card {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(2, 132, 199, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.06) 0%, rgba(236, 72, 153, 0.05) 100%);
     border: 1px solid var(--border-subtle);
     padding: 2rem 1.5rem;
     border-radius: 14px;
@@ -527,7 +527,7 @@ em { color: var(--text-muted); }
 .service-card p { text-align: center; color: var(--text-muted); font-size: 0.95rem; }
 
 .type-card {
-    background: linear-gradient(180deg, rgba(16, 185, 129, 0.08) 0%, transparent 100%);
+    background: linear-gradient(180deg, rgba(139, 92, 246, 0.09) 0%, transparent 100%);
     border: 1px solid var(--border-subtle);
     padding: 1.4rem 1rem;
     border-radius: 12px;
@@ -552,7 +552,7 @@ em { color: var(--text-muted); }
     font-weight: 700;
     font-size: 1.4rem;
     margin-bottom: 0.7rem;
-    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
 }
 
 .type-card h4 {
@@ -570,7 +570,7 @@ em { color: var(--text-muted); }
 }
 
 .grid-2 .card {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(2, 132, 199, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.06) 0%, rgba(236, 72, 153, 0.05) 100%);
     border: 1px solid var(--border-subtle);
     padding: 2rem;
     border-radius: 14px;
@@ -584,7 +584,7 @@ em { color: var(--text-muted); }
 
 /* ===== BREADCRUMB ===== */
 .breadcrumb {
-    background: rgba(16, 185, 129, 0.05);
+    background: rgba(139, 92, 246, 0.06);
     border: 1px solid var(--border-subtle);
     padding: 0.6rem 1.1rem;
     border-radius: 8px;
@@ -595,7 +595,7 @@ em { color: var(--text-muted); }
 }
 
 .breadcrumb a {
-    color: var(--accent-orange);
+    color: var(--accent-amber);
     text-decoration: none;
     cursor: pointer;
 }
@@ -604,7 +604,7 @@ em { color: var(--text-muted); }
 
 /* ===== TIPS ===== */
 .tip {
-    background: linear-gradient(90deg, rgba(16, 185, 129, 0.06) 0%, transparent 100%);
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.07) 0%, transparent 100%);
     border: 1px solid var(--border-subtle);
     border-left: 3px solid var(--accent-orange);
     padding: 1rem 1.2rem;
@@ -615,12 +615,12 @@ em { color: var(--text-muted); }
 }
 
 .tip:hover {
-    background: linear-gradient(90deg, rgba(16, 185, 129, 0.1) 0%, transparent 100%);
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.12) 0%, transparent 100%);
     transform: translateX(4px);
-    border-left-color: var(--accent-amber);
+    border-left-color: var(--accent-red);
 }
 
-.tip strong { color: var(--accent-orange); }
+.tip strong { color: var(--accent-amber); }
 
 /* PASS Steps */
 .pass-grid {
@@ -631,7 +631,7 @@ em { color: var(--text-muted); }
 }
 
 .pass-step {
-    background: linear-gradient(180deg, rgba(2, 132, 199, 0.08) 0%, rgba(16, 185, 129, 0.05) 100%);
+    background: linear-gradient(180deg, rgba(236, 72, 153, 0.08) 0%, rgba(139, 92, 246, 0.05) 100%);
     border: 1px solid var(--border-subtle);
     padding: 1.5rem 1rem;
     border-radius: 12px;
@@ -659,14 +659,14 @@ em { color: var(--text-muted); }
     font-weight: 700;
     font-size: 0.85rem;
     line-height: 26px;
-    box-shadow: 0 0 10px rgba(2, 132, 199, 0.5);
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.5);
 }
 
 .pass-step .letter {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: var(--accent-orange);
+    color: var(--accent-amber);
     margin-bottom: 0.4rem;
 }
 
@@ -686,7 +686,7 @@ em { color: var(--text-muted); }
 
 /* ===== FOOTER ===== */
 footer {
-    background: rgba(4, 11, 14, 0.95);
+    background: rgba(7, 6, 14, 0.95);
     backdrop-filter: blur(10px);
     color: var(--text-secondary);
     padding: 3.5rem 2rem 1.5rem;
@@ -743,10 +743,10 @@ footer a {
     transition: color 0.25s ease;
 }
 
-footer a:hover { color: var(--accent-orange); }
+footer a:hover { color: var(--accent-amber); }
 
 .responsable-footer {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(2, 132, 199, 0.05));
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.06), rgba(236, 72, 153, 0.05));
     border: 1px solid var(--border-glow);
     padding: 1.5rem;
     border-radius: 14px;
@@ -759,7 +759,7 @@ footer a:hover { color: var(--accent-orange); }
     top: -10px;
     left: 1.5rem;
     background: var(--bg-primary);
-    color: var(--accent-orange);
+    color: var(--accent-amber);
     padding: 0 0.6rem;
     font-size: 0.7rem;
     font-family: 'JetBrains Mono', monospace;
@@ -767,7 +767,7 @@ footer a:hover { color: var(--accent-orange); }
     letter-spacing: 0.1em;
 }
 
-.responsable-footer h4 { color: var(--accent-orange); }
+.responsable-footer h4 { color: var(--accent-amber); }
 .responsable-footer strong { color: var(--text-primary); }
 
 .footer-bottom {
@@ -805,8 +805,8 @@ footer a:hover { color: var(--accent-orange); }
 .logo-mark { animation: logoPulse 4s ease-in-out infinite; }
 
 @keyframes logoPulse {
-    0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.45); }
-    50% { box-shadow: 0 0 30px rgba(16, 185, 129, 0.7), 0 0 50px rgba(2, 132, 199, 0.3); }
+    0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.45); }
+    50% { box-shadow: 0 0 30px rgba(139, 92, 246, 0.7), 0 0 50px rgba(236, 72, 153, 0.3); }
 }
 
 /* Cursor blink in hero */
@@ -825,18 +825,18 @@ footer a:hover { color: var(--accent-orange); }
 }
 
 ::selection {
-    background: rgba(16, 185, 129, 0.3);
+    background: rgba(139, 92, 246, 0.3);
     color: var(--text-primary);
 }
 
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: var(--bg-primary); }
 ::-webkit-scrollbar-thumb {
-    background: rgba(16, 185, 129, 0.25);
+    background: rgba(139, 92, 246, 0.25);
     border-radius: 10px;
     border: 2px solid var(--bg-primary);
 }
-::-webkit-scrollbar-thumb:hover { background: rgba(16, 185, 129, 0.45); }
+::-webkit-scrollbar-thumb:hover { background: rgba(139, 92, 246, 0.45); }
 </style>
 </head>
 <body>
@@ -849,7 +849,7 @@ footer a:hover { color: var(--accent-orange); }
             <div class="logo-mark">JR</div>
             <div class="logo-text">
                 <span>Julian Restrepo Alvarez</span>
-                <small>Guía Educativa</small>
+                <small>Manual Informativo</small>
             </div>
         </div>
         <nav>
@@ -868,30 +868,30 @@ footer a:hover { color: var(--accent-orange); }
 <div id="page-inicio" class="page active">
     <div class="hero">
         <div class="hero-content">
-            <span class="badge">Sitio educativo · Sin fines comerciales</span>
-            <h1>Gestión y Revisión de <span class="accent">Paquetes y Recargas</span><span class="cursor"></span></h1>
-            <p>Guía educativa con datos prácticos para entender, administrar y verificar correctamente paquetes y recargas de celular, asegurando que tu línea esté lista cuando surja una necesidad.</p>
+            <span class="badge">Portal informativo · Sin actividad comercial</span>
+            <h1>Conservación y Revisión de <span class="accent">Extintores Domésticos</span><span class="cursor"></span></h1>
+            <p>Manual informativo con recomendaciones prácticas para identificar, preservar y verificar adecuadamente el equipo contra incendios de tu vivienda, asegurando su operatividad ante cualquier imprevisto.</p>
             <div class="hero-meta">
-                <span><span class="dot"></span> SISTEMA EDUCATIVO ACTIVO</span>
+                <span><span class="dot"></span> PLATAFORMA INFORMATIVA EN LÍNEA</span>
                 <span>v2.0</span>
                 <span>COL-2026</span>
             </div>
             <div class="tech-stats">
                 <div class="stat-card">
                     <div class="num">04</div>
-                    <div class="label">Rubros Clave</div>
+                    <div class="label">Clases de Fuego</div>
                 </div>
                 <div class="stat-card">
-                    <div class="num">R.E.V.A.</div>
-                    <div class="label">Rutina Base</div>
+                    <div class="num">P.A.S.S.</div>
+                    <div class="label">Método Estándar</div>
                 </div>
                 <div class="stat-card">
-                    <div class="num">30</div>
-                    <div class="label">Días de Plazo</div>
+                    <div class="num">12</div>
+                    <div class="label">Meses por Servicio</div>
                 </div>
                 <div class="stat-card">
-                    <div class="num">*#</div>
-                    <div class="label">Consulta Rápida</div>
+                    <div class="num">123</div>
+                    <div class="label">Contacto Urgencias</div>
                 </div>
             </div>
         </div>
@@ -899,135 +899,135 @@ footer a:hover { color: var(--accent-orange); }
 
     <main>
         <section>
-            <h2>Objetivo de este Recurso</h2>
-            <p>Esta página fue elaborada con un <strong>fin puramente formativo y divulgativo</strong>. Su meta central consiste en brindar a los hogares de Colombia pautas sencillas y aplicables sobre la administración, consulta y selección de paquetes y recargas de celular, ayudando a consolidar hábitos responsables de conectividad en el entorno familiar.</p>
+            <h2>Finalidad de este Manual</h2>
+            <p>Esta página digital se ha desarrollado con un <strong>carácter estrictamente pedagógico y divulgativo</strong>. Su meta central es brindar a las familias colombianas pautas comprensibles y útiles sobre la conservación, revisión preventiva y control de los extintores en el hogar, aportando al fortalecimiento de los hábitos de autocuidado y protección contra conatos de incendio.</p>
 
             <div class="highlight-box">
-                <strong>¿Por qué se elabora este material educativo?</strong>
-                <p style="margin-top: 0.6rem;">En Colombia, buena parte de los inconvenientes de comunicación cotidiana podrían evitarse si los usuarios verificaran sus saldos y entendieran cómo rinden sus paquetes móviles. Sin embargo, muchas personas recargan o activan un paquete y dejan pasar días sin revisar vigencias ni consumos, quedándose sin cobertura en el momento menos oportuno. Este manual pretende acortar esa falta de claridad con orientación abierta, útil y comprobable, favoreciendo la organización familiar y la prevención de contratiempos.</p>
+                <strong>¿Qué motiva la creación de este recurso formativo?</strong>
+                <p style="margin-top: 0.6rem;">Dentro del territorio colombiano, numerosos incidentes domésticos por fuego podrían contenerse durante sus instantes iniciales si las viviendas dispusieran de un cilindro operativo y sus habitantes conocieran su manejo. No obstante, bastantes hogares compran un extintor y omiten revisarlo periódicamente, dejándolo inoperante justo en el momento crítico. Este documento pretende reducir esa falta de orientación mediante datos gratuitos, directos y comprobables.</p>
             </div>
 
-            <p><strong>En este portal NO se lleva a cabo:</strong></p>
+            <p><strong>En este portal NO se efectúa:</strong></p>
             <ul>
-                <li>Obtención, registro o resguardo de información personal de quienes visitan el sitio.</li>
-                <li>Comercialización de paquetes, recargas, planes, accesorios ni servicios de telefonía.</li>
-                <li>Trámites de inscripción, membresía, cambio de operador o apertura de cuentas.</li>
-                <li>Operaciones de pago, transferencias o movimientos financieros de clase alguna.</li>
-                <li>Sugerencia de firmas comerciales, marcas o establecimientos de venta.</li>
+                <li>Recopilación, registro ni resguardo de información personal de quienes nos visitan.</li>
+                <li>Comercialización de cilindros, servicios de recarga, artículos ni asesorías pagas.</li>
+                <li>Trámites de inscripción, membresía ni apertura de cuentas de usuario.</li>
+                <li>Operaciones monetarias o cobros de cualquier naturaleza.</li>
+                <li>Promoción de fabricantes, marcas ni compañías del sector.</li>
             </ul>
         </section>
 
         <section>
-            <h2>¿Por qué Planificar Paquetes y Recargas?</h2>
-            <p>Contar con saldo o un paquete activo bien elegido es uno de los apoyos más útiles para resolver gestiones diarias sin tropiezos. Una decisión acertada puede marcar la diferencia entre mantener contacto oportuno o quedarse incomunicado. Organizarlo según tu ritmo habitual forma parte de una rutina básica de conectividad para cualquier hogar.</p>
+            <h2>¿Por qué Contar con un Extintor en la Vivienda?</h2>
+            <p>Disponer de un cilindro extintor representa uno de los recursos más efectivos para sofocar un foco de fuego apenas comienza. Su desempeño adecuado puede marcar el límite entre un incidente menor y daños irreparables. Ubicarlo dentro de la vivienda en un punto visible y con presión vigente constituye un pilar esencial en la preparación familiar.</p>
             <div class="grid-3">
                 <div class="service-card">
-                    <div class="icon">📲</div>
+                    <div class="icon">🔥</div>
                     <h3>Anticipación</h3>
-                    <p>Un paquete o recarga al día permite resolver imprevistos cotidianos antes de que se vuelvan urgencias.</p>
+                    <p>Un equipo bien conservado facilita detener pequeños focos antes de que se propaguen por la vivienda.</p>
                 </div>
                 <div class="service-card">
-                    <div class="icon">🏡</div>
-                    <h3>Apoyo al Hogar</h3>
-                    <p>Facilita la comunicación de tu familia, estudio o trabajo ante cualquier aviso repentino.</p>
+                    <div class="icon">🏠</div>
+                    <h3>Resguardo Familiar</h3>
+                    <p>Cuida a los integrantes del hogar, animales de compañía y enseres frente a una situación imprevista.</p>
                 </div>
                 <div class="service-card">
-                    <div class="icon">⏳</div>
-                    <h3>Atención Oportuna</h3>
-                    <p>Permite actuar con rapidez en los primeros instantes, cuando comunicarse de inmediato resulta clave.</p>
+                    <div class="icon">⏱️</div>
+                    <h3>Acción Inmediata</h3>
+                    <p>Facilita intervenir durante los segundos iniciales, etapa determinante al presentarse fuego en casa.</p>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>Modalidades de Paquetes y Sus Alcances</h2>
-            <p>Existen distintas alternativas de paquetes móviles pensadas para cubrir necesidades diferentes. Identificarlas es indispensable para escoger la opción más acorde a cada caso.</p>
+            <h2>Categorías de Extintores y Aplicaciones</h2>
+            <p>Existen diversas variedades de agentes extintores fabricados para neutralizar distintos orígenes de combustión. Diferenciarlos resulta indispensable para seleccionar el más apropiado en cada espacio.</p>
             <div class="grid-4">
                 <div class="type-card">
-                    <div class="badge-letter">D</div>
-                    <h4>Datos</h4>
-                    <p>Navegación web, mapas, correo, mensajería y consulta en línea.</p>
+                    <div class="badge-letter">A</div>
+                    <h4>Materiales Sólidos</h4>
+                    <p>Madera, papel, cartón, tejidos y polímeros comunes.</p>
                 </div>
                 <div class="type-card">
-                    <div class="badge-letter">M</div>
-                    <h4>Minutos</h4>
-                    <p>Llamadas de voz a números móviles, fijos o destinos habilitados.</p>
-                </div>
-                <div class="type-card">
-                    <div class="badge-letter">R</div>
-                    <h4>Redes</h4>
-                    <p>Acceso a aplicaciones sociales sujetas a condiciones del paquete.</p>
+                    <div class="badge-letter">B</div>
+                    <h4>Sustancias Líquidas</h4>
+                    <p>Combustibles, lubricantes, alcoholes y solventes.</p>
                 </div>
                 <div class="type-card">
                     <div class="badge-letter">C</div>
-                    <h4>Combos</h4>
-                    <p>Paquetes mixtos que reúnen megas, voz y vigencia por un lapso fijo.</p>
+                    <h4>Riesgo Eléctrico</h4>
+                    <p>Artefactos conectados, cableado y cajas de circuitos.</p>
+                </div>
+                <div class="type-card">
+                    <div class="badge-letter">K</div>
+                    <h4>Área de Cocina</h4>
+                    <p>Aceites y grasas de origen vegetal o animal.</p>
                 </div>
             </div>
             <div class="info-box">
-                <strong>Sugerencia práctica:</strong> Un paquete mixto con datos y minutos suele resultar conveniente para el uso diario equilibrado, ya que reúne navegación y llamadas en un mismo periodo. Si requieres mayor navegación continua, conviene revisar bolsas específicas de datos.
+                <strong>Sugerencia doméstica:</strong> El cilindro cargado con polvo químico seco <strong>multipropósito ABC</strong> suele ser el más sugerido para residencias, puesto que abarca las tres clases de fuego habituales en una vivienda. Para zonas de cocción, conviene añadir uno clase K.
             </div>
         </section>
 
         <section>
-            <h2>Cómo Administrar y Revisar sus Recargas</h2>
-            <div class="tip"><strong>1. Elección del momento:</strong> active o recargue cuando realmente necesite el servicio o justo antes de un día de alta actividad, evitando que corra el tiempo sin aprovecharlo.</div>
-            <div class="tip"><strong>2. Chequeo periódico de saldo:</strong> consulte con regularidad los megas, minutos y días restantes, verificando que el estado coincida con lo activado y sin descuentos imprevistos.</div>
-            <div class="tip"><strong>3. Controle la caducidad:</strong> observe la fecha y hora de vencimiento de cada paquete. Gran parte de las opciones promocionales o de corta duración vencen en plazos fijos.</div>
-            <div class="tip"><strong>4. Red y ajustes limpios:</strong> procure que el teléfono tenga conexión estable y que las descargas o actualizaciones pesadas no agoten el paquete antes de tiempo.</div>
-            <div class="tip"><strong>5. Canales formales:</strong> cuando requiera activar, consultar o reclamar sobre una recarga, acuda exclusivamente a medios oficiales autorizados. Jamás entregue claves ni códigos privados.</div>
-            <div class="tip"><strong>6. Dosifique el consumo (Datos):</strong> en paquetes con volumen limitado de navegación, modere videos, transmisiones y copias automáticas para que el rendimiento rinda todo el plazo.</div>
-            <div class="tip"><strong>7. Vigile renovaciones activas:</strong> si una opción se renueva automáticamente sin que lo desee, revise las reglas de cancelación para evitar cargos no previstos.</div>
-            <div class="tip"><strong>8. Detalle claro de lo activado:</strong> conserve la confirmación o el resumen de lo que incluye el paquete para tener claridad sobre sus límites reales.</div>
+            <h2>Pautas para Conservar y Revisar tu Equipo</h2>
+            <div class="tip"><strong>1. Emplazamiento visible:</strong> colóquelo en un sitio despejado, de fácil alcance y máximo a 1.50 metros del suelo, apartado de estufas, radiación directa o zonas húmedas.</div>
+            <div class="tip"><strong>2. Chequeo visual periódico:</strong> compruebe cada mes que el indicador de presión marque la franja verde, el precinto siga íntegro y el envase no muestre corrosión, golpes ni escapes.</div>
+            <div class="tip"><strong>3. Control de vencimiento:</strong> revise las fechas de fabricación, última recarga y próxima revisión. Habitualmente los equipos residenciales exigen mantenimiento cada doce meses.</div>
+            <div class="tip"><strong>4. Ducto y boquilla despejados:</strong> confirme que la manguera carezca de fisuras, taponamientos o holguras. Retire el polvo externo para impedir obstrucciones por suciedad o insectos.</div>
+            <div class="tip"><strong>5. Servicio técnico avalado:</strong> acuda anualmente a un taller autorizado para su inspección y recarga completa. Jamás intente rellenar ni manipular la válvula por cuenta propia.</div>
+            <div class="tip"><strong>6. Agitación del agente (PQS):</strong> en cilindros de polvo químico seco, inviértalos con suavidad cada cuatro a ocho semanas para evitar que el compuesto se apelmace en la base.</div>
+            <div class="tip"><strong>7. Integridad del precinto:</strong> si el pasador o sello plástico aparece fracturado sin haberse accionado el equipo, envíelo de inmediato a revisión técnica.</div>
+            <div class="tip"><strong>8. Rótulo en buen estado:</strong> verifique que la calcomanía con instrucciones de operación permanezca nítida y legible; solicite su reposición si se ha borrado.</div>
         </section>
 
         <section>
-            <h2>Cómo Verificar un Paquete: Rutina R.E.V.A.</h2>
-            <p>La rutina R.E.V.A. (<em>Revisar, Evaluar, Verificar, Administrar</em>) ofrece un orden simple para comprobar el estado de un paquete antes de depender de él. Practicarla ahorra contratiempos.</p>
+            <h2>Operación Básica: Método P.A.S.S.</h2>
+            <p>El procedimiento internacional P.A.S.S. (siglas en inglés de <em>Pull, Aim, Squeeze, Sweep</em>) describe la secuencia segura para accionar un extintor manual ante un conato. Memorizarlo resulta vital.</p>
             <div class="pass-grid">
                 <div class="pass-step">
                     <span class="step-num">1</span>
-                    <div class="letter">R</div>
-                    <h4>Revisar / Estado</h4>
-                    <p>Consulte el saldo disponible de datos y minutos en su línea.</p>
+                    <div class="letter">P</div>
+                    <h4>Pull / Retirar</h4>
+                    <p>Extraiga el pasador metálico para desbloquear la palanca.</p>
                 </div>
                 <div class="pass-step">
                     <span class="step-num">2</span>
-                    <div class="letter">E</div>
-                    <h4>Evaluar / Vigencia</h4>
-                    <p>Compruebe cuántos días u horas le restan antes de vencer.</p>
+                    <div class="letter">A</div>
+                    <h4>Aim / Dirigir</h4>
+                    <p>Oriente la descarga hacia el origen del fuego, nunca arriba.</p>
                 </div>
                 <div class="pass-step">
                     <span class="step-num">3</span>
-                    <div class="letter">V</div>
-                    <h4>Verificar / Reglas</h4>
-                    <p>Confirme qué aplicaciones o llamadas están cubiertas por el paquete.</p>
+                    <div class="letter">S</div>
+                    <h4>Squeeze / Oprimir</h4>
+                    <p>Apriete la manija de descarga con firmeza y continuidad.</p>
                 </div>
                 <div class="pass-step">
                     <span class="step-num">4</span>
-                    <div class="letter">A</div>
-                    <h4>Administrar / Uso</h4>
-                    <p>Ajuste el consumo diario de acuerdo con el tiempo y volumen restante.</p>
+                    <div class="letter">S</div>
+                    <h4>Sweep / Barrer</h4>
+                    <p>Desplace el chorro horizontalmente abarcando toda la base.</p>
                 </div>
             </div>
             <div class="warning-box">
-                <strong>¡Atención!</strong> Antes de realizar cualquier gestión importante, procure contar con un medio alterno de contacto o red disponible. Si surge un fallo técnico o un problema de servicio, comuníquese de inmediato con los canales oficiales de atención. Estar comunicado con calma siempre es lo primero.
+                <strong>¡Precaución!</strong> Previo a intentar apagar cualquier foco, verifique tener una ruta libre de salida a su espalda. Si las llamas avanzan rápido o el humo dificulta respirar, abandone el lugar enseguida y comuníquese al <strong>123</strong> o con Bomberos. Su integridad física siempre está primero.
             </div>
         </section>
 
         <section>
-            <h2>Pautas Generales de Uso Responsable</h2>
+            <h2>Consejos Generales de Prevención Residencial</h2>
             <ol>
-                <li>Mantenga en su teléfono un respaldo de información o contactos esenciales por si se agota un paquete en un momento crítico.</li>
-                <li>Procure que los integrantes del hogar sepan revisar su saldo y comprender la diferencia entre saldo libre y paquete activo.</li>
-                <li>Haga un balance mensual de cuánto gasta y consume para ajustar mejor sus futuras recargas.</li>
-                <li>Evite enlaces sospechosos o mensajes engañosos que prometan recargas gratuitas o beneficios irreales.</li>
-                <li>Utilice redes Wi-Fi confiables cuando deba descargar archivos grandes o actualizar aplicaciones.</li>
-                <li>Revise periódicamente suscripciones o cobros adicionales asociados a la línea y cancele lo que no utilice.</li>
-                <li>Tenga a la mano los números de atención y emergencia correspondientes: <strong>123</strong> (línea única), <strong>119</strong> (Bomberos en algunas ciudades).</li>
+                <li>Disponga como mínimo de un equipo multipropósito ABC en casa, procurando contar con uno por cada nivel o planta.</li>
+                <li>Verifique que los adultos y jóvenes de la familia conozcan su ubicación exacta y la forma correcta de accionarlo.</li>
+                <li>Organice un ejercicio práctico de evacuación doméstica por lo menos una vez cada año.</li>
+                <li>Conserve despejados los pasillos de salida e identifique mínimo dos rutas alternas para abandonar el inmueble.</li>
+                <li>Coloque alarmas detectoras de humo y renueve sus baterías conforme a las indicaciones del fabricante.</li>
+                <li>Desconecte aparatos eléctricos tras usarlos y supervise periódicamente el estado de tomas, cables y redes de gas.</li>
+                <li>Mantenga a la vista los números de atención urgente: <strong>123</strong> (atención unificada) y <strong>119</strong> (Cuerpo de Bomberos local).</li>
             </ol>
             <div class="info-box">
-                <strong>Nota:</strong> Este contenido representa una guía orientativa de carácter formativo. No sustituye la información oficial de los proveedores ni la asesoría técnica especializada. Para activaciones, tarifas, condiciones particulares o reclamos, consulte directamente las fuentes oficiales y la normativa vigente aplicable.
+                <strong>Aviso:</strong> Este documento ofrece orientación general con fines formativos. No sustituye conceptos técnicos especializados ni el servicio de talleres certificados. Para recargas, pruebas hidrostáticas o instalaciones, recurra a empresas autorizadas conforme a las normas NTC o NFPA correspondientes.
             </div>
         </section>
     </main>
@@ -1039,23 +1039,23 @@ footer a:hover { color: var(--accent-orange); }
         <section>
             <div class="breadcrumb"><a href="#inicio">~/inicio</a> &gt; sobre-nosotros</div>
             <h2>Sobre Nosotros</h2>
-            <p>Somos un proyecto educativo autónomo originado en <strong>Barranquilla, Atlántico (Colombia)</strong>, con la firme intención de acercar a los hogares colombianos pautas claras, prácticas y contrastables sobre el manejo y revisión de paquetes y recargas de celular, impulsando hábitos preventivos de conectividad familiar.</p>
-            <p>Esta guía nace al notar que muchas personas realizan recargas o adquieren paquetes por costumbre o recomendación, pero rara vez revisan cómo funcionan realmente, sin advertir que una mala lectura de vigencias o consumos puede dejar sin servicio cuando más hace falta.</p>
+            <p>Representamos un proyecto pedagógico independiente surgido en <strong>Barranquilla, Atlántico (Colombia)</strong>, orientado a facilitar a las familias colombianas contenido comprensible, práctico y contrastable acerca del cuidado y revisión de extintores domésticos, promoviendo hábitos preventivos de protección en el hogar.</p>
+            <p>Esta iniciativa parte de constatar que numerosos hogares adquieren un extintor por requisito o sugerencia, pero omiten inspeccionarlo con el paso del tiempo, ignorando que un cilindro sin mantenimiento puede fallar justo cuando resulta indispensable.</p>
 
             <h3>¿Quiénes somos?</h3>
-            <p>Detrás de esta publicación está <strong>Julian Restrepo Alvarez</strong>, ciudadano colombiano domiciliado en Barranquilla (Atlántico), quien de forma particular y sin ánimo de lucro ha decidido compartir contenidos educativos sobre paquetes y recargas de celular, sin perseguir ganancias económicas ni prestar servicios comerciales.</p>
+            <p>Al frente de este portal se encuentra <strong>Julian Restrepo Alvarez</strong>, ciudadano colombiano domiciliado en Barranquilla (Atlántico), quien de forma particular y desinteresada comparte material informativo sobre la conservación de extintores residenciales, sin ánimo de lucro ni oferta de servicios comerciales.</p>
 
             <h3>Nuestro compromiso</h3>
             <ul>
-                <li>Brindar contenidos de carácter formativo, orientados a la ciudadanía y la familia.</li>
-                <li>Sostener una plataforma de libre acceso, sin anuncios de terceros ni recolección de datos personales.</li>
-                <li>Impulsar una cultura de organización y buen uso de los recursos móviles.</li>
-                <li>Poner al día los textos de manera periódica conforme a las prácticas habituales.</li>
-                <li>Resguardar de forma integral la confidencialidad de quienes visitan el sitio.</li>
+                <li>Brindar contenido netamente pedagógico, pensado para el entorno ciudadano y familiar.</li>
+                <li>Conservar un portal completamente gratuito, libre de pauta externa y sin recolección de datos personales.</li>
+                <li>Fomentar hábitos responsables de prevención y respuesta frente a conatos de incendio.</li>
+                <li>Revisar periódicamente las recomendaciones para mantenerlas alineadas con buenas prácticas.</li>
+                <li>Garantizar el respeto absoluto por la confidencialidad de cada visitante.</li>
             </ul>
 
             <div class="responsable-box">
-                <strong>Datos de identificación del responsable del sitio:</strong>
+                <strong>Datos del titular responsable del portal:</strong>
                 <p style="margin-top: 0.6rem;">
                     <strong>Nombre:</strong> Julian Restrepo Alvarez<br>
                     <strong>NIT:</strong> 81.777.04-1<br>
@@ -1065,8 +1065,8 @@ footer a:hover { color: var(--accent-orange); }
                 </p>
             </div>
 
-            <h3>Carácter del sitio</h3>
-            <p>Este espacio digital tiene un carácter estrictamente educativo. No configura una operación comercial ni representa a compañía alguna, marca, organismo estatal, operador móvil o distribuidor de recargas. Todo lo aquí expuesto es de consulta abierta y su único propósito es aportar claridad en el uso cotidiano de paquetes y recargas.</p>
+            <h3>Carácter del portal</h3>
+            <p>Esta página tiene un carácter exclusivamente informativo y educativo. No constituye actividad comercial ni guarda vínculo con empresas, marcas, entidades estatales, fabricantes ni talleres de recarga de extintores. El material publicado es de consulta abierta y busca exclusivamente aportar a la prevención doméstica.</p>
         </section>
     </main>
 </div>
@@ -1080,26 +1080,26 @@ footer a:hover { color: var(--accent-orange); }
             <div class="grid-2">
                 <div class="card">
                     <h3>Nuestra Misión</h3>
-                    <p>Compartir, de forma transparente, sencilla y sin costo, materiales educativos que guíen a los hogares colombianos en la administración y revisión de paquetes y recargas de celular, fomentando el uso ordenado, la tranquilidad familiar y la consulta oportuna, sin acudir a fines comerciales ni a la captura de datos personales.</p>
+                    <p>Compartir de manera clara, sencilla y gratuita recursos formativos que guíen a las familias colombianas en la conservación y revisión preventiva de sus extintores domésticos, fortaleciendo la prevención, el cuidado familiar y la actuación oportuna frente a conatos de incendio, sin realizar operaciones comerciales ni recolectar información personal.</p>
                 </div>
                 <div class="card">
                     <h3>Nuestra Visión</h3>
-                    <p>Consolidarnos hacia el año 2030 como una guía educativa de consulta habitual en internet para las familias colombianas que deseen organizar mejor sus paquetes y recargas móviles, reconocida por el lenguaje directo, claro y confiable de sus orientaciones, así como por su compromiso con la formación ciudadana y la privacidad.</p>
+                    <p>Consolidarnos hacia el año 2030 como un portal informativo de consulta habitual para los hogares colombianos interesados en proteger su vivienda mediante el manejo correcto de extintores, destacándonos por la claridad, utilidad y rigor de nuestras pautas, junto con un compromiso constante hacia la educación preventiva.</p>
                 </div>
             </div>
 
             <h3>Nuestros Valores</h3>
             <ul>
-                <li><strong>Formación:</strong> confiamos en el valor del aprendizaje claro como herramienta práctica del día a día.</li>
-                <li><strong>Previsión:</strong> fomentamos una actitud cotidiana basada en anticiparse y no en improvisar.</li>
-                <li><strong>Claridad:</strong> difundimos explicaciones sencillas, verificables y de aplicación real.</li>
-                <li><strong>Acceso libre:</strong> ingresar a este sitio es y seguirá siendo totalmente gratuito.</li>
-                <li><strong>Confidencialidad:</strong> no captamos datos personales de quienes navegan aquí.</li>
-                <li><strong>Autonomía:</strong> no defendemos intereses comerciales, partidistas ni gremiales.</li>
+                <li><strong>Pedagogía:</strong> confiamos en el aprendizaje práctico como recurso clave para proteger vidas.</li>
+                <li><strong>Anticipación:</strong> impulsamos hábitos familiares basados en prevenir antes que lamentar.</li>
+                <li><strong>Claridad:</strong> divulgamos orientaciones comprensibles, verificables y fáciles de aplicar.</li>
+                <li><strong>Gratuidad:</strong> consultar este portal es y continuará siendo totalmente libre y sin cobros.</li>
+                <li><strong>Confidencialidad:</strong> no solicitamos ni almacenamos datos personales de los usuarios.</li>
+                <li><strong>Autonomía:</strong> no representamos intereses empresariales, políticos ni sectoriales.</li>
             </ul>
 
             <div class="info-box">
-                <strong>Constancia:</strong> Esta misión y visión se dan a conocer para acreditar el propósito educativo de la página, en concordancia con los lineamientos de las plataformas publicitarias y las disposiciones legales vigentes en Colombia.
+                <strong>Acreditación:</strong> Esta misión y visión se publican con el fin de respaldar la naturaleza educativa del portal, atendiendo los lineamientos de las plataformas digitales y la normativa colombiana vigente.
             </div>
         </section>
     </main>
@@ -1114,7 +1114,7 @@ footer a:hover { color: var(--accent-orange); }
             <p><em>Última actualización: 8 de mayo de 2026</em></p>
 
             <div class="responsable-box">
-                <strong>Responsable del tratamiento de los datos:</strong>
+                <strong>Titular responsable del manejo de datos:</strong>
                 <p style="margin-top: 0.6rem;">
                     <strong>Nombre:</strong> Julian Restrepo Alvarez<br>
                     <strong>NIT:</strong> 81.777.04-1<br>
@@ -1123,51 +1123,51 @@ footer a:hover { color: var(--accent-orange); }
                 </p>
             </div>
 
-            <h3>1. Alcance</h3>
-            <p>Este documento busca dar a conocer a los usuarios y visitantes de la página cómo se maneja la información, en observancia de la <strong>Ley 1581 de 2012</strong>, el <strong>Decreto 1377 de 2013</strong> y demás normas relacionadas con la protección de datos personales en Colombia.</p>
+            <h3>1. Finalidad</h3>
+            <p>Este documento busca comunicar a quienes visitan y consultan el portal cómo se gestiona la información, atendiendo lo dispuesto en la <strong>Ley 1581 de 2012</strong>, el <strong>Decreto 1377 de 2013</strong> y demás disposiciones vigentes sobre protección de datos personales en Colombia.</p>
 
-            <h3>2. Finalidad de la página</h3>
-            <p>Este sitio funciona como un <strong>recurso educativo de consulta abierta</strong>. No exige inscripción, no pide datos personales, no dispone de formularios de contacto ni emplea cookies de rastreo publicitario. En consecuencia, durante una visita ordinaria, no se recopilan, guardan ni administran datos personales de los usuarios.</p>
+            <h3>2. Carácter del portal</h3>
+            <p>Este sitio constituye un <strong>manual informativo de acceso abierto</strong>. No exige inscripciones, no pide datos personales, carece de formularios de captura y no emplea cookies de seguimiento comercial. En consecuencia, durante una consulta habitual, no se recaban, guardan ni procesan datos personales de quienes navegan.</p>
 
-            <h3>3. Información técnica posible</h3>
-            <p>Por motivos operativos y de forma automática, el servidor donde reside esta página puede anotar datos habituales como la dirección IP, el navegador empleado, la fecha y la hora de ingreso. Ese registro se guarda únicamente para fines técnicos y métricas generales.</p>
+            <h3>3. Registros técnicos eventuales</h3>
+            <p>De forma automática y estrictamente operativa, el servidor que aloja la página puede conservar registros básicos como dirección IP, navegador empleado, fecha y hora de conexión. Dichos registros se mantienen únicamente para labores técnicas y métricas generales agregadas.</p>
 
-            <h3>4. Uso de la información</h3>
-            <p>Cualquier dato técnico registrado se empleará de manera exclusiva para:</p>
+            <h3>4. Destino de los registros</h3>
+            <p>Los eventuales registros técnicos se emplearán exclusivamente para:</p>
             <ul>
-                <li>Asegurar la correcta operatividad del sitio web.</li>
-                <li>Identificar y frenar usos indebidos o incidentes de seguridad informática.</li>
-                <li>Obtener cifras globales y anónimas de navegación.</li>
+                <li>Asegurar la estabilidad y operatividad normal del portal.</li>
+                <li>Identificar y contener accesos indebidos o incidentes informáticos.</li>
+                <li>Elaborar estadísticas globales y anónimas sobre visitas.</li>
             </ul>
 
-            <h3>5. Reserva y no cesión</h3>
-            <p>El responsable no entrega, comercializa, difunde ni transfiere información a terceros con propósitos mercantiles. Los registros técnicos del servidor solo podrían facilitarse si lo ordena una autoridad facultada mediante mandato legal.</p>
+            <h3>5. Prohibición de cesión</h3>
+            <p>El titular responsable no vende, cede, comparte ni transfiere información a terceros con propósitos comerciales. Los registros técnicos del servidor solo serían suministrados ante requerimiento formal de autoridad competente.</p>
 
             <h3>6. Facultades del titular</h3>
-            <p>Según lo previsto en la Ley 1581 de 2012, toda persona titular de datos personales tiene derecho a:</p>
+            <p>Conforme a la Ley 1581 de 2012, toda persona titular de datos personales posee derecho a:</p>
             <ul>
-                <li>Conocer, poner al día y corregir sus datos personales.</li>
-                <li>Pedir constancia de la autorización dada al responsable.</li>
-                <li>Recibir información sobre el destino dado a sus datos.</li>
-                <li>Acudir con reclamaciones ante la Superintendencia de Industria y Comercio.</li>
-                <li>Dejar sin efecto la autorización y/o pedir que se elimine el dato.</li>
-                <li>Consultar sin costo alguno sus datos personales.</li>
+                <li>Conocer, actualizar y corregir sus datos personales.</li>
+                <li>Pedir constancia de la autorización otorgada al responsable.</li>
+                <li>Ser informada respecto al uso dado a sus datos.</li>
+                <li>Radicar quejas ante la Superintendencia de Industria y Comercio.</li>
+                <li>Revocar la autorización y/o pedir la eliminación del registro.</li>
+                <li>Consultar gratuitamente sus datos personales.</li>
             </ul>
 
             <h3>7. Medio de contacto</h3>
-            <p>Para ejercer cualquiera de las facultades indicadas, elevar consultas, peticiones o inconformidades vinculadas a esta política, el titular puede escribir al responsable al correo electrónico: <strong>Tocandod@gmail.com</strong>.</p>
+            <p>Para ejercer cualquiera de estas facultades, formular inquietudes, reclamos o peticiones vinculadas con esta política, puede escribir al responsable mediante el correo electrónico: <strong>Tocandod@gmail.com</strong>.</p>
 
             <h3>8. Cookies</h3>
-            <p>Esta página no instala cookies de seguimiento, medición comercial ni anuncios segmentados.</p>
+            <p>Este portal no emplea cookies de rastreo, medición publicitaria ni segmentación comercial.</p>
 
-            <h3>9. Cambios</h3>
-            <p>El responsable podrá actualizar este texto en cualquier momento, publicando la versión vigente directamente en este mismo espacio.</p>
+            <h3>9. Actualizaciones</h3>
+            <p>El responsable podrá modificar esta política en cualquier instante, publicando la versión actualizada directamente en este mismo portal.</p>
 
             <h3>10. Conformidad</h3>
-            <p>Ingresar y permanecer en esta página supone que el visitante conoce y acepta la presente política de privacidad.</p>
+            <p>El acceso y permanencia en este sitio web supone que el visitante conoce y acepta lo establecido en la presente política de privacidad.</p>
 
             <div class="info-box">
-                <strong>Entidad de vigilancia:</strong> Superintendencia de Industria y Comercio (SIC) de Colombia. Para presentar reclamos sobre protección de datos personales, puede visitar: <em>www.sic.gov.co</em>.
+                <strong>Entidad de vigilancia:</strong> Superintendencia de Industria y Comercio (SIC) de Colombia. Para radicar quejas vinculadas al manejo de datos personales, puede visitar: <em>www.sic.gov.co</em>.
             </div>
         </section>
     </main>
@@ -1182,7 +1182,7 @@ footer a:hover { color: var(--accent-orange); }
             <p><em>Última actualización: 8 de mayo de 2026</em></p>
 
             <div class="responsable-box">
-                <strong>Responsable del sitio y del tratamiento de los datos:</strong>
+                <strong>Responsable del portal y del tratamiento de datos:</strong>
                 <p style="margin-top: 0.6rem;">
                     <strong>Nombre:</strong> Julian Restrepo Alvarez<br>
                     <strong>NIT:</strong> 81.777.04-1<br>
@@ -1191,50 +1191,50 @@ footer a:hover { color: var(--accent-orange); }
                 </p>
             </div>
 
-            <h3>1. Aceptación</h3>
-            <p>El ingreso y empleo de este sitio web conllevan la aceptación completa, expresa y sin reservas de estos Términos y Condiciones por parte de quien lo utiliza.</p>
+            <h3>1. Conformidad con los términos</h3>
+            <p>El ingreso y navegación en este portal implican la aceptación íntegra, expresa y sin condicionamientos de estos Términos y Condiciones por parte del visitante.</p>
 
-            <h3>2. Propósito</h3>
-            <p>Esta página web tiene un carácter <strong>estrictamente educativo e informativo</strong>. Sus textos buscan difundir recomendaciones prácticas sobre el manejo y revisión de paquetes y recargas de celular. En ningún caso representan asesoría técnica, profesional, comercial ni de ingeniería en telecomunicaciones.</p>
+            <h3>2. Finalidad del portal</h3>
+            <p>Esta página web posee un propósito <strong>exclusivamente pedagógico e informativo</strong>. Su contenido pretende divulgar recomendaciones básicas sobre la revisión y conservación de extintores domésticos. Bajo ningún concepto reemplaza asesoría técnica, profesional, comercial ni de ingeniería contra incendios.</p>
 
             <h3>3. Ausencia de fines comerciales</h3>
-            <p>La página no ejecuta operaciones comerciales, no vende bienes ni servicios, no recibe dinero, no recopila datos personales con fines de venta ni capta clientes o prospectos.</p>
+            <p>Este sitio no ejecuta operaciones mercantiles, no comercializa artículos ni servicios, no recibe pagos, no recaba datos personales con fines de venta ni capta clientes o prospectos.</p>
 
             <h3>4. Derechos de autor</h3>
-            <p>Los textos, redacciones, diseños, gráficos y piezas visuales de la página pertenecen al responsable. Se autoriza su reproducción parcial con fines educativos citando la procedencia. Queda prohibido su aprovechamiento comercial sin permiso previo y por escrito.</p>
+            <p>Los textos, redacciones, estructuras, gráficos y elementos visuales pertenecen al responsable. Se autoriza citar o reproducir fragmentos con propósito educativo mencionando la fuente. Se prohíbe cualquier explotación comercial sin autorización previa por escrito.</p>
 
-            <h3>5. Conducta esperada</h3>
-            <p>Quien utilice el sitio se compromete a hacerlo:</p>
+            <h3>5. Uso adecuado</h3>
+            <p>El visitante se compromete a emplear este portal:</p>
             <ul>
-                <li>De acuerdo con la normativa colombiana, la moral y las buenas costumbres.</li>
-                <li>Sin modificar, perjudicar o intentar ingresar sin permiso al sitio o a su infraestructura.</li>
-                <li>Sin destinar los contenidos a actividades ilegales, engañosas o perjudiciales para terceros.</li>
-                <li>Sin copiar el material con propósitos comerciales no autorizados.</li>
+                <li>Respetando la legislación colombiana, la ética y las buenas costumbres.</li>
+                <li>Absteniéndose de alterar, dañar o intentar ingresar sin permiso al sitio o sus servidores.</li>
+                <li>Sin destinar la información a fines ilícitos, engañosos o perjudiciales para terceros.</li>
+                <li>Sin copiar ni distribuir el material con fines comerciales no autorizados.</li>
             </ul>
 
-            <h3>6. Alcance de la responsabilidad</h3>
-            <p>El responsable actúa de buena fe y procura mantener los contenidos al día y exactos. Sin embargo, <strong>no asegura</strong> que estén exentos de inexactitudes u omisiones. Lo publicado es orientación general; ante un inconveniente real o consulta técnica puntual, el usuario debe dirigirse a los canales oficiales correspondientes o a la línea de emergencia <strong>123</strong>.</p>
+            <h3>6. Alcance de responsabilidad</h3>
+            <p>El responsable actúa de buena fe y procura mantener los textos actualizados y exactos. No obstante, <strong>no asegura</strong> ausencia total de errores u omisiones. El contenido es meramente orientativo; ante una emergencia real o consulta técnica especializada, acuda a personal certificado o a la línea <strong>123</strong>.</p>
 
             <h3>7. Vínculos externos</h3>
-            <p>Si en algún momento se incorporan enlaces hacia otros sitios web, el responsable no asume responsabilidad por los contenidos, políticas de privacidad ni prácticas de dichas páginas ajenas.</p>
+            <p>De existir enlaces hacia sitios externos, el responsable no asume responsabilidad alguna por sus contenidos, políticas de privacidad ni prácticas.</p>
 
-            <h3>8. Continuidad del servicio</h3>
-            <p>El responsable no garantiza que el sitio esté disponible sin interrupciones. Pueden presentarse pausas por labores técnicas, actualizaciones, fallos de red o hechos de fuerza mayor.</p>
+            <h3>8. Continuidad del acceso</h3>
+            <p>El responsable no garantiza disponibilidad permanente del portal, pudiendo ocurrir pausas por mantenimiento, mejoras, fallos técnicos o fuerza mayor.</p>
 
-            <h3>9. Actualizaciones</h3>
-            <p>El responsable se reserva la facultad de modificar lo publicado en el sitio y estos Términos y Condiciones en cualquier instante, sin aviso previo.</p>
+            <h3>9. Cambios</h3>
+            <p>El responsable podrá actualizar el contenido y estos Términos y Condiciones en cualquier momento sin notificación previa.</p>
 
             <h3>10. Manejo de datos</h3>
-            <p>Para revisar lo relativo al manejo de datos, puede consultarse la <a href="#politicas-privacidad" style="color: var(--accent-orange); text-decoration: underline;">Política de Privacidad</a>. El responsable del tratamiento de datos personales es <strong>Julian Restrepo Alvarez</strong>, señalado arriba.</p>
+            <p>Para detalles sobre privacidad, consulte la <a href="#politicas-privacidad" style="color: var(--accent-amber); text-decoration: underline;">Política de Privacidad</a>. El responsable del tratamiento es <strong>Julian Restrepo Alvarez</strong>, identificado arriba.</p>
 
-            <h3>11. Ley y fuero</h3>
-            <p>Estos Términos y Condiciones se rigen por las leyes de la <strong>República de Colombia</strong>. Toda diferencia será conocida por los jueces competentes de Barranquilla, Atlántico, salvo disposición legal en contrario.</p>
+            <h3>11. Normativa y jurisdicción</h3>
+            <p>Estos Términos y Condiciones se rigen por el ordenamiento jurídico de la <strong>República de Colombia</strong>. Toda controversia será resuelta por los jueces competentes de Barranquilla, Atlántico, salvo disposición legal distinta.</p>
 
-            <h3>12. Atención</h3>
-            <p>Para cualquier duda vinculada con estos Términos y Condiciones, puede escribirse al correo: <strong>Tocandod@gmail.com</strong>.</p>
+            <h3>12. Contacto</h3>
+            <p>Para inquietudes respecto a estos Términos y Condiciones, escriba al correo: <strong>Tocandod@gmail.com</strong>.</p>
 
             <div class="info-box">
-                <strong>Declaración:</strong> Al seguir navegando en este sitio, el usuario declara haber leído, comprendido y aceptado estos Términos y Condiciones, junto con la Política de Privacidad divulgada.
+                <strong>Constancia:</strong> Al permanecer navegando en este sitio, el usuario confirma haber leído, comprendido y aceptado estos Términos y Condiciones junto con la Política de Privacidad vigente.
             </div>
         </section>
     </main>
@@ -1271,7 +1271,7 @@ footer a:hover { color: var(--accent-orange); }
     </div>
     <div class="footer-bottom">
         <p>&copy; 2026 Julian Restrepo Alvarez · Todos los derechos reservados</p>
-        <p>Sitio educativo · Sin fines comerciales · Sin captación de datos personales</p>
+        <p>Manual informativo · Sin fines comerciales · Sin captación de datos personales</p>
     </div>
 </footer>
 
