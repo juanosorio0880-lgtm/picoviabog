@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Guía educativa sobre cómo elegir y entender paquetes de celulares (datos, minutos, redes y vigencia). Sitio educativo sin fines comerciales ni captación de datos.">
+<meta name="description" content="Guía educativa sobre paquetes y recargas de celular: cómo funcionan los saldos, vigencias, megas, minutos y buenas prácticas de consumo. Sitio educativo sin fines comerciales.">
 <meta name="author" content="Julian Restrepo Alvarez">
 <meta name="robots" content="index, follow">
-<title>Julian Restrepo Alvarez</title>
+<title>Julian Restrepo Alvarez · Guía de Paquetes y Recargas de Celular</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -87,7 +87,6 @@ body::after {
     100% { transform: translate(-20px, 30px) scale(0.95); }
 }
 
-/* Scanning line effect */
 .scan-line {
     position: fixed;
     top: 0;
@@ -153,6 +152,7 @@ header {
     font-size: 0.9rem;
     box-shadow: 0 0 20px rgba(14, 165, 233, 0.45);
     position: relative;
+    animation: logoPulse 4s ease-in-out infinite;
 }
 
 .logo-mark::after {
@@ -164,6 +164,11 @@ header {
     opacity: 0.5;
     filter: blur(8px);
     z-index: -1;
+}
+
+@keyframes logoPulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(14, 165, 233, 0.45); }
+    50% { box-shadow: 0 0 30px rgba(14, 165, 233, 0.7), 0 0 50px rgba(99, 102, 241, 0.3); }
 }
 
 .logo-text {
@@ -264,7 +269,7 @@ nav a.active {
 
 .stat-card .num {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     font-weight: 700;
     background: var(--gradient-1);
     -webkit-background-clip: text;
@@ -542,15 +547,15 @@ em { color: var(--text-muted); }
 
 .type-card .badge-letter {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
     background: var(--gradient-1);
     color: white;
     border-radius: 50%;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     margin-bottom: 0.7rem;
     box-shadow: 0 0 15px rgba(14, 165, 233, 0.4);
 }
@@ -622,7 +627,7 @@ em { color: var(--text-muted); }
 
 .tip strong { color: var(--accent-orange); }
 
-/* PASS / Selection Steps */
+/* Steps Grid */
 .pass-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -664,7 +669,7 @@ em { color: var(--text-muted); }
 
 .pass-step .letter {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.55rem;
     font-weight: 700;
     color: var(--accent-orange);
     margin-bottom: 0.4rem;
@@ -801,15 +806,6 @@ footer a:hover { color: var(--accent-orange); }
     .scan-line { display: none; }
 }
 
-/* Hover glow on logo mark */
-.logo-mark { animation: logoPulse 4s ease-in-out infinite; }
-
-@keyframes logoPulse {
-    0%, 100% { box-shadow: 0 0 20px rgba(14, 165, 233, 0.45); }
-    50% { box-shadow: 0 0 30px rgba(14, 165, 233, 0.7), 0 0 50px rgba(99, 102, 241, 0.3); }
-}
-
-/* Cursor blink in hero */
 .cursor {
     display: inline-block;
     width: 3px;
@@ -849,7 +845,7 @@ footer a:hover { color: var(--accent-orange); }
             <div class="logo-mark">JR</div>
             <div class="logo-text">
                 <span>Julian Restrepo Alvarez</span>
-                <small>Guía Educativa</small>
+                <small>Guía Educativa · Paquetes y Recargas</small>
             </div>
         </div>
         <nav>
@@ -869,8 +865,8 @@ footer a:hover { color: var(--accent-orange); }
     <div class="hero">
         <div class="hero-content">
             <span class="badge">Sitio educativo · Sin fines comerciales</span>
-            <h1>Guía Práctica de <span class="accent">Paquetes de Celulares</span><span class="cursor"></span></h1>
-            <p>Información clara y objetiva para entender cómo funcionan los paquetes móviles de datos, minutos, mensajes y redes sociales, evitando cargos inesperados y eligiendo según tu uso real.</p>
+            <h1>Guía de <span class="accent">Paquetes y Recargas de Celular</span><span class="cursor"></span></h1>
+            <p>Orientación clara y objetiva sobre cómo funcionan las recargas de saldo, la compra de paquetes móviles, las vigencias y el control del consumo de datos y minutos en tu teléfono.</p>
             <div class="hero-meta">
                 <span><span class="dot"></span> SISTEMA EDUCATIVO ACTIVO</span>
                 <span>v2.0</span>
@@ -878,20 +874,20 @@ footer a:hover { color: var(--accent-orange); }
             </div>
             <div class="tech-stats">
                 <div class="stat-card">
-                    <div class="num">GB / MB</div>
-                    <div class="label">Navegación Móvil</div>
+                    <div class="num">SALDO</div>
+                    <div class="label">Recarga Directa</div>
                 </div>
                 <div class="stat-card">
-                    <div class="num">MIN / SMS</div>
-                    <div class="label">Voz y Mensajes</div>
+                    <div class="num">COMBOS</div>
+                    <div class="label">Datos + Voz</div>
                 </div>
                 <div class="stat-card">
                     <div class="num">1 - 30 D</div>
-                    <div class="label">Vigencia Común</div>
+                    <div class="label">Vigencia Típica</div>
                 </div>
                 <div class="stat-card">
                     <div class="num">4G / 5G</div>
-                    <div class="label">Conectividad</div>
+                    <div class="label">Red Móvil</div>
                 </div>
             </div>
         </div>
@@ -900,134 +896,132 @@ footer a:hover { color: var(--accent-orange); }
     <main>
         <section>
             <h2>Propósito de esta Guía</h2>
-            <p>Este sitio web ha sido creado con un <strong>propósito netamente educativo e informativo</strong>. Su objetivo principal es ofrecer a los usuarios información clara y práctica sobre el funcionamiento de los paquetes de celulares, las diferencias entre tipos de planes y las buenas prácticas para administrar el consumo de datos móviles.</p>
+            <p>Este sitio web ha sido creado con un <strong>propósito netamente educativo e informativo</strong>. Su objetivo es explicar de manera sencilla cómo funcionan las recargas de celular y los paquetes móviles en modalidad prepago o por demanda, ayudando a los usuarios a comprender qué incluye cada opción antes de activarla.</p>
 
             <div class="highlight-box">
                 <strong>¿Por qué se realiza esta guía educativa?</strong>
-                <p style="margin-top: 0.6rem;">Muchas personas activan paquetes de celulares sin revisar la vigencia, las condiciones de las aplicaciones incluidas o el consumo real de sus aplicaciones en segundo plano. Esto suele generar agotamiento rápido de datos o confusión al comparar opciones. Esta guía busca explicar de forma sencilla cómo leer y aprovechar mejor cada paquete móvil.</p>
+                <p style="margin-top: 0.6rem;">Es habitual confundir una recarga de saldo tradicional con la activación directa de un paquete cerrado, o perder megas y minutos por no revisar la vigencia y las condiciones de consumo por demanda. Esta guía reúne conceptos prácticos para administrar mejor cada recarga y evitar descuentos inesperados en el saldo.</p>
             </div>
 
             <p><strong>Este sitio NO realiza:</strong></p>
             <ul>
                 <li>Captación, recolección o almacenamiento de datos personales de los visitantes.</li>
-                <li>Ventas de paquetes móviles, recargas, SIM cards, equipos ni servicios de telecomunicaciones.</li>
+                <li>Ventas ni procesamiento de recargas de celular, paquetes móviles, SIM cards ni equipos.</li>
                 <li>Procesos de afiliación, suscripción, portabilidad o registro de usuarios.</li>
-                <li>Transacciones financieras de ningún tipo.</li>
-                <li>Recomendación comercial de operadores, marcas o planes específicos.</li>
+                <li>Pagos en línea, pasarelas de recaudo ni transacciones financieras de ningún tipo.</li>
+                <li>Promoción comercial de operadores, marcas ni distribuidores de telefonía.</li>
             </ul>
         </section>
 
         <section>
-            <h2>¿Por qué Entender Bien tu Paquete Móvil?</h2>
-            <p>Elegir un paquete acorde a tus hábitos diarios evita gastar saldo de forma innecesaria y te permite mantener conectividad cuando realmente la necesitas, ya sea para trabajar, estudiar, comunicarte o consultar información en movilidad.</p>
+            <h2>Diferencia entre Recarga de Saldo y Paquete Móvil</h2>
+            <p>Entender cómo opera cada modalidad te permite decidir si te conviene mantener saldo libre o convertirlo en un paquete con recursos definidos.</p>
             <div class="grid-3">
                 <div class="service-card">
-                    <div class="icon">📊</div>
-                    <h3>Control del Consumo</h3>
-                    <p>Permite identificar qué aplicaciones gastan más megas y ajustar el uso según tu necesidad diaria.</p>
+                    <div class="icon">💳</div>
+                    <h3>Recarga de Saldo</h3>
+                    <p>Abona dinero a tu línea prepago para usarlo por demanda en llamadas, mensajes o datos según tarifa vigente, o para comprar paquetes después.</p>
                 </div>
                 <div class="service-card">
-                    <div class="icon">⏳</div>
-                    <h3>Gestión de Vigencia</h3>
-                    <p>Ayuda a diferenciar paquetes de 1, 3, 7, 15 o 30 días para que el tiempo no venza sin aprovecharse.</p>
+                    <div class="icon">📦</div>
+                    <h3>Paquete Todo Incluido</h3>
+                    <p>Asigna una cantidad fija de megas/gigas, minutos y redes sociales por un tiempo determinado (1, 3, 7, 15 o 30 días) a un valor cerrado.</p>
                 </div>
                 <div class="service-card">
-                    <div class="icon">📱</div>
-                    <h3>Uso Informado</h3>
-                    <p>Facilita comparar beneficios reales frente a condiciones como límites de velocidad o apps excluidas.</p>
+                    <div class="icon">⚡</div>
+                    <h3>Paquete Específico</h3>
+                    <p>Se enfoca en un solo recurso puntual, como solo datos para navegar durante unas horas o solo minutos para llamadas de voz.</p>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>Componentes Principales de un Paquete de Celular</h2>
-            <p>La mayoría de los paquetes móviles combinan distintos recursos. Conocer qué significa cada uno ayuda a evaluar si un paquete se ajusta a tu rutina.</p>
+            <h2>Elementos Clave de Paquetes y Recargas</h2>
+            <p>Antes de realizar una recarga o activar un paquete desde tu celular, conviene revisar cuatro variables principales que determinan su rendimiento real.</p>
             <div class="grid-4">
                 <div class="type-card">
-                    <div class="badge-letter">DATOS</div>
-                    <h4>Navegación Libre</h4>
-                    <p>Megabytes o gigabytes para navegar en internet, mapas, correo y páginas web.</p>
+                    <div class="badge-letter">MEGAS</div>
+                    <h4>Bolsa de Datos</h4>
+                    <p>Capacidad en MB o GB disponible para navegación web, correo, mapas y descargas.</p>
                 </div>
                 <div class="type-card">
                     <div class="badge-letter">VOZ</div>
                     <h4>Minutos y SMS</h4>
-                    <p>Llamadas a otros números móviles o fijos y mensajes de texto tradicionales.</p>
+                    <p>Tiempo para llamadas nacionales o a destinos incluidos y envío de mensajes de texto.</p>
+                </div>
+                <div class="type-card">
+                    <div class="badge-letter">RELOJ</div>
+                    <h4>Vigencia Exacta</h4>
+                    <p>Duración en horas o días calendario; al cumplirse el plazo, los recursos no usados expiran.</p>
                 </div>
                 <div class="type-card">
                     <div class="badge-letter">APPS</div>
-                    <h4>Redes y Mensajería</h4>
-                    <p>Acceso a plataformas específicas, sujeto a términos y condiciones particulares.</p>
-                </div>
-                <div class="type-card">
-                    <div class="badge-letter">TIEMPO</div>
-                    <h4>Vigencia del Paquete</h4>
-                    <p>Plazo en horas o días durante el cual permanecen activos los recursos asignados.</p>
+                    <h4>Uso en Plataformas</h4>
+                    <p>Aplicaciones incluidas sin descuento de megas generales, bajo reglas específicas de uso.</p>
                 </div>
             </div>
             <div class="info-box">
-                <strong>Dato útil:</strong> Los videos en alta definición, las videollamadas continuas y las actualizaciones automáticas de aplicaciones suelen consumir significativamente más datos que la mensajería de texto o la lectura de páginas ligeras.
+                <strong>Importante sobre el consumo por demanda:</strong> Si tienes saldo recargado sin un paquete activo y dejas encendidos los datos móviles, el sistema puede descontar dinero por cada megabyte consumido hasta agotar el saldo disponible.
             </div>
         </section>
 
         <section>
-            <h2>Cómo Administrar y Cuidar tu Consumo de Datos</h2>
-            <div class="tip"><strong>1. Revisa la vigencia antes de activar:</strong> comprueba si el paquete dura horas, días o un mes, y asegúrate de que coincida con tu frecuencia de uso.</div>
-            <div class="tip"><strong>2. Usa Wi-Fi para descargas pesadas:</strong> actualiza el sistema operativo, respalda fotos o descarga archivos grandes conectado a redes Wi-Fi confiables.</div>
-            <div class="tip"><strong>3. Limita el uso en segundo plano:</strong> restringe los datos en segundo plano para aplicaciones que no necesiten sincronizarse constantemente cuando no usas el teléfono.</div>
-            <div class="tip"><strong>4. Modera la calidad de video:</strong> en plataformas de video o transmisión en vivo, ajusta la resolución a media o automática cuando estés con datos móviles.</div>
-            <div class="tip"><strong>5. Activa alertas de consumo:</strong> configura en los ajustes del celular un aviso o límite de datos para saber cuándo te acercas al tope del paquete.</div>
-            <div class="tip"><strong>6. Lee las condiciones de redes incluidas:</strong> verifica si reproducir videos, enlaces externos o llamadas dentro de ciertas apps consume de la bolsa de datos general.</div>
-            <div class="tip"><strong>7. Desactiva el roaming si no aplica:</strong> evita cargos adicionales por uso internacional verificando las condiciones de tu línea antes de viajar.</div>
-            <div class="tip"><strong>8. Consulta el saldo periódicamente:</strong> revisa el estado de tus megas y minutos disponibles desde los canales oficiales de tu operador antes de realizar actividades de alto consumo.</div>
+            <h2>Buenas Prácticas al Recargar y Usar Paquetes</h2>
+            <div class="tip"><strong>1. Apaga los datos antes de recargar saldo:</strong> si vas a recargar dinero para luego comprar un paquete, desactiva temporalmente los datos móviles para que las apps en segundo plano no consuman el saldo antes de activarlo.</div>
+            <div class="tip"><strong>2. Verifica el número de línea dos veces:</strong> al hacer una recarga en puntos físicos o medios digitales oficiales, confirma dígito por dígito el número celular antes de aprobar la operación.</div>
+            <div class="tip"><strong>3. Revisa si la recarga activa paquete automático:</strong> algunos montos o códigos activan directamente un paquete en lugar de dejar saldo libre; lee siempre la descripción antes de confirmar.</div>
+            <div class="tip"><strong>4. Calcula tu vigencia ideal:</strong> si usas el celular principalmente fuera de casa entre semana, un paquete de 7 o 15 días suele rendir mejor que recargas diarias repetidas.</div>
+            <div class="tip"><strong>5. Usa Wi-Fi para actualizaciones y copias de seguridad:</strong> evita que las tiendas de aplicaciones o servicios en la nube descarguen archivos grandes usando tus datos móviles.</div>
+            <div class="tip"><strong>6. Revisa qué excluyen las redes incluidas:</strong> en muchas ocasiones las videollamadas, transmisiones en vivo o enlaces externos dentro de redes sociales descuentan de la bolsa general de datos.</div>
+            <div class="tip"><strong>7. Conserva el comprobante de recarga:</strong> guarda el recibo o captura de confirmación hasta verificar en tu celular que el saldo o el paquete quedó acreditado correctamente.</div>
+            <div class="tip"><strong>8. Configura un límite de datos en Android o iOS:</strong> establece alertas automáticas en los ajustes de red móvil para controlar cuánto llevas consumido dentro del periodo vigente.</div>
         </section>
 
         <section>
-            <h2>Cómo Elegir un Paquete: Pasos Clave</h2>
-            <p>Seguir un orden sencillo al momento de elegir un paquete móvil ayuda a tomar decisiones más ajustadas a tu presupuesto y a tu forma de conectarte.</p>
+            <h2>Pasos para Aprovechar Mejor tu Recarga</h2>
+            <p>Aplicar esta secuencia básica antes y después de recargar ayuda a evitar pérdidas de saldo y mantener el control de tu línea móvil.</p>
             <div class="pass-grid">
                 <div class="pass-step">
                     <span class="step-num">1</span>
-                    <div class="letter">USO</div>
-                    <h4>Evalúa tu Rutina</h4>
-                    <p>Identifica si usas el celular más para mensajería, trabajo, estudio o entretenimiento.</p>
+                    <div class="letter">PAUSAR</div>
+                    <h4>Controla Conexiones</h4>
+                    <p>Desactiva datos móviles si vas a abonar saldo libre para comprar un paquete.</p>
                 </div>
                 <div class="pass-step">
                     <span class="step-num">2</span>
-                    <div class="letter">PLAZO</div>
-                    <h4>Define la Vigencia</h4>
-                    <p>Elige entre opciones de corta duración o mayor vigencia según tu ciclo de consumo.</p>
+                    <div class="letter">ELEGIR</div>
+                    <h4>Compara Opciones</h4>
+                    <p>Revisa vigencia, gigas, minutos y condiciones según tu uso real de la semana o mes.</p>
                 </div>
                 <div class="pass-step">
                     <span class="step-num">3</span>
-                    <div class="letter">LEER</div>
-                    <h4>Revisa Condiciones</h4>
-                    <p>Consulta políticas de uso justo, renovaciones automáticas y alcances de cada beneficio.</p>
+                    <div class="letter">VALIDAR</div>
+                    <h4>Confirma Activación</h4>
+                    <p>Espera el mensaje de confirmación del paquete antes de volver a navegar con datos.</p>
                 </div>
                 <div class="pass-step">
                     <span class="step-num">4</span>
-                    <div class="letter">MEDIR</div>
-                    <h4>Monitorea el Resultado</h4>
-                    <p>Compara cuánto consumiste al finalizar el periodo para ajustar tu próxima elección.</p>
+                    <div class="letter">SEGUIR</div>
+                    <h4>Monitorea Saldo</h4>
+                    <p>Consulta periódicamente tus recursos disponibles para anticipar el vencimiento.</p>
                 </div>
             </div>
             <div class="warning-box">
-                <strong>¡Ten en cuenta!</strong> Las condiciones, tarifas, coberturas y políticas de los paquetes móviles varían según el operador, el tipo de línea y la regulación vigente. Verifica siempre la información oficial directamente con el proveedor de servicios correspondiente.
+                <strong>¡Aviso importante!</strong> Las tarifas, vigencias, códigos de activación y políticas de uso justo cambian según cada operador de telefonía móvil y la regulación vigente. Consulta siempre los canales oficiales de tu operador antes de efectuar cualquier recarga o compra.
             </div>
         </section>
 
         <section>
-            <h2>Recomendaciones Generales de Conectividad</h2>
+            <h2>Recomendaciones de Seguridad en Recargas Móviles</h2>
             <ol>
-                <li>Revisa el historial de consumo de datos en los ajustes de tu teléfono para conocer tus promedios reales.</li>
-                <li>Evita activar renovaciones automáticas sin confirmar primero cómo funcionan los cobros y cancelaciones.</li>
-                <li>Mantén tu dispositivo protegido con bloqueo de pantalla y precaución al conectarte a redes Wi-Fi públicas.</li>
-                <li>Compara el costo por día o por gigabyte en lugar de guiarte únicamente por el número grande del anuncio.</li>
-                <li>Conserva los comprobantes o confirmaciones de activación de tu línea para cualquier consulta con tu operador.</li>
-                <li>Ajusta la reproducción automática de videos en redes sociales para ahorrar datos móviles.</li>
-                <li>Consulta las líneas de atención oficial de tu proveedor ante fallas de servicio, facturación o cobertura.</li>
+                <li>Realiza tus recargas únicamente a través de canales oficiales de tu operador, entidades bancarias reconocidas o puntos autorizados.</li>
+                <li>Desconfía de mensajes de texto, enlaces o llamadas que ofrezcan recargas gratis o premios a cambio de claves o códigos SMS.</li>
+                <li>Nunca compartas códigos de verificación recibidos por mensaje de texto, ya que protegen el acceso a tu línea y cuentas asociadas.</li>
+                <li>Revisa en tu teléfono las suscripciones de contenido activo para evitar cobros recurrentes que descuenten tu saldo recargado.</li>
+                <li>Ante fallas en la acreditación de una recarga, comunícate con la línea de atención oficial de tu operador teniendo a mano la fecha, hora y valor de la operación.</li>
             </ol>
             <div class="info-box">
-                <strong>Importante:</strong> Esta guía constituye orientación general de carácter educativo. No reemplaza la información oficial de los operadores de telecomunicaciones ni constituye asesoría comercial, legal o técnica especializada.
+                <strong>Nota educativa:</strong> Esta guía constituye orientación general de carácter informativo. No representa a ningún operador de telefonía celular ni reemplaza sus términos contractuales oficiales.
             </div>
         </section>
     </main>
@@ -1039,17 +1033,17 @@ footer a:hover { color: var(--accent-orange); }
         <section>
             <div class="breadcrumb"><a href="#inicio">~/inicio</a> &gt; sobre-nosotros</div>
             <h2>Sobre Nosotros</h2>
-            <p>Somos una iniciativa educativa independiente que nace en la ciudad de <strong>Barranquilla, Atlántico (Colombia)</strong>, con el propósito de poner a disposición de los usuarios información clara, práctica y verificable sobre el funcionamiento y uso responsable de los paquetes de celulares.</p>
-            <p>Esta guía surge de la necesidad de explicar en lenguaje cotidiano conceptos habituales de la telefonía móvil —como megas, gigabytes, vigencias y consumos en segundo plano— para que las personas tomen decisiones más informadas.</p>
+            <p>Somos una iniciativa educativa independiente que nace en la ciudad de <strong>Barranquilla, Atlántico (Colombia)</strong>, con el propósito de ofrecer información clara, práctica y verificable sobre el funcionamiento de los paquetes y recargas de celular.</p>
+            <p>Esta guía surge de la necesidad de explicar en lenguaje sencillo cómo operan las recargas de saldo, la activación de paquetes móviles, las vigencias y el consumo de datos, ayudando a los usuarios a administrar mejor su conectividad diaria.</p>
 
             <h3>¿Quiénes somos?</h3>
-            <p>Detrás de este sitio se encuentra <strong>Julian Restrepo Alvarez</strong>, ciudadano colombiano residente en Barranquilla (Atlántico), quien de manera personal y voluntaria divulga contenidos educativos sobre paquetes de celulares, sin perseguir fines de lucro y sin ofrecer ningún tipo de servicio comercial.</p>
+            <p>Detrás de este sitio se encuentra <strong>Julian Restrepo Alvarez</strong>, ciudadano colombiano residente en Barranquilla (Atlántico), quien de manera personal y voluntaria divulga contenidos educativos sobre paquetes y recargas de celular, sin perseguir fines de lucro y sin ofrecer ningún tipo de servicio comercial.</p>
 
             <h3>Nuestro compromiso</h3>
             <ul>
                 <li>Ofrecer información de carácter educativo, con enfoque claro y práctico.</li>
                 <li>Mantener un sitio totalmente gratuito, sin publicidad de terceros y sin captación de datos personales.</li>
-                <li>Promover el uso informado y consciente de los recursos móviles.</li>
+                <li>Promover el uso informado y seguro de las recargas y paquetes móviles.</li>
                 <li>Actualizar periódicamente la información para reflejar buenas prácticas vigentes.</li>
                 <li>Respetar plenamente la privacidad de los visitantes.</li>
             </ul>
@@ -1066,7 +1060,7 @@ footer a:hover { color: var(--accent-orange); }
             </div>
 
             <h3>Naturaleza del sitio</h3>
-            <p>Este sitio web tiene una naturaleza estrictamente educativa. No constituye una actividad mercantil ni representa a ningún operador móvil, marca, entidad pública, distribuidor o comercializador de planes y paquetes celulares. Toda la información publicada es de libre consulta y su único fin es orientar al usuario.</p>
+            <p>Este sitio web tiene una naturaleza estrictamente educativa. No constituye una actividad mercantil ni representa a ningún operador móvil, marca, entidad pública, punto de recarga o comercializador de servicios de telecomunicaciones. Toda la información publicada es de libre consulta.</p>
         </section>
     </main>
 </div>
@@ -1080,18 +1074,18 @@ footer a:hover { color: var(--accent-orange); }
             <div class="grid-2">
                 <div class="card">
                     <h3>Nuestra Misión</h3>
-                    <p>Difundir, de manera clara, accesible y gratuita, contenidos educativos que orienten a los usuarios sobre el funcionamiento, elección y administración de los paquetes de celulares, promoviendo el uso informado de la conectividad móvil sin recurrir a actividades comerciales ni a la captación de datos personales.</p>
+                    <p>Difundir, de manera clara, accesible y gratuita, contenidos educativos que orienten a los usuarios sobre el funcionamiento, elección y administración de los paquetes y recargas de celular, promoviendo el uso informado de la conectividad móvil sin recurrir a actividades comerciales ni a la captación de datos personales.</p>
                 </div>
                 <div class="card">
                     <h3>Nuestra Visión</h3>
-                    <p>Ser para el año 2030 una guía educativa de referencia en línea para quienes buscan comprender de forma sencilla los paquetes móviles y optimizar su consumo diario, reconocida por la claridad, utilidad y objetividad de sus contenidos, así como por su compromiso con la privacidad del visitante.</p>
+                    <p>Ser para el año 2030 una guía educativa de referencia en línea para quienes buscan comprender de forma sencilla los paquetes y recargas móviles y optimizar su consumo diario, reconocida por la claridad, utilidad y objetividad de sus contenidos, así como por su compromiso con la privacidad del visitante.</p>
                 </div>
             </div>
 
             <h3>Nuestros Valores</h3>
             <ul>
                 <li><strong>Educación:</strong> creemos que la información clara facilita mejores decisiones cotidianas.</li>
-                <li><strong>Claridad:</strong> explicamos términos técnicos de conectividad en un lenguaje accesible.</li>
+                <li><strong>Claridad:</strong> explicamos términos técnicos de telefonía móvil en un lenguaje accesible.</li>
                 <li><strong>Transparencia:</strong> publicamos información objetiva y de utilidad práctica.</li>
                 <li><strong>Gratuidad:</strong> el acceso a este sitio es y será siempre completamente libre y sin costo.</li>
                 <li><strong>Privacidad:</strong> no recolectamos datos personales de nuestros visitantes.</li>
@@ -1195,7 +1189,7 @@ footer a:hover { color: var(--accent-orange); }
             <p>El acceso y uso del presente sitio web implican la aceptación plena, expresa y sin reservas de los presentes Términos y Condiciones por parte del usuario.</p>
 
             <h3>2. Objeto del sitio</h3>
-            <p>Este sitio web tiene un fin <strong>exclusivamente educativo e informativo</strong>. Su contenido busca difundir información práctica sobre el funcionamiento y uso de paquetes de celulares. Bajo ninguna circunstancia constituye oferta comercial, asesoría contractual ni asesoría técnica especializada.</p>
+            <p>Este sitio web tiene un fin <strong>exclusivamente educativo e informativo</strong>. Su contenido busca difundir información práctica sobre el funcionamiento y uso de paquetes y recargas de celular. Bajo ninguna circunstancia constituye oferta comercial, servicio de recargas, asesoría contractual ni asesoría técnica especializada.</p>
 
             <h3>3. Carácter no comercial</h3>
             <p>El sitio no realiza actividades comerciales, no vende productos ni servicios, no recibe pagos, no recolecta datos personales con fines comerciales y no realiza captación de clientes ni potenciales consumidores.</p>
@@ -1213,7 +1207,7 @@ footer a:hover { color: var(--accent-orange); }
             </ul>
 
             <h3>6. Limitación de responsabilidad</h3>
-            <p>El responsable del sitio actúa de buena fe y se esfuerza por mantener la información actualizada y precisa. Sin embargo, <strong>no garantiza</strong> que la información esté libre de errores u omisiones. Para condiciones específicas de planes, tarifas o coberturas, el usuario deberá consultar directamente los canales oficiales de su operador de telecomunicaciones.</p>
+            <p>El responsable del sitio actúa de buena fe y se esfuerza por mantener la información actualizada y precisa. Sin embargo, <strong>no garantiza</strong> que la información esté libre de errores u omisiones. Para condiciones específicas de recargas, planes, tarifas o coberturas, el usuario deberá consultar directamente los canales oficiales de su operador de telecomunicaciones.</p>
 
             <h3>7. Enlaces a terceros</h3>
             <p>En caso de que el sitio incluya enlaces a sitios web de terceros, el responsable no se hace responsable del contenido, las políticas de privacidad ni las prácticas de dichos sitios externos.</p>
@@ -1280,7 +1274,7 @@ footer a:hover { color: var(--accent-orange); }
     var validPages = ['inicio', 'sobre-nosotros', 'mision-vision', 'politicas-privacidad', 'terminos-condiciones'];
 
     var titles = {
-        'inicio': 'Julian Restrepo Alvarez',
+        'inicio': 'Julian Restrepo Alvarez · Guía de Paquetes y Recargas de Celular',
         'sobre-nosotros': 'Julian Restrepo Alvarez · Sobre Nosotros',
         'mision-vision': 'Julian Restrepo Alvarez · Misión y Visión',
         'politicas-privacidad': 'Julian Restrepo Alvarez · Políticas y Privacidad',
