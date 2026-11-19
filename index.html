@@ -3,32 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Guía educativa sobre paquetes y recargas de celular: cómo funcionan los saldos, vigencias, megas, minutos y buenas prácticas de consumo. Sitio educativo sin fines comerciales.">
+<meta name="description" content="Guía educativa sobre la gestión y revisión de paquetes y recargas de celular en casa. Sitio educativo sin fines comerciales ni captación de datos.">
 <meta name="author" content="Julian Restrepo Alvarez">
 <meta name="robots" content="index, follow">
-<title>Julian Restrepo Alvarez · Guía de Paquetes y Recargas de Celular</title>
+<title>Julian Restrepo Alvarez</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-    --bg-primary: #090d16;
-    --bg-secondary: #111827;
-    --bg-card: rgba(17, 24, 39, 0.72);
-    --bg-card-hover: rgba(30, 41, 59, 0.9);
-    --border-glow: rgba(14, 165, 233, 0.35);
+    --bg-primary: #061014;
+    --bg-secondary: #0c1d24;
+    --bg-card: rgba(12, 29, 36, 0.72);
+    --bg-card-hover: rgba(18, 42, 52, 0.9);
+    --border-glow: rgba(16, 185, 129, 0.35);
     --border-subtle: rgba(148, 163, 184, 0.14);
-    --accent-orange: #0ea5e9;
-    --accent-red: #6366f1;
-    --accent-amber: #38bdf8;
-    --accent-cyan: #06b6d4;
-    --accent-emerald: #10b981;
-    --text-primary: #f8fafc;
+    --accent-orange: #10b981;
+    --accent-red: #0284c7;
+    --accent-amber: #34d399;
+    --accent-cyan: #22d3ee;
+    --accent-emerald: #2dd4bf;
+    --text-primary: #f0fdf4;
     --text-secondary: #cbd5e1;
     --text-muted: #94a3b8;
-    --gradient-1: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
-    --gradient-2: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
-    --gradient-3: linear-gradient(135deg, #06b6d4 0%, #10b981 100%);
+    --gradient-1: linear-gradient(135deg, #10b981 0%, #0284c7 100%);
+    --gradient-2: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+    --gradient-3: linear-gradient(135deg, #22d3ee 0%, #2dd4bf 100%);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -41,9 +41,9 @@ body {
     color: var(--text-secondary);
     background-color: var(--bg-primary);
     background-image:
-        radial-gradient(circle at 15% 10%, rgba(14, 165, 233, 0.12) 0%, transparent 40%),
-        radial-gradient(circle at 85% 85%, rgba(99, 102, 241, 0.1) 0%, transparent 40%),
-        radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.05) 0%, transparent 60%);
+        radial-gradient(circle at 15% 10%, rgba(16, 185, 129, 0.11) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(2, 132, 199, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(52, 211, 153, 0.05) 0%, transparent 60%);
     background-attachment: fixed;
     min-height: 100vh;
     overflow-x: hidden;
@@ -54,8 +54,8 @@ body::before {
     position: fixed;
     inset: 0;
     background-image:
-        linear-gradient(rgba(14, 165, 233, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
+        linear-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
     background-size: 50px 50px;
     pointer-events: none;
     z-index: 0;
@@ -67,9 +67,9 @@ body::after {
     position: fixed;
     inset: 0;
     background:
-        radial-gradient(circle at 20% 30%, rgba(14, 165, 233, 0.15) 0%, transparent 8%),
-        radial-gradient(circle at 70% 60%, rgba(99, 102, 241, 0.12) 0%, transparent 8%),
-        radial-gradient(circle at 40% 80%, rgba(56, 189, 248, 0.1) 0%, transparent 6%);
+        radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.15) 0%, transparent 8%),
+        radial-gradient(circle at 70% 60%, rgba(2, 132, 199, 0.12) 0%, transparent 8%),
+        radial-gradient(circle at 40% 80%, rgba(52, 211, 153, 0.1) 0%, transparent 6%);
     filter: blur(40px);
     pointer-events: none;
     z-index: 0;
@@ -87,6 +87,7 @@ body::after {
     100% { transform: translate(-20px, 30px) scale(0.95); }
 }
 
+/* Scanning line effect */
 .scan-line {
     position: fixed;
     top: 0;
@@ -108,7 +109,7 @@ body::after {
 
 /* ===== HEADER ===== */
 header {
-    background: rgba(9, 13, 22, 0.85);
+    background: rgba(6, 16, 20, 0.85);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     border-bottom: 1px solid var(--border-subtle);
@@ -150,9 +151,8 @@ header {
     color: white;
     font-weight: 700;
     font-size: 0.9rem;
-    box-shadow: 0 0 20px rgba(14, 165, 233, 0.45);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.45);
     position: relative;
-    animation: logoPulse 4s ease-in-out infinite;
 }
 
 .logo-mark::after {
@@ -164,11 +164,6 @@ header {
     opacity: 0.5;
     filter: blur(8px);
     z-index: -1;
-}
-
-@keyframes logoPulse {
-    0%, 100% { box-shadow: 0 0 20px rgba(14, 165, 233, 0.45); }
-    50% { box-shadow: 0 0 30px rgba(14, 165, 233, 0.7), 0 0 50px rgba(99, 102, 241, 0.3); }
 }
 
 .logo-text {
@@ -208,15 +203,15 @@ nav a {
 
 nav a:hover {
     color: var(--accent-orange);
-    background: rgba(14, 165, 233, 0.08);
+    background: rgba(16, 185, 129, 0.08);
     border-color: var(--border-glow);
 }
 
 nav a.active {
     color: var(--accent-orange);
-    background: rgba(14, 165, 233, 0.12);
+    background: rgba(16, 185, 129, 0.12);
     border-color: var(--border-glow);
-    box-shadow: 0 0 12px rgba(14, 165, 233, 0.18);
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.18);
 }
 
 /* ===== HERO ===== */
@@ -254,7 +249,7 @@ nav a.active {
 }
 
 .stat-card {
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.07) 0%, transparent 100%);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.06) 0%, transparent 100%);
     border: 1px solid var(--border-subtle);
     padding: 1.2rem 1rem;
     border-radius: 12px;
@@ -269,7 +264,7 @@ nav a.active {
 
 .stat-card .num {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     font-weight: 700;
     background: var(--gradient-1);
     -webkit-background-clip: text;
@@ -291,7 +286,7 @@ nav a.active {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at center top, rgba(14, 165, 233, 0.18) 0%, transparent 60%);
+    background: radial-gradient(ellipse at center top, rgba(16, 185, 129, 0.18) 0%, transparent 60%);
     pointer-events: none;
 }
 
@@ -306,7 +301,7 @@ nav a.active {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(14, 165, 233, 0.08);
+    background: rgba(16, 185, 129, 0.08);
     border: 1px solid var(--border-glow);
     padding: 0.5rem 1.1rem;
     border-radius: 100px;
@@ -341,7 +336,7 @@ nav a.active {
     letter-spacing: -0.03em;
     margin-bottom: 1.4rem;
     color: var(--text-primary);
-    background: linear-gradient(180deg, #f8fafc 0%, #94a3b8 100%);
+    background: linear-gradient(180deg, #f0fdf4 0%, #94a3b8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -463,32 +458,32 @@ em { color: var(--text-muted); }
 }
 
 .highlight-box {
-    background: rgba(56, 189, 248, 0.08);
-    border-color: rgba(56, 189, 248, 0.25);
+    background: rgba(52, 211, 153, 0.08);
+    border-color: rgba(52, 211, 153, 0.25);
     border-left: 3px solid var(--accent-amber);
 }
 
 .highlight-box strong { color: var(--accent-amber); }
 
 .info-box {
-    background: rgba(6, 182, 212, 0.06);
-    border-color: rgba(6, 182, 212, 0.2);
+    background: rgba(34, 211, 238, 0.06);
+    border-color: rgba(34, 211, 238, 0.2);
     border-left: 3px solid var(--accent-cyan);
 }
 
 .info-box strong { color: var(--accent-cyan); }
 
 .warning-box {
-    background: rgba(99, 102, 241, 0.08);
-    border-color: rgba(99, 102, 241, 0.28);
+    background: rgba(2, 132, 199, 0.08);
+    border-color: rgba(2, 132, 199, 0.28);
     border-left: 3px solid var(--accent-red);
 }
 
 .warning-box strong { color: var(--accent-red); }
 
 .responsable-box {
-    background: rgba(16, 185, 129, 0.06);
-    border-color: rgba(16, 185, 129, 0.25);
+    background: rgba(45, 212, 191, 0.06);
+    border-color: rgba(45, 212, 191, 0.25);
     border-left: 3px solid var(--accent-emerald);
 }
 
@@ -500,7 +495,7 @@ em { color: var(--text-muted); }
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; margin: 2rem 0; }
 
 .service-card {
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.06) 0%, rgba(99, 102, 241, 0.06) 100%);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(2, 132, 199, 0.05) 100%);
     border: 1px solid var(--border-subtle);
     padding: 2rem 1.5rem;
     border-radius: 14px;
@@ -532,7 +527,7 @@ em { color: var(--text-muted); }
 .service-card p { text-align: center; color: var(--text-muted); font-size: 0.95rem; }
 
 .type-card {
-    background: linear-gradient(180deg, rgba(14, 165, 233, 0.09) 0%, transparent 100%);
+    background: linear-gradient(180deg, rgba(16, 185, 129, 0.08) 0%, transparent 100%);
     border: 1px solid var(--border-subtle);
     padding: 1.4rem 1rem;
     border-radius: 12px;
@@ -547,17 +542,17 @@ em { color: var(--text-muted); }
 
 .type-card .badge-letter {
     display: inline-block;
-    width: 56px;
-    height: 56px;
-    line-height: 56px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     background: var(--gradient-1);
     color: white;
     border-radius: 50%;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
-    font-size: 0.95rem;
+    font-size: 1.4rem;
     margin-bottom: 0.7rem;
-    box-shadow: 0 0 15px rgba(14, 165, 233, 0.4);
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
 }
 
 .type-card h4 {
@@ -575,7 +570,7 @@ em { color: var(--text-muted); }
 }
 
 .grid-2 .card {
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.06) 0%, rgba(99, 102, 241, 0.06) 100%);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(2, 132, 199, 0.05) 100%);
     border: 1px solid var(--border-subtle);
     padding: 2rem;
     border-radius: 14px;
@@ -589,7 +584,7 @@ em { color: var(--text-muted); }
 
 /* ===== BREADCRUMB ===== */
 .breadcrumb {
-    background: rgba(14, 165, 233, 0.05);
+    background: rgba(16, 185, 129, 0.05);
     border: 1px solid var(--border-subtle);
     padding: 0.6rem 1.1rem;
     border-radius: 8px;
@@ -609,7 +604,7 @@ em { color: var(--text-muted); }
 
 /* ===== TIPS ===== */
 .tip {
-    background: linear-gradient(90deg, rgba(14, 165, 233, 0.07) 0%, transparent 100%);
+    background: linear-gradient(90deg, rgba(16, 185, 129, 0.06) 0%, transparent 100%);
     border: 1px solid var(--border-subtle);
     border-left: 3px solid var(--accent-orange);
     padding: 1rem 1.2rem;
@@ -620,14 +615,14 @@ em { color: var(--text-muted); }
 }
 
 .tip:hover {
-    background: linear-gradient(90deg, rgba(14, 165, 233, 0.12) 0%, transparent 100%);
+    background: linear-gradient(90deg, rgba(16, 185, 129, 0.1) 0%, transparent 100%);
     transform: translateX(4px);
     border-left-color: var(--accent-amber);
 }
 
 .tip strong { color: var(--accent-orange); }
 
-/* Steps Grid */
+/* PASS Steps */
 .pass-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -636,7 +631,7 @@ em { color: var(--text-muted); }
 }
 
 .pass-step {
-    background: linear-gradient(180deg, rgba(99, 102, 241, 0.09) 0%, rgba(14, 165, 233, 0.06) 100%);
+    background: linear-gradient(180deg, rgba(2, 132, 199, 0.08) 0%, rgba(16, 185, 129, 0.05) 100%);
     border: 1px solid var(--border-subtle);
     padding: 1.5rem 1rem;
     border-radius: 12px;
@@ -646,7 +641,7 @@ em { color: var(--text-muted); }
 }
 
 .pass-step:hover {
-    border-color: var(--accent-orange);
+    border-color: var(--accent-red);
     transform: translateY(-3px);
 }
 
@@ -664,12 +659,12 @@ em { color: var(--text-muted); }
     font-weight: 700;
     font-size: 0.85rem;
     line-height: 26px;
-    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 10px rgba(2, 132, 199, 0.5);
 }
 
 .pass-step .letter {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.55rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--accent-orange);
     margin-bottom: 0.4rem;
@@ -691,7 +686,7 @@ em { color: var(--text-muted); }
 
 /* ===== FOOTER ===== */
 footer {
-    background: rgba(6, 9, 16, 0.95);
+    background: rgba(4, 11, 14, 0.95);
     backdrop-filter: blur(10px);
     color: var(--text-secondary);
     padding: 3.5rem 2rem 1.5rem;
@@ -751,7 +746,7 @@ footer a {
 footer a:hover { color: var(--accent-orange); }
 
 .responsable-footer {
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.06), rgba(99, 102, 241, 0.06));
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(2, 132, 199, 0.05));
     border: 1px solid var(--border-glow);
     padding: 1.5rem;
     border-radius: 14px;
@@ -806,6 +801,15 @@ footer a:hover { color: var(--accent-orange); }
     .scan-line { display: none; }
 }
 
+/* Hover glow on logo mark */
+.logo-mark { animation: logoPulse 4s ease-in-out infinite; }
+
+@keyframes logoPulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.45); }
+    50% { box-shadow: 0 0 30px rgba(16, 185, 129, 0.7), 0 0 50px rgba(2, 132, 199, 0.3); }
+}
+
+/* Cursor blink in hero */
 .cursor {
     display: inline-block;
     width: 3px;
@@ -821,18 +825,18 @@ footer a:hover { color: var(--accent-orange); }
 }
 
 ::selection {
-    background: rgba(14, 165, 233, 0.3);
+    background: rgba(16, 185, 129, 0.3);
     color: var(--text-primary);
 }
 
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: var(--bg-primary); }
 ::-webkit-scrollbar-thumb {
-    background: rgba(14, 165, 233, 0.25);
+    background: rgba(16, 185, 129, 0.25);
     border-radius: 10px;
     border: 2px solid var(--bg-primary);
 }
-::-webkit-scrollbar-thumb:hover { background: rgba(14, 165, 233, 0.45); }
+::-webkit-scrollbar-thumb:hover { background: rgba(16, 185, 129, 0.45); }
 </style>
 </head>
 <body>
@@ -845,7 +849,7 @@ footer a:hover { color: var(--accent-orange); }
             <div class="logo-mark">JR</div>
             <div class="logo-text">
                 <span>Julian Restrepo Alvarez</span>
-                <small>Guía Educativa · Paquetes y Recargas</small>
+                <small>Guía Educativa</small>
             </div>
         </div>
         <nav>
@@ -865,8 +869,8 @@ footer a:hover { color: var(--accent-orange); }
     <div class="hero">
         <div class="hero-content">
             <span class="badge">Sitio educativo · Sin fines comerciales</span>
-            <h1>Guía de <span class="accent">Paquetes y Recargas de Celular</span><span class="cursor"></span></h1>
-            <p>Orientación clara y objetiva sobre cómo funcionan las recargas de saldo, la compra de paquetes móviles, las vigencias y el control del consumo de datos y minutos en tu teléfono.</p>
+            <h1>Gestión y Revisión de <span class="accent">Paquetes y Recargas</span><span class="cursor"></span></h1>
+            <p>Guía educativa con datos prácticos para entender, administrar y verificar correctamente paquetes y recargas de celular, asegurando que tu línea esté lista cuando surja una necesidad.</p>
             <div class="hero-meta">
                 <span><span class="dot"></span> SISTEMA EDUCATIVO ACTIVO</span>
                 <span>v2.0</span>
@@ -874,20 +878,20 @@ footer a:hover { color: var(--accent-orange); }
             </div>
             <div class="tech-stats">
                 <div class="stat-card">
-                    <div class="num">SALDO</div>
-                    <div class="label">Recarga Directa</div>
+                    <div class="num">04</div>
+                    <div class="label">Rubros Clave</div>
                 </div>
                 <div class="stat-card">
-                    <div class="num">COMBOS</div>
-                    <div class="label">Datos + Voz</div>
+                    <div class="num">R.E.V.A.</div>
+                    <div class="label">Rutina Base</div>
                 </div>
                 <div class="stat-card">
-                    <div class="num">1 - 30 D</div>
-                    <div class="label">Vigencia Típica</div>
+                    <div class="num">30</div>
+                    <div class="label">Días de Plazo</div>
                 </div>
                 <div class="stat-card">
-                    <div class="num">4G / 5G</div>
-                    <div class="label">Red Móvil</div>
+                    <div class="num">*#</div>
+                    <div class="label">Consulta Rápida</div>
                 </div>
             </div>
         </div>
@@ -895,133 +899,135 @@ footer a:hover { color: var(--accent-orange); }
 
     <main>
         <section>
-            <h2>Propósito de esta Guía</h2>
-            <p>Este sitio web ha sido creado con un <strong>propósito netamente educativo e informativo</strong>. Su objetivo es explicar de manera sencilla cómo funcionan las recargas de celular y los paquetes móviles en modalidad prepago o por demanda, ayudando a los usuarios a comprender qué incluye cada opción antes de activarla.</p>
+            <h2>Objetivo de este Recurso</h2>
+            <p>Esta página fue elaborada con un <strong>fin puramente formativo y divulgativo</strong>. Su meta central consiste en brindar a los hogares de Colombia pautas sencillas y aplicables sobre la administración, consulta y selección de paquetes y recargas de celular, ayudando a consolidar hábitos responsables de conectividad en el entorno familiar.</p>
 
             <div class="highlight-box">
-                <strong>¿Por qué se realiza esta guía educativa?</strong>
-                <p style="margin-top: 0.6rem;">Es habitual confundir una recarga de saldo tradicional con la activación directa de un paquete cerrado, o perder megas y minutos por no revisar la vigencia y las condiciones de consumo por demanda. Esta guía reúne conceptos prácticos para administrar mejor cada recarga y evitar descuentos inesperados en el saldo.</p>
+                <strong>¿Por qué se elabora este material educativo?</strong>
+                <p style="margin-top: 0.6rem;">En Colombia, buena parte de los inconvenientes de comunicación cotidiana podrían evitarse si los usuarios verificaran sus saldos y entendieran cómo rinden sus paquetes móviles. Sin embargo, muchas personas recargan o activan un paquete y dejan pasar días sin revisar vigencias ni consumos, quedándose sin cobertura en el momento menos oportuno. Este manual pretende acortar esa falta de claridad con orientación abierta, útil y comprobable, favoreciendo la organización familiar y la prevención de contratiempos.</p>
             </div>
 
-            <p><strong>Este sitio NO realiza:</strong></p>
+            <p><strong>En este portal NO se lleva a cabo:</strong></p>
             <ul>
-                <li>Captación, recolección o almacenamiento de datos personales de los visitantes.</li>
-                <li>Ventas ni procesamiento de recargas de celular, paquetes móviles, SIM cards ni equipos.</li>
-                <li>Procesos de afiliación, suscripción, portabilidad o registro de usuarios.</li>
-                <li>Pagos en línea, pasarelas de recaudo ni transacciones financieras de ningún tipo.</li>
-                <li>Promoción comercial de operadores, marcas ni distribuidores de telefonía.</li>
+                <li>Obtención, registro o resguardo de información personal de quienes visitan el sitio.</li>
+                <li>Comercialización de paquetes, recargas, planes, accesorios ni servicios de telefonía.</li>
+                <li>Trámites de inscripción, membresía, cambio de operador o apertura de cuentas.</li>
+                <li>Operaciones de pago, transferencias o movimientos financieros de clase alguna.</li>
+                <li>Sugerencia de firmas comerciales, marcas o establecimientos de venta.</li>
             </ul>
         </section>
 
         <section>
-            <h2>Diferencia entre Recarga de Saldo y Paquete Móvil</h2>
-            <p>Entender cómo opera cada modalidad te permite decidir si te conviene mantener saldo libre o convertirlo en un paquete con recursos definidos.</p>
+            <h2>¿Por qué Planificar Paquetes y Recargas?</h2>
+            <p>Contar con saldo o un paquete activo bien elegido es uno de los apoyos más útiles para resolver gestiones diarias sin tropiezos. Una decisión acertada puede marcar la diferencia entre mantener contacto oportuno o quedarse incomunicado. Organizarlo según tu ritmo habitual forma parte de una rutina básica de conectividad para cualquier hogar.</p>
             <div class="grid-3">
                 <div class="service-card">
-                    <div class="icon">💳</div>
-                    <h3>Recarga de Saldo</h3>
-                    <p>Abona dinero a tu línea prepago para usarlo por demanda en llamadas, mensajes o datos según tarifa vigente, o para comprar paquetes después.</p>
+                    <div class="icon">📲</div>
+                    <h3>Anticipación</h3>
+                    <p>Un paquete o recarga al día permite resolver imprevistos cotidianos antes de que se vuelvan urgencias.</p>
                 </div>
                 <div class="service-card">
-                    <div class="icon">📦</div>
-                    <h3>Paquete Todo Incluido</h3>
-                    <p>Asigna una cantidad fija de megas/gigas, minutos y redes sociales por un tiempo determinado (1, 3, 7, 15 o 30 días) a un valor cerrado.</p>
+                    <div class="icon">🏡</div>
+                    <h3>Apoyo al Hogar</h3>
+                    <p>Facilita la comunicación de tu familia, estudio o trabajo ante cualquier aviso repentino.</p>
                 </div>
                 <div class="service-card">
-                    <div class="icon">⚡</div>
-                    <h3>Paquete Específico</h3>
-                    <p>Se enfoca en un solo recurso puntual, como solo datos para navegar durante unas horas o solo minutos para llamadas de voz.</p>
+                    <div class="icon">⏳</div>
+                    <h3>Atención Oportuna</h3>
+                    <p>Permite actuar con rapidez en los primeros instantes, cuando comunicarse de inmediato resulta clave.</p>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>Elementos Clave de Paquetes y Recargas</h2>
-            <p>Antes de realizar una recarga o activar un paquete desde tu celular, conviene revisar cuatro variables principales que determinan su rendimiento real.</p>
+            <h2>Modalidades de Paquetes y Sus Alcances</h2>
+            <p>Existen distintas alternativas de paquetes móviles pensadas para cubrir necesidades diferentes. Identificarlas es indispensable para escoger la opción más acorde a cada caso.</p>
             <div class="grid-4">
                 <div class="type-card">
-                    <div class="badge-letter">MEGAS</div>
-                    <h4>Bolsa de Datos</h4>
-                    <p>Capacidad en MB o GB disponible para navegación web, correo, mapas y descargas.</p>
+                    <div class="badge-letter">D</div>
+                    <h4>Datos</h4>
+                    <p>Navegación web, mapas, correo, mensajería y consulta en línea.</p>
                 </div>
                 <div class="type-card">
-                    <div class="badge-letter">VOZ</div>
-                    <h4>Minutos y SMS</h4>
-                    <p>Tiempo para llamadas nacionales o a destinos incluidos y envío de mensajes de texto.</p>
+                    <div class="badge-letter">M</div>
+                    <h4>Minutos</h4>
+                    <p>Llamadas de voz a números móviles, fijos o destinos habilitados.</p>
                 </div>
                 <div class="type-card">
-                    <div class="badge-letter">RELOJ</div>
-                    <h4>Vigencia Exacta</h4>
-                    <p>Duración en horas o días calendario; al cumplirse el plazo, los recursos no usados expiran.</p>
+                    <div class="badge-letter">R</div>
+                    <h4>Redes</h4>
+                    <p>Acceso a aplicaciones sociales sujetas a condiciones del paquete.</p>
                 </div>
                 <div class="type-card">
-                    <div class="badge-letter">APPS</div>
-                    <h4>Uso en Plataformas</h4>
-                    <p>Aplicaciones incluidas sin descuento de megas generales, bajo reglas específicas de uso.</p>
+                    <div class="badge-letter">C</div>
+                    <h4>Combos</h4>
+                    <p>Paquetes mixtos que reúnen megas, voz y vigencia por un lapso fijo.</p>
                 </div>
             </div>
             <div class="info-box">
-                <strong>Importante sobre el consumo por demanda:</strong> Si tienes saldo recargado sin un paquete activo y dejas encendidos los datos móviles, el sistema puede descontar dinero por cada megabyte consumido hasta agotar el saldo disponible.
+                <strong>Sugerencia práctica:</strong> Un paquete mixto con datos y minutos suele resultar conveniente para el uso diario equilibrado, ya que reúne navegación y llamadas en un mismo periodo. Si requieres mayor navegación continua, conviene revisar bolsas específicas de datos.
             </div>
         </section>
 
         <section>
-            <h2>Buenas Prácticas al Recargar y Usar Paquetes</h2>
-            <div class="tip"><strong>1. Apaga los datos antes de recargar saldo:</strong> si vas a recargar dinero para luego comprar un paquete, desactiva temporalmente los datos móviles para que las apps en segundo plano no consuman el saldo antes de activarlo.</div>
-            <div class="tip"><strong>2. Verifica el número de línea dos veces:</strong> al hacer una recarga en puntos físicos o medios digitales oficiales, confirma dígito por dígito el número celular antes de aprobar la operación.</div>
-            <div class="tip"><strong>3. Revisa si la recarga activa paquete automático:</strong> algunos montos o códigos activan directamente un paquete en lugar de dejar saldo libre; lee siempre la descripción antes de confirmar.</div>
-            <div class="tip"><strong>4. Calcula tu vigencia ideal:</strong> si usas el celular principalmente fuera de casa entre semana, un paquete de 7 o 15 días suele rendir mejor que recargas diarias repetidas.</div>
-            <div class="tip"><strong>5. Usa Wi-Fi para actualizaciones y copias de seguridad:</strong> evita que las tiendas de aplicaciones o servicios en la nube descarguen archivos grandes usando tus datos móviles.</div>
-            <div class="tip"><strong>6. Revisa qué excluyen las redes incluidas:</strong> en muchas ocasiones las videollamadas, transmisiones en vivo o enlaces externos dentro de redes sociales descuentan de la bolsa general de datos.</div>
-            <div class="tip"><strong>7. Conserva el comprobante de recarga:</strong> guarda el recibo o captura de confirmación hasta verificar en tu celular que el saldo o el paquete quedó acreditado correctamente.</div>
-            <div class="tip"><strong>8. Configura un límite de datos en Android o iOS:</strong> establece alertas automáticas en los ajustes de red móvil para controlar cuánto llevas consumido dentro del periodo vigente.</div>
+            <h2>Cómo Administrar y Revisar sus Recargas</h2>
+            <div class="tip"><strong>1. Elección del momento:</strong> active o recargue cuando realmente necesite el servicio o justo antes de un día de alta actividad, evitando que corra el tiempo sin aprovecharlo.</div>
+            <div class="tip"><strong>2. Chequeo periódico de saldo:</strong> consulte con regularidad los megas, minutos y días restantes, verificando que el estado coincida con lo activado y sin descuentos imprevistos.</div>
+            <div class="tip"><strong>3. Controle la caducidad:</strong> observe la fecha y hora de vencimiento de cada paquete. Gran parte de las opciones promocionales o de corta duración vencen en plazos fijos.</div>
+            <div class="tip"><strong>4. Red y ajustes limpios:</strong> procure que el teléfono tenga conexión estable y que las descargas o actualizaciones pesadas no agoten el paquete antes de tiempo.</div>
+            <div class="tip"><strong>5. Canales formales:</strong> cuando requiera activar, consultar o reclamar sobre una recarga, acuda exclusivamente a medios oficiales autorizados. Jamás entregue claves ni códigos privados.</div>
+            <div class="tip"><strong>6. Dosifique el consumo (Datos):</strong> en paquetes con volumen limitado de navegación, modere videos, transmisiones y copias automáticas para que el rendimiento rinda todo el plazo.</div>
+            <div class="tip"><strong>7. Vigile renovaciones activas:</strong> si una opción se renueva automáticamente sin que lo desee, revise las reglas de cancelación para evitar cargos no previstos.</div>
+            <div class="tip"><strong>8. Detalle claro de lo activado:</strong> conserve la confirmación o el resumen de lo que incluye el paquete para tener claridad sobre sus límites reales.</div>
         </section>
 
         <section>
-            <h2>Pasos para Aprovechar Mejor tu Recarga</h2>
-            <p>Aplicar esta secuencia básica antes y después de recargar ayuda a evitar pérdidas de saldo y mantener el control de tu línea móvil.</p>
+            <h2>Cómo Verificar un Paquete: Rutina R.E.V.A.</h2>
+            <p>La rutina R.E.V.A. (<em>Revisar, Evaluar, Verificar, Administrar</em>) ofrece un orden simple para comprobar el estado de un paquete antes de depender de él. Practicarla ahorra contratiempos.</p>
             <div class="pass-grid">
                 <div class="pass-step">
                     <span class="step-num">1</span>
-                    <div class="letter">PAUSAR</div>
-                    <h4>Controla Conexiones</h4>
-                    <p>Desactiva datos móviles si vas a abonar saldo libre para comprar un paquete.</p>
+                    <div class="letter">R</div>
+                    <h4>Revisar / Estado</h4>
+                    <p>Consulte el saldo disponible de datos y minutos en su línea.</p>
                 </div>
                 <div class="pass-step">
                     <span class="step-num">2</span>
-                    <div class="letter">ELEGIR</div>
-                    <h4>Compara Opciones</h4>
-                    <p>Revisa vigencia, gigas, minutos y condiciones según tu uso real de la semana o mes.</p>
+                    <div class="letter">E</div>
+                    <h4>Evaluar / Vigencia</h4>
+                    <p>Compruebe cuántos días u horas le restan antes de vencer.</p>
                 </div>
                 <div class="pass-step">
                     <span class="step-num">3</span>
-                    <div class="letter">VALIDAR</div>
-                    <h4>Confirma Activación</h4>
-                    <p>Espera el mensaje de confirmación del paquete antes de volver a navegar con datos.</p>
+                    <div class="letter">V</div>
+                    <h4>Verificar / Reglas</h4>
+                    <p>Confirme qué aplicaciones o llamadas están cubiertas por el paquete.</p>
                 </div>
                 <div class="pass-step">
                     <span class="step-num">4</span>
-                    <div class="letter">SEGUIR</div>
-                    <h4>Monitorea Saldo</h4>
-                    <p>Consulta periódicamente tus recursos disponibles para anticipar el vencimiento.</p>
+                    <div class="letter">A</div>
+                    <h4>Administrar / Uso</h4>
+                    <p>Ajuste el consumo diario de acuerdo con el tiempo y volumen restante.</p>
                 </div>
             </div>
             <div class="warning-box">
-                <strong>¡Aviso importante!</strong> Las tarifas, vigencias, códigos de activación y políticas de uso justo cambian según cada operador de telefonía móvil y la regulación vigente. Consulta siempre los canales oficiales de tu operador antes de efectuar cualquier recarga o compra.
+                <strong>¡Atención!</strong> Antes de realizar cualquier gestión importante, procure contar con un medio alterno de contacto o red disponible. Si surge un fallo técnico o un problema de servicio, comuníquese de inmediato con los canales oficiales de atención. Estar comunicado con calma siempre es lo primero.
             </div>
         </section>
 
         <section>
-            <h2>Recomendaciones de Seguridad en Recargas Móviles</h2>
+            <h2>Pautas Generales de Uso Responsable</h2>
             <ol>
-                <li>Realiza tus recargas únicamente a través de canales oficiales de tu operador, entidades bancarias reconocidas o puntos autorizados.</li>
-                <li>Desconfía de mensajes de texto, enlaces o llamadas que ofrezcan recargas gratis o premios a cambio de claves o códigos SMS.</li>
-                <li>Nunca compartas códigos de verificación recibidos por mensaje de texto, ya que protegen el acceso a tu línea y cuentas asociadas.</li>
-                <li>Revisa en tu teléfono las suscripciones de contenido activo para evitar cobros recurrentes que descuenten tu saldo recargado.</li>
-                <li>Ante fallas en la acreditación de una recarga, comunícate con la línea de atención oficial de tu operador teniendo a mano la fecha, hora y valor de la operación.</li>
+                <li>Mantenga en su teléfono un respaldo de información o contactos esenciales por si se agota un paquete en un momento crítico.</li>
+                <li>Procure que los integrantes del hogar sepan revisar su saldo y comprender la diferencia entre saldo libre y paquete activo.</li>
+                <li>Haga un balance mensual de cuánto gasta y consume para ajustar mejor sus futuras recargas.</li>
+                <li>Evite enlaces sospechosos o mensajes engañosos que prometan recargas gratuitas o beneficios irreales.</li>
+                <li>Utilice redes Wi-Fi confiables cuando deba descargar archivos grandes o actualizar aplicaciones.</li>
+                <li>Revise periódicamente suscripciones o cobros adicionales asociados a la línea y cancele lo que no utilice.</li>
+                <li>Tenga a la mano los números de atención y emergencia correspondientes: <strong>123</strong> (línea única), <strong>119</strong> (Bomberos en algunas ciudades).</li>
             </ol>
             <div class="info-box">
-                <strong>Nota educativa:</strong> Esta guía constituye orientación general de carácter informativo. No representa a ningún operador de telefonía celular ni reemplaza sus términos contractuales oficiales.
+                <strong>Nota:</strong> Este contenido representa una guía orientativa de carácter formativo. No sustituye la información oficial de los proveedores ni la asesoría técnica especializada. Para activaciones, tarifas, condiciones particulares o reclamos, consulte directamente las fuentes oficiales y la normativa vigente aplicable.
             </div>
         </section>
     </main>
@@ -1033,23 +1039,23 @@ footer a:hover { color: var(--accent-orange); }
         <section>
             <div class="breadcrumb"><a href="#inicio">~/inicio</a> &gt; sobre-nosotros</div>
             <h2>Sobre Nosotros</h2>
-            <p>Somos una iniciativa educativa independiente que nace en la ciudad de <strong>Barranquilla, Atlántico (Colombia)</strong>, con el propósito de ofrecer información clara, práctica y verificable sobre el funcionamiento de los paquetes y recargas de celular.</p>
-            <p>Esta guía surge de la necesidad de explicar en lenguaje sencillo cómo operan las recargas de saldo, la activación de paquetes móviles, las vigencias y el consumo de datos, ayudando a los usuarios a administrar mejor su conectividad diaria.</p>
+            <p>Somos un proyecto educativo autónomo originado en <strong>Barranquilla, Atlántico (Colombia)</strong>, con la firme intención de acercar a los hogares colombianos pautas claras, prácticas y contrastables sobre el manejo y revisión de paquetes y recargas de celular, impulsando hábitos preventivos de conectividad familiar.</p>
+            <p>Esta guía nace al notar que muchas personas realizan recargas o adquieren paquetes por costumbre o recomendación, pero rara vez revisan cómo funcionan realmente, sin advertir que una mala lectura de vigencias o consumos puede dejar sin servicio cuando más hace falta.</p>
 
             <h3>¿Quiénes somos?</h3>
-            <p>Detrás de este sitio se encuentra <strong>Julian Restrepo Alvarez</strong>, ciudadano colombiano residente en Barranquilla (Atlántico), quien de manera personal y voluntaria divulga contenidos educativos sobre paquetes y recargas de celular, sin perseguir fines de lucro y sin ofrecer ningún tipo de servicio comercial.</p>
+            <p>Detrás de esta publicación está <strong>Julian Restrepo Alvarez</strong>, ciudadano colombiano domiciliado en Barranquilla (Atlántico), quien de forma particular y sin ánimo de lucro ha decidido compartir contenidos educativos sobre paquetes y recargas de celular, sin perseguir ganancias económicas ni prestar servicios comerciales.</p>
 
             <h3>Nuestro compromiso</h3>
             <ul>
-                <li>Ofrecer información de carácter educativo, con enfoque claro y práctico.</li>
-                <li>Mantener un sitio totalmente gratuito, sin publicidad de terceros y sin captación de datos personales.</li>
-                <li>Promover el uso informado y seguro de las recargas y paquetes móviles.</li>
-                <li>Actualizar periódicamente la información para reflejar buenas prácticas vigentes.</li>
-                <li>Respetar plenamente la privacidad de los visitantes.</li>
+                <li>Brindar contenidos de carácter formativo, orientados a la ciudadanía y la familia.</li>
+                <li>Sostener una plataforma de libre acceso, sin anuncios de terceros ni recolección de datos personales.</li>
+                <li>Impulsar una cultura de organización y buen uso de los recursos móviles.</li>
+                <li>Poner al día los textos de manera periódica conforme a las prácticas habituales.</li>
+                <li>Resguardar de forma integral la confidencialidad de quienes visitan el sitio.</li>
             </ul>
 
             <div class="responsable-box">
-                <strong>Identificación del responsable del sitio:</strong>
+                <strong>Datos de identificación del responsable del sitio:</strong>
                 <p style="margin-top: 0.6rem;">
                     <strong>Nombre:</strong> Julian Restrepo Alvarez<br>
                     <strong>NIT:</strong> 81.777.04-1<br>
@@ -1059,8 +1065,8 @@ footer a:hover { color: var(--accent-orange); }
                 </p>
             </div>
 
-            <h3>Naturaleza del sitio</h3>
-            <p>Este sitio web tiene una naturaleza estrictamente educativa. No constituye una actividad mercantil ni representa a ningún operador móvil, marca, entidad pública, punto de recarga o comercializador de servicios de telecomunicaciones. Toda la información publicada es de libre consulta.</p>
+            <h3>Carácter del sitio</h3>
+            <p>Este espacio digital tiene un carácter estrictamente educativo. No configura una operación comercial ni representa a compañía alguna, marca, organismo estatal, operador móvil o distribuidor de recargas. Todo lo aquí expuesto es de consulta abierta y su único propósito es aportar claridad en el uso cotidiano de paquetes y recargas.</p>
         </section>
     </main>
 </div>
@@ -1074,26 +1080,26 @@ footer a:hover { color: var(--accent-orange); }
             <div class="grid-2">
                 <div class="card">
                     <h3>Nuestra Misión</h3>
-                    <p>Difundir, de manera clara, accesible y gratuita, contenidos educativos que orienten a los usuarios sobre el funcionamiento, elección y administración de los paquetes y recargas de celular, promoviendo el uso informado de la conectividad móvil sin recurrir a actividades comerciales ni a la captación de datos personales.</p>
+                    <p>Compartir, de forma transparente, sencilla y sin costo, materiales educativos que guíen a los hogares colombianos en la administración y revisión de paquetes y recargas de celular, fomentando el uso ordenado, la tranquilidad familiar y la consulta oportuna, sin acudir a fines comerciales ni a la captura de datos personales.</p>
                 </div>
                 <div class="card">
                     <h3>Nuestra Visión</h3>
-                    <p>Ser para el año 2030 una guía educativa de referencia en línea para quienes buscan comprender de forma sencilla los paquetes y recargas móviles y optimizar su consumo diario, reconocida por la claridad, utilidad y objetividad de sus contenidos, así como por su compromiso con la privacidad del visitante.</p>
+                    <p>Consolidarnos hacia el año 2030 como una guía educativa de consulta habitual en internet para las familias colombianas que deseen organizar mejor sus paquetes y recargas móviles, reconocida por el lenguaje directo, claro y confiable de sus orientaciones, así como por su compromiso con la formación ciudadana y la privacidad.</p>
                 </div>
             </div>
 
             <h3>Nuestros Valores</h3>
             <ul>
-                <li><strong>Educación:</strong> creemos que la información clara facilita mejores decisiones cotidianas.</li>
-                <li><strong>Claridad:</strong> explicamos términos técnicos de telefonía móvil en un lenguaje accesible.</li>
-                <li><strong>Transparencia:</strong> publicamos información objetiva y de utilidad práctica.</li>
-                <li><strong>Gratuidad:</strong> el acceso a este sitio es y será siempre completamente libre y sin costo.</li>
-                <li><strong>Privacidad:</strong> no recolectamos datos personales de nuestros visitantes.</li>
-                <li><strong>Independencia:</strong> no representamos intereses comerciales, políticos ni de operadores.</li>
+                <li><strong>Formación:</strong> confiamos en el valor del aprendizaje claro como herramienta práctica del día a día.</li>
+                <li><strong>Previsión:</strong> fomentamos una actitud cotidiana basada en anticiparse y no en improvisar.</li>
+                <li><strong>Claridad:</strong> difundimos explicaciones sencillas, verificables y de aplicación real.</li>
+                <li><strong>Acceso libre:</strong> ingresar a este sitio es y seguirá siendo totalmente gratuito.</li>
+                <li><strong>Confidencialidad:</strong> no captamos datos personales de quienes navegan aquí.</li>
+                <li><strong>Autonomía:</strong> no defendemos intereses comerciales, partidistas ni gremiales.</li>
             </ul>
 
             <div class="info-box">
-                <strong>Verificación:</strong> Esta misión y visión han sido publicadas con fines de verificación del propósito educativo del sitio, conforme a las exigencias de las plataformas publicitarias y de las normas colombianas aplicables.
+                <strong>Constancia:</strong> Esta misión y visión se dan a conocer para acreditar el propósito educativo de la página, en concordancia con los lineamientos de las plataformas publicitarias y las disposiciones legales vigentes en Colombia.
             </div>
         </section>
     </main>
@@ -1117,51 +1123,51 @@ footer a:hover { color: var(--accent-orange); }
                 </p>
             </div>
 
-            <h3>1. Objeto</h3>
-            <p>La presente política tiene por objeto informar a los usuarios y visitantes del sitio web sobre el tratamiento que se da a la información, en cumplimiento de la <strong>Ley 1581 de 2012</strong>, el <strong>Decreto 1377 de 2013</strong> y demás normas concordantes que regulan la protección de datos personales en Colombia.</p>
+            <h3>1. Alcance</h3>
+            <p>Este documento busca dar a conocer a los usuarios y visitantes de la página cómo se maneja la información, en observancia de la <strong>Ley 1581 de 2012</strong>, el <strong>Decreto 1377 de 2013</strong> y demás normas relacionadas con la protección de datos personales en Colombia.</p>
 
-            <h3>2. Naturaleza del sitio</h3>
-            <p>Este sitio es una <strong>guía educativa de libre consulta</strong>. No requiere registro, no solicita datos personales, no maneja formularios de contacto y no utiliza cookies de seguimiento publicitario. Por lo tanto, en condiciones normales de navegación, el sitio no recolecta, almacena ni trata datos personales de los visitantes.</p>
+            <h3>2. Finalidad de la página</h3>
+            <p>Este sitio funciona como un <strong>recurso educativo de consulta abierta</strong>. No exige inscripción, no pide datos personales, no dispone de formularios de contacto ni emplea cookies de rastreo publicitario. En consecuencia, durante una visita ordinaria, no se recopilan, guardan ni administran datos personales de los usuarios.</p>
 
-            <h3>3. Datos que podrían ser recolectados</h3>
-            <p>De manera técnica y automática, el servidor que aloja este sitio podría registrar información estándar como la dirección IP, el tipo de navegador, la fecha y hora de acceso. Esta información se conserva únicamente con fines técnicos y estadísticos agregados.</p>
+            <h3>3. Información técnica posible</h3>
+            <p>Por motivos operativos y de forma automática, el servidor donde reside esta página puede anotar datos habituales como la dirección IP, el navegador empleado, la fecha y la hora de ingreso. Ese registro se guarda únicamente para fines técnicos y métricas generales.</p>
 
-            <h3>4. Finalidad del tratamiento</h3>
-            <p>Cualquier información técnica recolectada se utilizará exclusivamente para:</p>
+            <h3>4. Uso de la información</h3>
+            <p>Cualquier dato técnico registrado se empleará de manera exclusiva para:</p>
             <ul>
-                <li>Garantizar el funcionamiento adecuado del sitio.</li>
-                <li>Detectar y prevenir intentos de uso indebido o ataques informáticos.</li>
-                <li>Generar estadísticas agregadas y anónimas de visitas.</li>
+                <li>Asegurar la correcta operatividad del sitio web.</li>
+                <li>Identificar y frenar usos indebidos o incidentes de seguridad informática.</li>
+                <li>Obtener cifras globales y anónimas de navegación.</li>
             </ul>
 
-            <h3>5. No transferencia de información</h3>
-            <p>El responsable no transfiere, vende, comparte ni cede información a terceros con fines comerciales. La información técnica del servidor podría ser entregada únicamente cuando lo exija una autoridad competente mediante orden legal.</p>
+            <h3>5. Reserva y no cesión</h3>
+            <p>El responsable no entrega, comercializa, difunde ni transfiere información a terceros con propósitos mercantiles. Los registros técnicos del servidor solo podrían facilitarse si lo ordena una autoridad facultada mediante mandato legal.</p>
 
-            <h3>6. Derechos del titular</h3>
-            <p>De conformidad con la Ley 1581 de 2012, todo titular de datos personales tiene derecho a:</p>
+            <h3>6. Facultades del titular</h3>
+            <p>Según lo previsto en la Ley 1581 de 2012, toda persona titular de datos personales tiene derecho a:</p>
             <ul>
-                <li>Conocer, actualizar y rectificar sus datos personales.</li>
-                <li>Solicitar prueba de la autorización otorgada al responsable.</li>
-                <li>Ser informado sobre el uso que se ha dado a sus datos.</li>
-                <li>Presentar quejas ante la Superintendencia de Industria y Comercio.</li>
-                <li>Revocar la autorización y/o solicitar la supresión del dato.</li>
-                <li>Acceder en forma gratuita a sus datos personales.</li>
+                <li>Conocer, poner al día y corregir sus datos personales.</li>
+                <li>Pedir constancia de la autorización dada al responsable.</li>
+                <li>Recibir información sobre el destino dado a sus datos.</li>
+                <li>Acudir con reclamaciones ante la Superintendencia de Industria y Comercio.</li>
+                <li>Dejar sin efecto la autorización y/o pedir que se elimine el dato.</li>
+                <li>Consultar sin costo alguno sus datos personales.</li>
             </ul>
 
-            <h3>7. Canal de atención</h3>
-            <p>Para ejercer cualquiera de los derechos anteriores, presentar consultas, reclamos o solicitudes relacionadas con la presente política, el titular podrá comunicarse con el responsable a través del correo electrónico: <strong>Tocandod@gmail.com</strong>.</p>
+            <h3>7. Medio de contacto</h3>
+            <p>Para ejercer cualquiera de las facultades indicadas, elevar consultas, peticiones o inconformidades vinculadas a esta política, el titular puede escribir al responsable al correo electrónico: <strong>Tocandod@gmail.com</strong>.</p>
 
-            <h3>8. Uso de cookies</h3>
-            <p>Este sitio no utiliza cookies de rastreo, análisis comercial ni publicidad personalizada.</p>
+            <h3>8. Cookies</h3>
+            <p>Esta página no instala cookies de seguimiento, medición comercial ni anuncios segmentados.</p>
 
-            <h3>9. Modificaciones</h3>
-            <p>El responsable se reserva el derecho de modificar la presente política en cualquier momento, en cuyo caso se publicará la nueva versión en este mismo sitio.</p>
+            <h3>9. Cambios</h3>
+            <p>El responsable podrá actualizar este texto en cualquier momento, publicando la versión vigente directamente en este mismo espacio.</p>
 
-            <h3>10. Aceptación</h3>
-            <p>La navegación y permanencia en el presente sitio implica el conocimiento y la aceptación de la presente política de privacidad por parte del visitante.</p>
+            <h3>10. Conformidad</h3>
+            <p>Ingresar y permanecer en esta página supone que el visitante conoce y acepta la presente política de privacidad.</p>
 
             <div class="info-box">
-                <strong>Autoridad de control:</strong> Superintendencia de Industria y Comercio (SIC) de Colombia. Para presentar quejas relacionadas con el tratamiento de datos personales, puede consultar: <em>www.sic.gov.co</em>.
+                <strong>Entidad de vigilancia:</strong> Superintendencia de Industria y Comercio (SIC) de Colombia. Para presentar reclamos sobre protección de datos personales, puede visitar: <em>www.sic.gov.co</em>.
             </div>
         </section>
     </main>
@@ -1185,50 +1191,50 @@ footer a:hover { color: var(--accent-orange); }
                 </p>
             </div>
 
-            <h3>1. Aceptación de los términos</h3>
-            <p>El acceso y uso del presente sitio web implican la aceptación plena, expresa y sin reservas de los presentes Términos y Condiciones por parte del usuario.</p>
+            <h3>1. Aceptación</h3>
+            <p>El ingreso y empleo de este sitio web conllevan la aceptación completa, expresa y sin reservas de estos Términos y Condiciones por parte de quien lo utiliza.</p>
 
-            <h3>2. Objeto del sitio</h3>
-            <p>Este sitio web tiene un fin <strong>exclusivamente educativo e informativo</strong>. Su contenido busca difundir información práctica sobre el funcionamiento y uso de paquetes y recargas de celular. Bajo ninguna circunstancia constituye oferta comercial, servicio de recargas, asesoría contractual ni asesoría técnica especializada.</p>
+            <h3>2. Propósito</h3>
+            <p>Esta página web tiene un carácter <strong>estrictamente educativo e informativo</strong>. Sus textos buscan difundir recomendaciones prácticas sobre el manejo y revisión de paquetes y recargas de celular. En ningún caso representan asesoría técnica, profesional, comercial ni de ingeniería en telecomunicaciones.</p>
 
-            <h3>3. Carácter no comercial</h3>
-            <p>El sitio no realiza actividades comerciales, no vende productos ni servicios, no recibe pagos, no recolecta datos personales con fines comerciales y no realiza captación de clientes ni potenciales consumidores.</p>
+            <h3>3. Ausencia de fines comerciales</h3>
+            <p>La página no ejecuta operaciones comerciales, no vende bienes ni servicios, no recibe dinero, no recopila datos personales con fines de venta ni capta clientes o prospectos.</p>
 
-            <h3>4. Propiedad intelectual</h3>
-            <p>Los contenidos, textos, diseños, imágenes y elementos gráficos del sitio son propiedad del responsable. Se permite la reproducción parcial con fines educativos, citando la fuente. Está prohibida la utilización comercial sin autorización previa y por escrito.</p>
+            <h3>4. Derechos de autor</h3>
+            <p>Los textos, redacciones, diseños, gráficos y piezas visuales de la página pertenecen al responsable. Se autoriza su reproducción parcial con fines educativos citando la procedencia. Queda prohibido su aprovechamiento comercial sin permiso previo y por escrito.</p>
 
-            <h3>5. Uso permitido</h3>
-            <p>El usuario se obliga a utilizar el sitio:</p>
+            <h3>5. Conducta esperada</h3>
+            <p>Quien utilice el sitio se compromete a hacerlo:</p>
             <ul>
-                <li>Conforme a la ley colombiana, la moral y las buenas costumbres.</li>
-                <li>Sin alterar, dañar o intentar acceder no autorizadamente al sitio o a sus servidores.</li>
-                <li>Sin utilizar el contenido para fines ilícitos, fraudulentos o lesivos a terceros.</li>
-                <li>Sin reproducir el contenido con fines comerciales no autorizados.</li>
+                <li>De acuerdo con la normativa colombiana, la moral y las buenas costumbres.</li>
+                <li>Sin modificar, perjudicar o intentar ingresar sin permiso al sitio o a su infraestructura.</li>
+                <li>Sin destinar los contenidos a actividades ilegales, engañosas o perjudiciales para terceros.</li>
+                <li>Sin copiar el material con propósitos comerciales no autorizados.</li>
             </ul>
 
-            <h3>6. Limitación de responsabilidad</h3>
-            <p>El responsable del sitio actúa de buena fe y se esfuerza por mantener la información actualizada y precisa. Sin embargo, <strong>no garantiza</strong> que la información esté libre de errores u omisiones. Para condiciones específicas de recargas, planes, tarifas o coberturas, el usuario deberá consultar directamente los canales oficiales de su operador de telecomunicaciones.</p>
+            <h3>6. Alcance de la responsabilidad</h3>
+            <p>El responsable actúa de buena fe y procura mantener los contenidos al día y exactos. Sin embargo, <strong>no asegura</strong> que estén exentos de inexactitudes u omisiones. Lo publicado es orientación general; ante un inconveniente real o consulta técnica puntual, el usuario debe dirigirse a los canales oficiales correspondientes o a la línea de emergencia <strong>123</strong>.</p>
 
-            <h3>7. Enlaces a terceros</h3>
-            <p>En caso de que el sitio incluya enlaces a sitios web de terceros, el responsable no se hace responsable del contenido, las políticas de privacidad ni las prácticas de dichos sitios externos.</p>
+            <h3>7. Vínculos externos</h3>
+            <p>Si en algún momento se incorporan enlaces hacia otros sitios web, el responsable no asume responsabilidad por los contenidos, políticas de privacidad ni prácticas de dichas páginas ajenas.</p>
 
-            <h3>8. Disponibilidad del sitio</h3>
-            <p>El responsable no garantiza la disponibilidad ininterrumpida del sitio. Podrán existir interrupciones por mantenimiento, actualizaciones, fallas técnicas o causas de fuerza mayor.</p>
+            <h3>8. Continuidad del servicio</h3>
+            <p>El responsable no garantiza que el sitio esté disponible sin interrupciones. Pueden presentarse pausas por labores técnicas, actualizaciones, fallos de red o hechos de fuerza mayor.</p>
 
-            <h3>9. Modificaciones</h3>
-            <p>El responsable se reserva el derecho de modificar el contenido del sitio y los presentes Términos y Condiciones en cualquier momento, sin necesidad de aviso previo.</p>
+            <h3>9. Actualizaciones</h3>
+            <p>El responsable se reserva la facultad de modificar lo publicado en el sitio y estos Términos y Condiciones en cualquier instante, sin aviso previo.</p>
 
-            <h3>10. Tratamiento de datos</h3>
-            <p>Para conocer el tratamiento de los datos, el usuario podrá consultar la <a href="#politicas-privacidad" style="color: var(--accent-orange); text-decoration: underline;">Política de Privacidad</a>. El responsable del tratamiento de los datos personales es <strong>Julian Restrepo Alvarez</strong>, identificado anteriormente.</p>
+            <h3>10. Manejo de datos</h3>
+            <p>Para revisar lo relativo al manejo de datos, puede consultarse la <a href="#politicas-privacidad" style="color: var(--accent-orange); text-decoration: underline;">Política de Privacidad</a>. El responsable del tratamiento de datos personales es <strong>Julian Restrepo Alvarez</strong>, señalado arriba.</p>
 
-            <h3>11. Legislación aplicable y jurisdicción</h3>
-            <p>Los presentes Términos y Condiciones se rigen por las leyes de la <strong>República de Colombia</strong>. Cualquier controversia será resuelta ante los jueces competentes de la ciudad de Barranquilla, Atlántico, salvo que la ley disponga otra cosa.</p>
+            <h3>11. Ley y fuero</h3>
+            <p>Estos Términos y Condiciones se rigen por las leyes de la <strong>República de Colombia</strong>. Toda diferencia será conocida por los jueces competentes de Barranquilla, Atlántico, salvo disposición legal en contrario.</p>
 
-            <h3>12. Contacto</h3>
-            <p>Para cualquier consulta relacionada con estos Términos y Condiciones, puede comunicarse al correo: <strong>Tocandod@gmail.com</strong>.</p>
+            <h3>12. Atención</h3>
+            <p>Para cualquier duda vinculada con estos Términos y Condiciones, puede escribirse al correo: <strong>Tocandod@gmail.com</strong>.</p>
 
             <div class="info-box">
-                <strong>Constancia:</strong> Al continuar navegando en este sitio, el usuario manifiesta haber leído, entendido y aceptado los presentes Términos y Condiciones, así como la Política de Privacidad publicada.
+                <strong>Declaración:</strong> Al seguir navegando en este sitio, el usuario declara haber leído, comprendido y aceptado estos Términos y Condiciones, junto con la Política de Privacidad divulgada.
             </div>
         </section>
     </main>
@@ -1274,7 +1280,7 @@ footer a:hover { color: var(--accent-orange); }
     var validPages = ['inicio', 'sobre-nosotros', 'mision-vision', 'politicas-privacidad', 'terminos-condiciones'];
 
     var titles = {
-        'inicio': 'Julian Restrepo Alvarez · Guía de Paquetes y Recargas de Celular',
+        'inicio': 'Julian Restrepo Alvarez',
         'sobre-nosotros': 'Julian Restrepo Alvarez · Sobre Nosotros',
         'mision-vision': 'Julian Restrepo Alvarez · Misión y Visión',
         'politicas-privacidad': 'Julian Restrepo Alvarez · Políticas y Privacidad',
